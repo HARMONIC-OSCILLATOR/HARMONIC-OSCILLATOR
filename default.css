@@ -1,7 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200&display=swap');
+
 body {
   background-color: #000;
   color: #AA3090;
-  font: 16px Garamond;
+  font: 16px Garamond, 'EB Garamond', serif;
   overflow-x: hidden; /*cursed*/
 }
 
@@ -47,11 +58,11 @@ body {
   gap: 2%;
 }
 
+#logo {width: 3.25rem; height: 3.25rem;}
+
 .nav-logo {}
 .nav-logo:hover {animation: hue-rotation 1.5s ease-in infinite alternate;}
 .nav-logo:active {animation: hue-rotation 1s ease-in infinite alternate;}
-
-#logo {width: 3.25rem; height: 3.25rem;}
 
 @keyframes hue-rotation {
   from {filter: hue-rotate(0deg);}
@@ -172,6 +183,7 @@ body {
 .nav-flex-item a:hover .osc-sticker-wide {border: 1px solid #600040;}
 .nav-flex-item a:hover .osc-sticker-wide h1 {color: #800060; border-bottom: 1px solid #600040;}
 .nav-flex-item a:hover .osc-sticker-wide h2 {color: #800060; border-top: 1px solid #600040;}
+.nav-flex-item a:hover .rings circle {stroke: #400020; fill: none;}
 .nav-flex-item a:hover path {stroke: #400020;}
 .nav-flex-item a:hover circle {fill: #180008;}
 
@@ -183,6 +195,7 @@ body {
 .nav-flex-item a:active .osc-sticker-wide {border: 1px solid #CCC;}
 .nav-flex-item a:active .osc-sticker-wide h1 {color: #FFF; border-bottom: 1px solid #CCC;}
 .nav-flex-item a:active .osc-sticker-wide h2 {color: #FFF; border-top: 1px solid #CCC;}
+.nav-flex-item a:active .rings circle {stroke: #FFF; fill: none;}
 .nav-flex-item a:active path {stroke: #FFF;}
 .nav-flex-item a:active circle {fill: #222;}
 
@@ -203,10 +216,13 @@ body {
   flex-flow: row nowrap;
   justify-content: center;
   align-items: center;
-  margin: 5em 0;
+  margin: 0;
+  padding: 2em 0 0;
   width: 100%;
-  height: 20em;
+  min-height: 20em;
 }
+
+.restricted {overflow: hidden;}
 
 #splash-flex-img-1-standard {
   width: 50%;
@@ -258,6 +274,39 @@ body {
   from {opacity: 2%;}
   to {opacity: 20%;}
 }
+
+@keyframes rotator {
+  from {transform:rotate(0deg);}
+  to {transform:rotate(360deg);}
+}
+
+@keyframes wow {
+  from {filter: invert(1);}
+  to {filter: invert(0);}
+}
+
+.radial-container {
+  flex: 0 1 auto;
+  width: 500px;
+  height: 500px;
+  overflow: hidden;
+}
+
+.radial {position: absolute;}
+/*replace with some sort of bezier routine?*/
+#S6 {animation: rotator 5s linear 1s infinite reverse;}
+#S5 {animation: rotator 10s linear 0.8s infinite;}
+#S4 {animation: rotator 15s linear 0.6s infinite reverse;}
+#S3 {animation: rotator 20s linear 0.4s infinite;}
+#S2 {animation: rotator 25s linear 0.2s infinite reverse;}
+#S1 {animation: rotator 30s linear 0.1s infinite;}
+#S0 {animation: rotator 180s linear 0s infinite reverse;}
+
+/*works if theres not noselect on!*/
+/*#S0:hover {animation: wow 3s cubic-bezier(0.8, 0, 0.2, 1);}*/
+
+.radial-container:hover > img {mix-blend-mode: hard-light;}
+.radial-container:active > #S0 {filter: hue-rotate(150deg);}
 
 p {
   padding: 0 10%;
