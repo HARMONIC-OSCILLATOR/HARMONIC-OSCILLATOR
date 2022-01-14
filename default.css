@@ -14,6 +14,7 @@ body {
   color: #AA3090;
   font: 16px Garamond, 'EB Garamond', serif;
   overflow-x: hidden; /*cursed*/
+  image-rendering: -webkit-optimize-contrast; /*very cursed*/
 }
 
 ::selection {background-color: rgba(51, 0, 102, 0.5);}
@@ -69,12 +70,51 @@ body {
   to {filter: hue-rotate(320deg);}
 }
 
-.nav-icon {opacity: 50%;}
+.nav-icon {
+  background: none;
+  border: none;
+  opacity: 50%;
+}
+
 .nav-icon:hover {opacity: 100%;}
 .nav-icon:active polygon {stroke: #FFF;}
 
 .nav-icon-standard {display: initial;}
 .nav-icon-mobile {display: none;}
+
+.left {}
+.right {}
+
+.nav-flex {
+  position: relative;
+  display: none;
+  margin: 5% auto 1%;
+  padding: 0;
+  width: 50%;
+  min-width: 25em;
+  max-width: 40em;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: flex-start;
+  list-style-type: none;
+  gap: 2%;
+  animation: nav-appear 1s linear 0s 1;
+}
+
+@keyframes nav-appear {
+  from {opacity: 0%;}
+  to {opacity: 100%;}
+}
+
+.nav-flex-item {flex: 1 1 auto;}
+
+.nav-flex-item a {
+  display: block;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  text-decoration: none;
+}
 
 .osc-sticker {
   width: 100px;
@@ -83,6 +123,7 @@ body {
   background-color: rgba(0, 0, 0, 0.75);
   border: 1px solid #AA3090;
 }
+
 .osc-sticker h1 {
   height: 10px;
   margin: 0;
@@ -111,6 +152,7 @@ body {
   background-color: rgba(0, 0, 0, 0.75);
   border: 1px solid #AA3090;
 }
+
 .osc-sticker-wide h1 {
   height: 10px;
   margin: 0;
@@ -130,30 +172,6 @@ body {
 }
 
 .osc-sticker-wide div {height: 50px;}
-
-.nav-flex {
-  position: relative;
-  display: flex;
-  margin: 5% auto 1%;
-  padding: 0;
-  width: 50%;
-  min-width: 25em;
-  flex-flow: row nowrap;
-  justify-content: center;
-  align-items: flex-start;
-  list-style-type: none;
-  gap: 2%;
-}
-
-.nav-flex-item {flex: 1 1 auto;}
-
-.nav-flex-item a {
-  display: block;
-  position: relative;
-  height: 100%;
-  width: 100%;
-  text-decoration: none;
-}
 
 .nav-flex-item a:link {color: #AA3090;} /*original link color: #00BBFF*/
 
@@ -275,16 +293,6 @@ body {
   to {opacity: 20%;}
 }
 
-@keyframes rotator {
-  from {transform:rotate(0deg);}
-  to {transform:rotate(360deg);}
-}
-
-@keyframes wow {
-  from {filter: invert(1);}
-  to {filter: invert(0);}
-}
-
 .radial-container {
   flex: 0 1 auto;
   width: 500px;
@@ -293,7 +301,7 @@ body {
 }
 
 .radial {position: absolute;}
-/*replace with some sort of bezier routine?*/
+
 #S6 {animation: rotator 5s linear 1s infinite reverse;}
 #S5 {animation: rotator 10s linear 0.8s infinite;}
 #S4 {animation: rotator 15s linear 0.6s infinite reverse;}
@@ -301,12 +309,14 @@ body {
 #S2 {animation: rotator 25s linear 0.2s infinite reverse;}
 #S1 {animation: rotator 30s linear 0.1s infinite;}
 #S0 {animation: rotator 180s linear 0s infinite reverse;}
-
-/*works if theres not noselect on!*/
-/*#S0:hover {animation: wow 3s cubic-bezier(0.8, 0, 0.2, 1);}*/
-
+#S {top: 100px; left: 50;}
 .radial-container:hover > img {mix-blend-mode: hard-light;}
 .radial-container:active > #S0 {filter: hue-rotate(150deg);}
+
+@keyframes rotator {
+  from {transform: rotate(0deg);}
+  to {transform: rotate(360deg);}
+}
 
 p {
   padding: 0 10%;

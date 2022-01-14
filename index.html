@@ -17,7 +17,7 @@
       <nav class="main-nav noselect">
         <ul>
 		  <li>
-		    <a class="nav-icon" href="tablets.html">
+		    <button id="left" class="nav-icon" onclick="navDisplay()">
 			  <svg class="nav-icon-standard" width="30" height="30">
                 <polygon points="" fill="none" stroke="#AA3090" stroke-width="1">
                 <animate attributeName="points" values="15,5 25,25 5,25; 5,25 15,5 25,25" dur="0.5s" repeatCount="indefinite">
@@ -28,11 +28,11 @@
                 <animate attributeName="points" values="24,8 40,40 8,40; 8,40 24,8 40,40" dur="1s" repeatCount="indefinite">
                 </polygon>
               </svg>
-			</a>
+			</button>
 		  </li>
   	      <li><a class="nav-logo" href="index.html"><img id="logo" src="assets/logo1.png"></a></li>
 		  <li>
-		    <a class="nav-icon" href="">
+		    <button id="right" class="nav-icon" onclick="navDisplay()">
 			  <svg class="nav-icon-standard" width="30" height="30">
                 <polygon points="" fill="none" stroke="#AA3090" stroke-width="1">
                 <animate attributeName="points" values="15,5 25,25 5,25; 20,10 0,10 10,30; 15,5 25,25 5,25;" dur="1s" repeatCount="indefinite">
@@ -43,7 +43,7 @@
                 <animate attributeName="points" values="24,8 40,40 8,40; 32,16 0,16 16,48; 24,8 40,40 8,40;" dur="2s" repeatCount="indefinite">
                 </polygon>
               </svg>
-			</a>
+			</button>
 		  </li>
         </ul>
       </nav>
@@ -60,7 +60,7 @@
 	  <nav>
 	    <ul class="nav-flex">
 		  <li class="nav-flex-item">
-		    <!--RINGS OSC-->
+		    <!--RINGS OSC UNFINISHED-->
 		    <a href="rings.html">
 	          <div class="osc-sticker noselect">
 	            <h1>HARMONIC OSCILLATOR</h1>
@@ -91,13 +91,16 @@
 			  <div class="osc-sticker-wide noselect">
 	            <h1>HARMONIC OSCILLATOR</h1>
 		        <div>
-		          <svg width="300" height="50">
-		            <path d="" fill="none" stroke="#AA3090" stroke-width="1">
-		            <animate attributeName="d" values="M300,50 L300,0; M0,0 L0,50; M300,50 L300,0;" dur="1.5s" repeatCount="indefinite">
-		            </path>
-		            <path d="" fill="none" stroke="#AA3090" stroke-width="1">
-		            <animate attributeName="d" values="M0,50 L0,0; M300,0 L300,50; M0,50 L0,0;" dur="2.5s" repeatCount="indefinite">
-		            </path>
+		          <svg class="rings" width="300" height="50">
+		            <circle cx="150" cy="25" r="" fill="" stroke="#AA3090" stroke-width="1">
+					<animate attributeName="r" values="500; 0; 400;" dur="5s" repeatCount="indefinite"/>
+					</circle>
+		            <circle cx="150" cy="25" r="" fill="" stroke="#AA3090" stroke-width="1">
+					<animate attributeName="r" values="400; 0; 300;" dur="5s" repeatCount="indefinite"/>
+					</circle>
+					<circle cx="150" cy="25" r="" fill="" stroke="#AA3090" stroke-width="1">
+					<animate attributeName="r" values="300; 0; 200;" dur="5s" repeatCount="indefinite"/>
+					</circle>
 		          </svg>
 		        </div>
 	            <h2>Underground Arts</h2>
@@ -139,7 +142,7 @@
 		  </li>
 		  <li class="nav-flex-item">
 		    <!--DEFAULT OSC-->
-		    <a href="">
+		    <a href="tablets.html">
 	          <div class="osc-sticker noselect">
 	            <h1>HARMONIC OSCILLATOR</h1>
 		        <div>
@@ -275,4 +278,16 @@
 </body>
 <!--ANIMATION CONTROLLER-->
 <script src='animcontroller_index.js'></script>
+<script>
+    function navDisplay() {
+	  var x = document.getElementsByClassName("nav-flex");
+	  var y = document.getElementById("left")
+	  var z = document.getElementById("right")
+	  
+	  for (var i = 0; i < x.length; i++) {
+	    if (x[i].style.display == "flex") {x[i].style.display = "none";}
+	    else {x[i].style.display = "flex";}
+      }
+	}
+</script>
 </html>
