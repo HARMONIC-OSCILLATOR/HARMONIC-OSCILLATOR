@@ -101,6 +101,25 @@ body {
   animation: nav-appear 1s linear 0s 1;
 }
 
+.side-page-nav-flex {
+  position: fixed;
+  display: none;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  margin: 0;
+  padding: 6em 0 0;
+  width: 100vw;
+  background-color: #000;
+  flex-flow: column nowrap;
+  justify-content: stretch;
+  align-items: stretch;
+  align-content: center;
+  list-style-type: none;
+  gap: 1%;
+  animation: nav-appear 0.5s linear 0s 1;
+}
+
 @keyframes nav-appear {
   from {opacity: 0%;}
   to {opacity: 100%;}
@@ -172,6 +191,9 @@ body {
 }
 
 .osc-sticker-wide div {height: 50px;}
+
+.side-page-sticker {display: none;}
+.side-page-sticker-wide {display: block;}
 
 .nav-flex-item a:link {color: #AA3090;} /*original link color: #00BBFF*/
 

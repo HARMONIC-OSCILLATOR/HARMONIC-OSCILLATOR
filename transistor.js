@@ -1,7 +1,7 @@
 //BUTTON TRANSITIONIST SCRIPT
 //MNO
 
-var w = document.getElementsByClassName('');
+var w = document.getElementsByClassName('side-page-nav-flex');
 var x = document.getElementsByClassName('nav-flex');
 var y = document.getElementById('left')
 var z = document.getElementById('right')
@@ -10,6 +10,11 @@ function navDisplay() {
 	for (var i = 0; i < x.length; i++) {
 		if (x[i].style.display == "flex") {x[i].style.display = "none";}
 		else {x[i].style.display = "flex";}
+	}
+	
+	for (var i = 0; i < w.length; i++) {
+		if (w[i].style.display == "flex") {w[i].style.display = "none";}
+		else {w[i].style.display = "flex";}
 	}
 }
 
@@ -30,5 +35,5 @@ function splashTransition() {
 }
 
 function sidePageTransition() {
-	
+	navDisplay();
 }
