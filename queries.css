@@ -39,7 +39,7 @@
 
 /*BOX MODE FOR BOX MODERS!*/
 @media all and (max-height: 450px) {
-  .side-page-nav-flex {flex-flow: column wrap; justify-content: flex-start;}
+  .side-page-nav-flex {flex-flow: column wrap; max-height: 200px;}
   .side-page-sticker {display: block;}
   .side-page-sticker-wide {display: none;}
 }

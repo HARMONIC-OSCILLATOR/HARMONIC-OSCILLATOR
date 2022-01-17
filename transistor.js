@@ -1,6 +1,6 @@
 //BUTTON TRANSITIONIST SCRIPT
 //MNO
-
+var v = document.getElementsByTagName('main');
 var w = document.getElementsByClassName('side-page-nav-flex');
 var x = document.getElementsByClassName('nav-flex');
 var y = document.getElementById('left')
@@ -17,6 +17,18 @@ function navDisplay() {
 		else {w[i].style.display = "flex";}
 	}
 }
+
+function totalNavDisplay() {  
+	for (var i = 0; i < v.length; i++) {
+		if (v[i].style.display == "none") {v[i].style.display = "initial";}
+		else {v[i].style.display = "none";}
+	}
+	for (var i = 0; i < w.length; i++) {
+		if (w[i].style.display == "flex") {w[i].style.display = "none";}
+		else {w[i].style.display = "flex";}
+	}
+}
+
 
 function animSwap() {
 	if (anim_1.frames == frames_01) {anim_1 = new animStruct(anim_img_id_01, frames_01_alt, freq_01);}
@@ -35,5 +47,5 @@ function splashTransition() {
 }
 
 function sidePageTransition() {
-	navDisplay();
+	totalNavDisplay();
 }
