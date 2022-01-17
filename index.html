@@ -17,7 +17,7 @@
       <nav class="main-nav noselect">
         <ul>
 		  <li>
-		    <button id="left" class="nav-icon" onclick="navDisplay()">
+		    <button id="left" class="nav-icon" onclick="splashTransition()">
 			  <svg class="nav-icon-standard" width="30" height="30">
                 <polygon points="" fill="none" stroke="#AA3090" stroke-width="1">
                 <animate attributeName="points" values="15,5 25,25 5,25; 5,25 15,5 25,25" dur="0.5s" repeatCount="indefinite">
@@ -32,7 +32,7 @@
 		  </li>
   	      <li><a class="nav-logo" href="index.html"><img id="logo" src="assets/logo1.png"></a></li>
 		  <li>
-		    <button id="right" class="nav-icon" onclick="navDisplay()">
+		    <button id="right" class="nav-icon" onclick="splashTransition()">
 			  <svg class="nav-icon-standard" width="30" height="30">
                 <polygon points="" fill="none" stroke="#AA3090" stroke-width="1">
                 <animate attributeName="points" values="15,5 25,25 5,25; 20,10 0,10 10,30; 15,5 25,25 5,25;" dur="1s" repeatCount="indefinite">
@@ -50,12 +50,12 @@
     </header>
     <main>
 	  <section class="splash-flex-standard noselect hard-noselect">
-	      <img id="splash-flex-img-1-standard" src="assets/photos/DSC01128.jpg">
-		  <img id="splash-flex-img-2-standard" src="assets/Untitled.gif">
+	      <img id="splash-flex-img-1-standard" src="assets/photos/DSC02822.jpg">
+		  <img id="splash-flex-img-2-standard" src="assets/index/untitled_frame_00.png">
 	  </section>
 	  <section class="splash-flex-mobile noselect hard-noselect">
-	      <img id="splash-flex-img-1-mobile" src="assets/photos/DSC07862.jpg">
-	      <img id="splash-flex-img-2-mobile" src="assets/index/blinker.gif">
+	      <img id="splash-flex-img-1-mobile" src="assets/photos/IMG00.jpg">
+	      <img id="splash-flex-img-2-mobile" src="assets/index/blinker_frame_00.png">
 	  </section>
 	  <nav>
 	    <ul class="nav-flex">
@@ -66,22 +66,22 @@
 	            <h1>HARMONIC OSCILLATOR</h1>
 		        <div>
 		          <svg class="rings" width="100" height="50">
-		            <circle cx="50" cy="25" r="" fill="" stroke="#AA3090" stroke-width="1">
+		            <circle cx="50" cy="25" r="400" fill="none" stroke="#AA3090" stroke-width="1">
 					<animate attributeName="r" values="400; 0; 300;" dur="5s" repeatCount="indefinite"/>
 					</circle>
-		            <circle cx="50" cy="25" r="" fill="" stroke="#AA3090" stroke-width="1">
+		            <circle cx="50" cy="25" r="300" fill="none" stroke="#AA3090" stroke-width="1">
 					<animate attributeName="r" values="300; 0; 200;" dur="5s" repeatCount="indefinite"/>
 					</circle>
-					<circle cx="50" cy="25" r="" fill="" stroke="#AA3090" stroke-width="1">
+					<circle cx="50" cy="25" r="200" fill="none" stroke="#AA3090" stroke-width="1">
 					<animate attributeName="r" values="200; 0; 100;" dur="5s" repeatCount="indefinite"/>
 					</circle>
-					<circle cx="50" cy="25" r="" fill="" stroke="#AA3090" stroke-width="1">
+					<circle cx="50" cy="25" r="110" fill="none" stroke="#AA3090" stroke-width="1">
 					<animate attributeName="r" values="110; 0; 90;" dur="5s" repeatCount="indefinite"/>
 					</circle>
-		            <circle cx="50" cy="25" r="" fill="" stroke="#AA3090" stroke-width="1">
+		            <circle cx="50" cy="25" r="100" fill="none" stroke="#AA3090" stroke-width="1">
 					<animate attributeName="r" values="100; 0; 80;" dur="5s" repeatCount="indefinite"/>
 					</circle>
-					<circle cx="50" cy="25" r="" fill="" stroke="#AA3090" stroke-width="1">
+					<circle cx="50" cy="25" r="90" fill="none" stroke="#AA3090" stroke-width="1">
 					<animate attributeName="r" values="90; 0; 70;" dur="5s" repeatCount="indefinite"/>
 					</circle>
 		          </svg>
@@ -92,14 +92,23 @@
 	            <h1>HARMONIC OSCILLATOR</h1>
 		        <div>
 		          <svg class="rings" width="300" height="50">
-		            <circle cx="150" cy="25" r="" fill="" stroke="#AA3090" stroke-width="1">
+		            <circle cx="150" cy="25" r="500" fill="none" stroke="#AA3090" stroke-width="1">
 					<animate attributeName="r" values="500; 0; 400;" dur="5s" repeatCount="indefinite"/>
 					</circle>
-		            <circle cx="150" cy="25" r="" fill="" stroke="#AA3090" stroke-width="1">
+		            <circle cx="150" cy="25" r="400" fill="none" stroke="#AA3090" stroke-width="1">
 					<animate attributeName="r" values="400; 0; 300;" dur="5s" repeatCount="indefinite"/>
 					</circle>
-					<circle cx="150" cy="25" r="" fill="" stroke="#AA3090" stroke-width="1">
+					<circle cx="150" cy="25" r="300" fill="none" stroke="#AA3090" stroke-width="1">
 					<animate attributeName="r" values="300; 0; 200;" dur="5s" repeatCount="indefinite"/>
+					</circle>
+					<circle cx="150" cy="25" r="30" fill="none" stroke="#AA3090" stroke-width="1">
+					<animate attributeName="r" values="30; 0; 30;" dur="5s" repeatCount="indefinite"/>
+					</circle>
+		            <circle cx="150" cy="25" r="20" fill="none" stroke="#AA3090" stroke-width="1">
+					<animate attributeName="r" values="20; 0; 20;" dur="5s" repeatCount="indefinite"/>
+					</circle>
+					<circle cx="150" cy="25" r="10" fill="none" stroke="#AA3090" stroke-width="1">
+					<animate attributeName="r" values="10; 0; 10;" dur="5s" repeatCount="indefinite"/>
 					</circle>
 		          </svg>
 		        </div>
@@ -109,7 +118,7 @@
 		  </li>
 		  <li class="nav-flex-item">
 		    <!--RACING OSC-->
-		    <a href="">
+		    <a href="tablets.html">
 	          <div class="osc-sticker noselect">
 	            <h1>HARMONIC OSCILLATOR</h1>
 		        <div>
@@ -278,16 +287,5 @@
 </body>
 <!--ANIMATION CONTROLLER-->
 <script src='animcontroller_index.js'></script>
-<script>
-    function navDisplay() {
-	  var x = document.getElementsByClassName("nav-flex");
-	  var y = document.getElementById("left")
-	  var z = document.getElementById("right")
-	  
-	  for (var i = 0; i < x.length; i++) {
-	    if (x[i].style.display == "flex") {x[i].style.display = "none";}
-	    else {x[i].style.display = "flex";}
-      }
-	}
-</script>
+<script src='transistor.js'></script>
 </html>

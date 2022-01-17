@@ -45,7 +45,7 @@ body {
   margin: 0 auto;
   padding: 0.25rem 0 0;
   background: linear-gradient(180deg, rgba(0, 102, 255, 0.2), rgba(0, 0, 255, 0.1) 50%, rgba(0, 0, 255, 0));
-  z-index: 1;
+  z-index: 2;
 }
 
 .main-nav ul {
@@ -235,7 +235,7 @@ body {
   justify-content: center;
   align-items: center;
   margin: 0;
-  padding: 2em 0 0;
+  padding: 3em 0 0;
   width: 100%;
   min-height: 20em;
 }
@@ -245,6 +245,7 @@ body {
 #splash-flex-img-1-standard {
   width: 50%;
   max-width: 540px;
+  min-width: 405px;
   z-index: 1;
 }
 
@@ -254,6 +255,8 @@ body {
   width: 50%;
   max-width: 540px;
   max-height: 540px;
+  min-width: 405px;
+  min-height: 405px;
   z-index: 2;
 }
 
@@ -297,6 +300,7 @@ body {
   flex: 0 1 auto;
   width: 500px;
   height: 500px;
+  padding: 2em 0;
   overflow: hidden;
 }
 
@@ -309,7 +313,8 @@ body {
 #S2 {animation: rotator 25s linear 0.2s infinite reverse;}
 #S1 {animation: rotator 30s linear 0.1s infinite;}
 #S0 {animation: rotator 180s linear 0s infinite reverse;}
-#S {top: 100px; left: 50;}
+#S {position: absolute; top: 150px; left: 150px;}
+
 .radial-container:hover > img {mix-blend-mode: hard-light;}
 .radial-container:active > #S0 {filter: hue-rotate(150deg);}
 

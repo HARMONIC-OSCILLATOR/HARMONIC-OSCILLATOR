@@ -24,6 +24,10 @@
   
   .flex-container {gap: 1%;}
   .tablet-of-truth {font-size: 0.75em;}
+  
+  .radial-container {width: 375px; height: 375px;}
+  .radial {width: 375px; height: 375px;}
+  #S {width: 125px; height: 175px; top: 40%; left: 5%;}
 }
 
 /*SMALLER SCREENS WORLD*/
