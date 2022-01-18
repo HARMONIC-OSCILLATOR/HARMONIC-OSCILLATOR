@@ -29,7 +29,6 @@ function totalNavDisplay() {
 	}
 }
 
-
 function animSwap() {
 	if (anim_1.frames == frames_01) {anim_1 = new animStruct(anim_img_id_01, frames_01_alt, freq_01);}
 	else {anim_1 = new animStruct(anim_img_id_01, frames_01, freq_01);}

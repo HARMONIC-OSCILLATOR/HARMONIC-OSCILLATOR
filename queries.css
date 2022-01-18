@@ -19,16 +19,14 @@
   .nav-flex-item {}
   .nav-flex-item a {padding: 2% 0;}
   
-  .side-page-nav-flex {padding: 8em 0 0;}
-  
   .splash-flex-standard {display: none;}
   .splash-flex-mobile {display: flex;}
   
   .flex-container {gap: 1%;}
   .tablet-of-truth {font-size: 0.75em;}
   
-  .radial-container {width: 375px; height: 375px;}
-  .radial {width: 375px; height: 375px;}
+  .radial-container {width: 250px; height: 250px;}
+  .radial {width: 250px; height: 250px;}
   #S {width: 125px; height: 175px; top: 40%; left: 5%;}
 }
 
@@ -37,11 +35,29 @@
   .tablet-of-truth {font-size: 0.625em;}
 }
 
-/*BOX MODE FOR BOX MODERS!*/
-@media all and (max-height: 450px) {
-  .side-page-nav-flex {flex-flow: column wrap; max-height: 200px;}
+/*BOX MODE!*/
+@media all and (max-height: 460px) {
+  .side-page-nav-flex {
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+	width: 220px;
+	min-height: 0;
+    height: 160px;
+  }
+  
+  .nav-flex-item {flex: 0 1 auto;}
   .side-page-sticker {display: block;}
   .side-page-sticker-wide {display: none;}
 }
+
+/*TUBE MODE!*/
+@media all and (max-height: 290px) {
+    .side-page-nav-flex {
+      width: 100%;
+	  max-width: 60em;
+      height: 90px;
+      margin: 1% auto 0;
+    }
 
 /*consider giving a shit about prefers-reduced-motion*/
