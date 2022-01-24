@@ -1,8 +1,9 @@
 //BUTTON TRANSITIONIST SCRIPT
 //MNO
+
 var v = document.getElementsByTagName('main');
 var w = document.getElementsByClassName('side-page-nav-flex');
-var x = document.getElementsByClassName('nav-flex');
+var x = document.getElementsByClassName('splash-nav-flex');
 var y = document.getElementById('left')
 var z = document.getElementById('right')
 
