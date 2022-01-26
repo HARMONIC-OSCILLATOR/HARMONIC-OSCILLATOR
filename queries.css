@@ -47,8 +47,6 @@
   .splash-nav-flex .osc-sticker {display: block;}
   .splash-nav-flex .osc-sticker-wide {display: none;}
 
-  #splash-flex-img-2-mobile {}
-
   .side-page-nav-flex {
     flex-flow: column wrap;
     justify-content: center;
@@ -58,9 +56,10 @@
     height: 160px;
   }
   
-  .nav-flex-item {flex: 0 1 auto;}
   .side-page-sticker {display: block;}
   .side-page-sticker-wide {display: none;}
+  
+  .nav-flex-item {flex: 0 1 auto;}  
 }
 
 /*SMALLER SCREENS*/
@@ -69,48 +68,44 @@
 }
 
 /*BLINKER EXCEPTIONS*/
-@media all and (max-width: 450px) and (max-height: 620px) {
+@media all and (max-width: 450px) and (max-height: 600px) {
   #splash-flex-img-2-mobile {display: none;}
 }
 
-/*TUBE MODE!*/ /*SPLASH MENU REPOSITIONING*/
+/*TUBE MODE!*/ /*SPLASH MENU REPOSITIONING*/ /*WORST CODE IMAGINABLE WROUGHT OF DESPERATION*/
 @media all and (min-width: 636px) and (max-height: 475px), (min-width: 900px) and (max-height: 500px), (min-width: 950px) and (max-height: 520px), (min-width: 1000px) and (max-height: 575px)  {
   .splash-nav-flex {
-    position: fixed;
+    position: absolute;
 	top: 0;
 	left: 0;
 	min-width: 0;
-	max-width: 300px;
-	height: 100vh;
-	padding-left: 20px;
-	flex-flow: column nowrap;
+	max-width: 100vw;
+	width: 100vw;
+	min-height: 0;
+    height: 160px;
+	margin: 8em 0 0;
+	padding: 0;
+	flex-flow: column wrap;
 	justify-content: center;
+	align-content: center;
 	align-items: center;
 	z-index: 3;
   }
+
+  .splash-nav-flex .osc-sticker {background-color: rgba(0, 0, 0, 0.95);}
   
-  .splash-nav-flex .osc-sticker {display: none;}
-  .splash-nav-flex .osc-sticker-wide {display: block;}
-  
-  .nav-flex-item {flex: 0 1 auto;}
-}
+  .splash-flex-standard {padding: 1em 0 0;}
+  #splash-flex-img-2-standard {left: 45vw;}
+}	
 
-/*MEGATUBE MODE!*/ /*ENTIRE SPLASH MENU REPOSITIONING*/
-@media all and (min-width: 636px) and (max-height: 540px) {
-
-}
-
-
-/*GIGATUBE MODE!*/
+/*GIGATUBE MOBILE*/
 @media all and (max-height: 290px) {
   .splash-nav-flex {
     width: 100%;
-	max-width: 60em;
     height: 90px;
     margin: 1% auto 0;
+	flex-flow: row nowrap;
   }
-  
-  #splash-flex-img-2-mobile {display: none;}
   
   .side-page-nav-flex {
     width: 100%;
@@ -118,5 +113,19 @@
     height: 90px;
     margin: 1% auto 0;
   }
+
+  .splash-flex-standard {display: none;}
+  #splash-flex-img-2-mobile {display: none;}
+}
+
+/*GIGATUBE STANDARD*/
+@media all and (min-width: 636px) and (max-height: 290px) {
+  .splash-nav-flex {
+    width: 100%;
+    height: 90px;
+    margin: 6em auto 0;
+	flex-flow: row wrap;
+	gap: 2%;
+  } 
 }
 /*consider giving a shit about prefers-reduced-motion*/
