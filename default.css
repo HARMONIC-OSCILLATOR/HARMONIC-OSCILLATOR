@@ -1,3 +1,6 @@
+/*HARMONIC OSCILLATOR DEFAULT CSS*/
+/*MNO*/
+
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200&display=swap');
 
@@ -387,6 +390,7 @@ p {
   padding: 0;
   border: 1px solid #AA3090;
   border-radius: 0.25em;
+  background-color: #100510;
 }
 
 .test2 {

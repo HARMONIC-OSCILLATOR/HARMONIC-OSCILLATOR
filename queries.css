@@ -1,4 +1,7 @@
-/*SMALL SCREENS WORLD!*/
+/*HARMONIC OSCILLATOR MEDIA QUERIES*/
+/*MNO*/
+
+/*SMALL SCREENS*/
 @media all and (max-width: 635px) {
   .main-nav ul {padding: 1em 0 0; justify-content: space-around;}
   #logo {width: 75px; height: 75px;}
@@ -37,7 +40,7 @@
   #S {width: 125px; height: 175px; top: 40%; left: 5%;}
 }
 
-/*SMALL SCREENS BOX MODE!*/
+/*SMALL SCREENS BOX MODE*/
 @media all and (max-width: 635px) and (max-height: 460px) {
   .splash-nav-flex {
     flex-flow: column wrap;
