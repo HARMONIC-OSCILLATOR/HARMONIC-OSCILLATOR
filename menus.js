@@ -23,7 +23,7 @@ var right_nav_codeblock =
                 '<polygon points="" fill="none" stroke="#AA3090" stroke-width="1">' +
                 '<animate attributeName="points" values="24,8 40,40 8,40; 32,16 0,16 16,48; 24,8 40,40 8,40;" dur="2s" repeatCount="indefinite">' +
                 '</polygon>' +
-              '</svg>;';
+              '</svg>';
 
 var default_osc_codeblock =
 	            '<h1>HARMONIC OSCILLATOR</h1>' +

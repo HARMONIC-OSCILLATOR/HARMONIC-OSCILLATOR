@@ -4,8 +4,6 @@
 var v = document.getElementsByTagName('main');
 var w = document.getElementsByClassName('side-page-nav-flex');
 var x = document.getElementsByClassName('splash-nav-flex');
-var y = document.getElementById('left')
-var z = document.getElementById('right')
 
 function navDisplay() {  
 	for (var i = 0; i < x.length; i++) {
