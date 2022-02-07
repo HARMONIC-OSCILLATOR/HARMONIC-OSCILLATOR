@@ -1,0 +1,88 @@
+/*HARMONIC OSCILLATOR COUNTERGLOW CSS*/
+/*MNO*/
+
+.tablet-of-truth {
+  width: 8em;
+  height: 34em;
+  margin: 0;
+  padding: 1.5em;
+  border: 1px solid #AA3090;
+  border-radius: 1.5em;
+}
+
+.tablet-of-truth p {
+  margin: 0;
+  padding: 0;
+  text-align: justify;
+  text-align-last: center;
+  line-height: 1em;
+  font-variant: small-caps;
+}
+
+.tablet-of-truth p::first-letter {
+  width: 2em;
+  height: 2em;
+  margin-right: 0.125em;
+  padding: 0.125em;
+  float: left;
+  font-size: 2em;
+  border: 1px solid #AA3090;
+  background-color: #100510;
+}
+
+.card {animation: appear 1s cubic-bezier(.81,.16,.47,.96) 0s 1 normal;}
+
+.card-title {
+  margin-bottom: 0.5rem;
+  font-size: 0.75em;
+  text-align: center;
+  font-variant: small-caps;
+}
+
+.glyph {
+  position: relative;
+  margin: 1em auto 0;
+  padding: 0;
+  border: 1px solid #AA3090;
+  border-radius: 0.25em;
+  background-color: #100510;
+}
+
+.glyph-tall {
+  width: 60px;
+  height: 120px;
+}
+
+.glyph-wide {
+  width: 100px;
+  height: 50px;
+}
+
+.glyph-svg-original {display: block;}
+.glyph-svg-small {display: none;}
+
+/*TABLETS QUERIES*/
+/*SMALL SCREENS*/
+@media all and (max-width: 635px) {
+  .flex-container {gap: 1%;}
+  
+  .tablet-of-truth {font-size: 0.75em;}
+  
+  .glyph-tall {
+    width: 50px;
+    height: 100px;
+  }
+  
+  .glyph-wide {
+    width: 60px;
+    height: 50px;
+  }
+  
+  .glyph-svg-original {display: none;}
+  .glyph-svg-small {display: block;}
+}
+
+/*SMALLER SCREENS*/
+@media all and (max-width: 400px) {
+  .tablet-of-truth {font-size: 0.625em;}
+}
