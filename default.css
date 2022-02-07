@@ -12,6 +12,13 @@ body {
   image-rendering: -webkit-optimize-contrast; /*very cursed*/
 }
 
+p {
+  padding: 0 10%;
+  text-align: justify;
+  text-align-last: center;
+  line-height: 1.5em;
+}
+
 ::selection {background-color: rgba(51, 0, 102, 0.5);}
 
 .noselect {
@@ -335,71 +342,4 @@ left: 150px;
 @keyframes rotator {
   from {transform: rotate(0deg);}
   to {transform: rotate(360deg);}
-}
-
-p {
-  padding: 0 10%;
-  text-align: justify;
-  text-align-last: center;
-  line-height: 1.5em;
-}
-
-.tablet-of-truth {
-  width: 8em;
-  height: 34em;
-  margin: 0;
-  padding: 1.5em;
-  border: 1px solid #AA3090;
-  border-radius: 1.5em;
-}
-
-.tablet-of-truth p {
-  margin: 0;
-  padding: 0;
-  text-align: justify;
-  text-align-last: center;
-  line-height: 1em;
-  font-variant: small-caps;
-}
-
-.tablet-of-truth p::first-letter {
-  width: 2em;
-  height: 2em;
-  margin-right: 0.125em;
-  padding: 0.125em;
-  float: left;
-  font-size: 2em;
-  border: 1px solid #AA3090;
-  background-color: #100510;
-}
-
-.card {animation: appear 1s cubic-bezier(.81,.16,.47,.96) 0s 1 normal;}
-
-.card-title {
-  margin-bottom: 0.5rem;
-  font-size: 0.75em;
-  text-align: center;
-  font-variant: small-caps;
-}
-
-.test {
-  position: relative;
-  width: 60px;
-  height: 120px;
-  margin: 1em auto 0;
-  padding: 0;
-  border: 1px solid #AA3090;
-  border-radius: 0.25em;
-  background-color: #100510;
-}
-
-.test2 {
-  position: relative;
-  width: 60px;
-  height: 50px;
-  margin: 1em auto 0;
-  padding: 0;
-  border: 1px solid #AA3090;
-  border-radius: 0.25em;
-  background-color: #100510;
 }

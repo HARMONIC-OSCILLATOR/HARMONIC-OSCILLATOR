@@ -1,4 +1,4 @@
-/*HARMONIC OSCILLATOR MEDIA QUERIES*/
+/*HARMONIC OSCILLATOR DEFAULT MEDIA QUERIES*/
 /*MNO*/
 
 /*SMALL SCREENS*/
@@ -32,9 +32,6 @@
   .splash-flex-standard {display: none;}
   .splash-flex-mobile {display: flex;}
   
-  .flex-container {gap: 1%;}
-  .tablet-of-truth {font-size: 0.75em;}
-  
   .radial-container {width: 250px; height: 250px;}
   .radial {width: 250px; height: 250px;}
   #S {width: 125px; height: 175px; top: 40%; left: 5%;}
@@ -67,11 +64,6 @@
   .side-page-sticker-wide {display: none;}
   
   .nav-flex-item {flex: 0 1 auto;}  
-}
-
-/*SMALLER SCREENS*/
-@media all and (max-width: 400px) {
-  .tablet-of-truth {font-size: 0.625em;}
 }
 
 /*BLINKER EXCEPTIONS*/
