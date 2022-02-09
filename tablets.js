@@ -1,0 +1,86 @@
+//HARMONIC OSCILLATOR COUNTERGLOW TABLET MANAGER
+//MNO
+
+var tablets = document.getElementsByClassName('tablet-of-truth');
+//var tablet_1 = document.getElementById('tablet-1');
+//var tablet_2 = document.getElementById('tablet-2');
+//var tablet_3 = document.getElementById('tablet-3');
+
+var tablet_text_standalone_1 = '<p>Furthermore, the object, which individuality has as its essence, has no content. It is what is called necessity, since necessity, fate, and the like, each amount to saying that we do not know how to say what it is doing or what its determinate laws and its positive content are supposed to be because it is the absolute pure concept itself intuited as being, the simple and empty but nonetheless inexorable and impassive relation whose work is merely the nothingness of individuality.</p>';
+var tablet_text_standalone_2 = '<p>Furthermore, since the skull does not itself feel, it seems that perhaps a more determinate significance could be given to it. Through their proximity to the skull, certain determinate sensations would allow us to take cognizance83 of what the skull is supposed to mean, and if a conscious mode of spirit has its feeling in a determinate place on the skull, then perhaps this place on the skull will indicate by its shape that mode of spirit and its particularity.</p>';
+
+var tablet_text_with_tallglyph_1 = '<p>Spirit is the self of the actual consciousness which spirit confronts, or rather which confronts itself as an objective actual world, a world which has likewise lost all its significance as something alien for the self, just as the self has lost any sense of being a dependent or independent being-for-itself separated from that world.</p>';
+var tablet_text_with_tallglyph_2 = '<p>The being of what was meant, along with the individuality and the universality opposed to that individuality in perception, as well as the empty inner of the understanding, no longer exist as the essence. Rather, they exist merely as moments of self-consciousness.</p>';
+
+var tablet_text_with_wideglyph_1 = '<p>This speech is the madness of the musician “who piled up and mixed together some thirty airs, Italian, French, tragic, comic, of all sorts of character; now, with a deep bass, he descended into the depths of hell, then, contracting his throat, with a falsetto he tore apart the vaults of the skies, alternately raging and then being placated, imperious and then derisive.”</p>';
+var tablet_text_with_wideglyph_2 = '<p>The unity is estranged because it is absolutely negative unity, that is, infinite unity, and because the unity is durable existence, the distinction also has self-sufficiency only in the unity. This self-sufficiency of the shape appears as something determinate, as for an other, for it is something estranged. The sublation of the estrangement likewise happens by way of an other.</p>';
+
+var tall_glyph_1 =
+		  '<div class="glyph glyph-tall">' +
+		    '<svg class="glyph-svg-original" width="60" height="120">' +
+		      '<polygon points="30,5 55,60 30,115 5,60" fill="none" stroke="#AA3090" stroke-width="1"/>' +
+		    '</svg>' +
+			'<svg class="glyph-svg-small" width="50" height="100">' +
+		      '<polygon points="25,5 45,50 25,95 5,50" fill="none" stroke="#AA3090" stroke-width="1"/>' +
+		    '</svg>' +
+		  '</div>';
+
+var tall_glyph_2 =
+		  '<div class="glyph glyph-tall">' +
+		    '<svg class="glyph-svg-original" width="60" height="120">' +
+		      '<polygon points="30,2 55,62 30,125 5,62" fill="none" stroke="#AA3090" stroke-width="1"/>' +
+		    '</svg>' +
+			'<svg class="glyph-svg-small" width="50" height="100">' +
+		      '<polygon points="25,2 45,52 25,25 5,50" fill="none" stroke="#AA3090" stroke-width="1"/>' +
+		    '</svg>' +
+		  '</div>';
+
+var wide_glyph_1 =
+		    '<div class="glyph glyph-wide">' +	  
+			  '<svg class="glyph-svg-original" width="100" height="50">' +
+			    '<path d="" fill="none" stroke="#AA3090" stroke-width="1">' +
+                '<animate attributeName="d" values="M75,20 L45,20 L40,25 L25,25 L25,35 L45,35 L50,25 L75,20; M73,12 L43,20 L40,26 L26,30 L30,40 L48,35 L50,22 L73,12; M75,20 L45,20 L40,25 L25,25 L25,35 L45,35 L50,25 L75,20;" dur="1s" repeatCount="indefinite">' +
+                '</path>' +
+				'<path d="" fill="none" stroke="#AA3090" stroke-width="1">' +
+                '<animate attributeName="d" values="M75,20 L45,20 L35,10 L25,20 L45,30 L75,20; M71,40 L49,21 L47,7 L33,9 L42,30 L71,40; M75,20 L45,20 L35,10 L25,20 L45,30 L75,20;" dur="1s" repeatCount="indefinite">' +
+                '</polygon>' +
+			  '</svg>' +
+			  '<svg class="glyph-svg-small" width="60" height="50">' +
+				'<path d="" fill="none" stroke="#AA3090" stroke-width="1">' +
+                '<animate attributeName="d" values="M55,20 L25,20 L20,25 L5,25 L5,35 L25,35 L30,25 L55,20; M53,12 L23,20 L20,26 L6,30 L10,40 L28,35 L30,22 L53,12; M55,20 L25,20 L20,25 L5,25 L5,35 L25,35 L30,25 L55,20;" dur="1s" repeatCount="indefinite">' +
+                '</path>' +
+				'<path d="" fill="none" stroke="#AA3090" stroke-width="1">' +
+                '<animate attributeName="d" values="M55,20 L25,20 L15,10 L5,20 L25,30 L55,20; M51,40 L29,21 L27,7 L13,9 L22,30 L51,40; M55,20 L25,20 L15,10 L5,20 L25,30 L55,20;" dur="1s" repeatCount="indefinite">' +
+                '</polygon>' +
+			  '</svg>' +
+			'</div>';
+
+var wide_glyph_2 =
+		    '<div class="glyph glyph-wide">' +	  
+			  '<svg class="glyph-svg-original" width="100" height="50">' +
+			    '<path d="" fill="none" stroke="#AA3090" stroke-width="1">' +
+                '<animate attributeName="d" values="M75,22 L45,22 L40,22 L25,22 L25,35 L45,35 L50,25 L75,20; M73,12 L43,22 L40,22 L26,30 L30,40 L48,35 L50,22 L73,12; M75,20 L45,20 L40,25 L25,25 L25,35 L45,35 L50,25 L75,20;" dur="1s" repeatCount="indefinite">' +
+                '</path>' +
+				'<path d="" fill="none" stroke="#AA3090" stroke-width="1">' +
+                '<animate attributeName="d" values="M75,20 L45,20 L35,10 L25,22 L42,32 L75,22; M71,20 L42,21 L42,7 L33,9 L42,30 L71,20; M75,20 L45,20 L35,10 L25,20 L45,30 L75,20;" dur="1s" repeatCount="indefinite">' +
+                '</polygon>' +
+			  '</svg>' +
+			  '<svg class="glyph-svg-small" width="60" height="50">' +
+				'<path d="" fill="none" stroke="#AA3090" stroke-width="1">' +
+                '<animate attributeName="d" values="M55,20 L25,20 L20,25 L5,25 L5,35 L25,35 L30,25 L55,20; M53,12 L23,20 L20,26 L6,30 L10,40 L28,35 L30,22 L53,12; M55,20 L25,20 L20,25 L5,25 L5,35 L25,35 L30,25 L55,20;" dur="1s" repeatCount="indefinite">' +
+                '</path>' +
+				'<path d="" fill="none" stroke="#AA3090" stroke-width="1">' +
+                '<animate attributeName="d" values="M55,20 L25,20 L15,10 L5,20 L25,30 L55,20; M51,40 L29,21 L27,7 L13,9 L22,30 L51,40; M55,20 L25,20 L15,10 L5,20 L25,30 L55,20;" dur="1s" repeatCount="indefinite">' +
+                '</polygon>' +
+			  '</svg>' +
+			'</div>';
+
+var tablet_texts[tablet_text_standalone_1, tablet_text_standalone_2, tablet_text_with_tallglyph_1, tablet_text_with_tallglyph_2, tablet_text_with_wideglyph_1, tablet_text_with_wideglyph_2];
+var tall_glyphs[tall_glyph_1, tall_glyph_2];
+var wide_glyphs[wide_glyph_1, wide_glyph_2];
+
+function populateTablets() {
+	for(i = 0; i < tablets.length; i++) {
+		
+	}
+}
