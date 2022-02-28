@@ -18,7 +18,7 @@ var tablets = document.getElementsByClassName('tablet-of-truth');
 //FORMAT AS new tablet_type('text','tag'); where tag is either 'none', 'tall', or 'wide'
 
 var tablet_text_standalone_1 = new tablet_type('<p>Furthermore, the object, which individuality has as its essence, has no content. It is what is called necessity, since necessity, fate, and the like, each amount to saying that we do not know how to say what it is doing or what its determinate laws and its positive content are supposed to be because it is the absolute pure concept itself intuited as being, the simple and empty but nonetheless inexorable and impassive relation whose work is merely the nothingness of individuality.</p>', 'none');
-var tablet_text_standalone_2 = new tablet_type('<p>Furthermore, since the skull does not itself feel, it seems that perhaps a more determinate significance could be given to it. Through their proximity to the skull, certain determinate sensations would allow us to take cognizance83 of what the skull is supposed to mean, and if a conscious mode of spirit has its feeling in a determinate place on the skull, then perhaps this place on the skull will indicate by its shape that mode of spirit and its particularity.</p>', 'none');
+var tablet_text_standalone_2 = new tablet_type('<p>Furthermore, since the skull does not itself feel, it seems that perhaps a more determinate significance could be given to it. Through their proximity to the skull, certain determinate sensations would allow us to take cognizance of what the skull is supposed to mean, and if a conscious mode of spirit has its feeling in a determinate place on the skull, then perhaps this place on the skull will indicate by its shape that mode of spirit and its particularity.</p>', 'none');
 
 var tablet_text_with_tallglyph_1 = new tablet_type('<p>Spirit is the self of the actual consciousness which spirit confronts, or rather which confronts itself as an objective actual world, a world which has likewise lost all its significance as something alien for the self, just as the self has lost any sense of being a dependent or independent being-for-itself separated from that world.</p>', 'tall');
 var tablet_text_with_tallglyph_2 = new tablet_type('<p>The being of what was meant, along with the individuality and the universality opposed to that individuality in perception, as well as the empty inner of the understanding, no longer exist as the essence. Rather, they exist merely as moments of self-consciousness.</p>', 'tall');
@@ -30,24 +30,83 @@ var tall_glyph_1 = //SCISSOR TALL
 		  '<div class="glyph glyph-tall">' +
 		    '<svg class="glyph-svg-original" width="60" height="120">' +
 		      '<polygon points="" fill="none" stroke="#AA3090" stroke-width="1">' +
-			  '<animate attributeName="points" values="32,100 22,60 12,50 12,20 28,20 28,46 35,60; 45,97 24,62 11,56 2,27 17,22 24,47 36,58; 32,100 22,60 12,50 12,20 28,20 28,46 35,60;" dur="1s" repeatCount="indefinite">' +
+			  '<animate attributeName="points" values="32,100 22,60 12,50 12,20 28,20 28,46 35,60; 45,97 24,62 11,56 2,27 17,22 24,47 36,58; 32,100 22,60 12,50 12,20 28,20 28,46 35,60;" dur="1s" repeatCount="indefinite"/>' +
 			  '</polygon>' +
 			  '<polygon points="" fill="none" stroke="#AA3090" stroke-width="1">' +
-			  '<animate attributeName="points" values="32,100 22,60 32,30 48,30 48,45 36,52; 13,97 22,56 45,35 58,41 51,55 38,56; 32,100 22,60 32,30 48,30 48,45 36,52;" dur="1s" repeatCount="indefinite">' +
+			  '<animate attributeName="points" values="32,100 22,60 32,30 48,30 48,45 36,52; 13,97 22,56 45,35 58,41 51,55 38,56; 32,100 22,60 32,30 48,30 48,45 36,52;" dur="1s" repeatCount="indefinite"/>' +
 			  '</polygon>' +
 		    '</svg>' +
 			'<svg class="glyph-svg-small" width="50" height="100">' +
 		      '<polygon points="" fill="none" stroke="#AA3090" stroke-width="1">' +
-			  '<animate attributeName="points" values="" dur="1s" repeatCount="indefinite">' +
+			  '<animate attributeName="points" values="27,83 19,50 10,42 10,17 24,17 24,38 29,50; 38,81 20,52 9,46 2,23 14,19 20,39 30,48; 27,83 19,50 10,42 10,17 24,17 24,38 29,50;" dur="1s" repeatCount="indefinite"/>' +
+			  '</polygon>' +
+			  '<polygon points="" fill="none" stroke="#AA3090" stroke-width="1">' +
+			  '<animate attributeName="points" values="27,83 19,50 27,25 39,25 39,38 30,44; 11,81 19,48 37,29 48,34 43,46 31,47; 27,83 19,50 27,25 39,25 39,38 30,44;" dur="1s" repeatCount="indefinite"/>' +
 			  '</polygon>' +
 		    '</svg>' +
 		  '</div>';
 
-var tall_glyph_2 = //TEMP DIAMOND
+var tall_glyph_2 = //SCREW TALL
 		  '<div class="glyph glyph-tall">' +
 		    '<svg class="glyph-svg-original" width="60" height="120">' +
-		      '<polygon points="30,5 55,60 30,115 5,60" fill="none" stroke="#AA3090" stroke-width="1"/>' +
+			  '<ellipse cx="30" cy="80" rx="1" ry="0.625" fill="none" stroke="#AA3090" stroke-width="1">' +
+			  '<animate attributeName="cy" values="80; 70;" dur="1s" repeatCount="indefinite"/>' +
+			  '<animate attributeName="rx" values="1; 1.875;" dur="1s" repeatCount="indefinite"/>' +
+			  '<animate attributeName="ry" values="0.625; 1.25;" dur="1s" repeatCount="indefinite"/>' +
+			  '</ellipse>' +
+			  '<ellipse cx="30" cy="70" rx="1.875" ry="1.25" fill="none" stroke="#AA3090" stroke-width="1">' +
+			  '<animate attributeName="cy" values="70; 60;" dur="1s" repeatCount="indefinite"/>' +
+			  '<animate attributeName="rx" values="1.875; 3.75;" dur="1s" repeatCount="indefinite"/>' +
+			  '<animate attributeName="ry" values="1.25; 2.5;" dur="1s" repeatCount="indefinite"/>' +
+			  '</ellipse>' +
+			  '<ellipse cx="30" cy="60" rx="3.75" ry="2.5" fill="none" stroke="#AA3090" stroke-width="1">' +
+			  '<animate attributeName="cy" values="60; 50;" dur="1s" repeatCount="indefinite"/>' +
+			  '<animate attributeName="rx" values="3.75; 7.5;" dur="1s" repeatCount="indefinite"/>' +
+			  '<animate attributeName="ry" values="2.5; 5;" dur="1s" repeatCount="indefinite"/>' +
+			  '</ellipse>' +
+			  '<ellipse cx="30" cy="50" rx="7.5" ry="5" fill="#100510" stroke="#AA3090" stroke-width="1">' +
+			  '<animate attributeName="cy" values="50; 40;" dur="1s" repeatCount="indefinite"/>' +
+			  '<animate attributeName="rx" values="7.5; 15;" dur="1s" repeatCount="indefinite"/>' +
+			  '<animate attributeName="ry" values="5; 10;" dur="1s" repeatCount="indefinite"/>' +
+			  '</ellipse>' +
+		      '<ellipse cx="30" cy="40" rx="15" ry="10" fill="#100510" stroke="#AA3090" stroke-width="1"/>' +
+			  '<path d="" fill="none" stroke="#AA3090" stroke-width="1">' +
+			  '<animate attributeName="d" values="M30,35 L30,45 M22,40 L38,40; M22,40 L38,40 M30,45 L30,35; M30,45 L30,35 M38,40 L22,40;" dur="1s" repeatCount="indefinite"/>' +
+			  '</path>' +
 		    '</svg>' +
+			'<svg class="glyph-svg-small" width="50" height="100">' +
+			  '<ellipse cx="25" cy="80" rx="1" ry="0.625" fill="none" stroke="#AA3090" stroke-width="1">' +
+			  '<animate attributeName="cy" values="80; 70;" dur="1s" repeatCount="indefinite"/>' +
+			  '<animate attributeName="rx" values="1; 1.875;" dur="1s" repeatCount="indefinite"/>' +
+			  '<animate attributeName="ry" values="0.625; 1.25;" dur="1s" repeatCount="indefinite"/>' +
+			  '</ellipse>' +
+			  '<ellipse cx="25" cy="70" rx="1.875" ry="1.25" fill="none" stroke="#AA3090" stroke-width="1">' +
+			  '<animate attributeName="cy" values="70; 60;" dur="1s" repeatCount="indefinite"/>' +
+			  '<animate attributeName="rx" values="1.875; 3.75;" dur="1s" repeatCount="indefinite"/>' +
+			  '<animate attributeName="ry" values="1.25; 2.5;" dur="1s" repeatCount="indefinite"/>' +
+			  '</ellipse>' +
+			  '<ellipse cx="25" cy="60" rx="3.75" ry="2.5" fill="none" stroke="#AA3090" stroke-width="1">' +
+			  '<animate attributeName="cy" values="60; 50;" dur="1s" repeatCount="indefinite"/>' +
+			  '<animate attributeName="rx" values="3.75; 7.5;" dur="1s" repeatCount="indefinite"/>' +
+			  '<animate attributeName="ry" values="2.5; 5;" dur="1s" repeatCount="indefinite"/>' +
+			  '</ellipse>' +
+			  '<ellipse cx="25" cy="50" rx="7.5" ry="5" fill="#100510" stroke="#AA3090" stroke-width="1">' +
+			  '<animate attributeName="cy" values="50; 40;" dur="1s" repeatCount="indefinite"/>' +
+			  '<animate attributeName="rx" values="7.5; 15;" dur="1s" repeatCount="indefinite"/>' +
+			  '<animate attributeName="ry" values="5; 10;" dur="1s" repeatCount="indefinite"/>' +
+			  '</ellipse>' +
+		      '<ellipse cx="25" cy="40" rx="15" ry="10" fill="#100510" stroke="#AA3090" stroke-width="1"/>' +
+			  '<path d="" fill="none" stroke="#AA3090" stroke-width="1">' +
+			  '<animate attributeName="d" values="M25,35 L25,45 M17,40 L33,40; M17,40 L33,40 M25,45 L25,35; M25,45 L25,35 M33,40 L17,40;" dur="1s" repeatCount="indefinite"/>' +
+			  '</path>' +
+		    '</svg>' +
+		  '</div>';
+
+var tall_glyph_3 = //TEMP DIAMOND
+		  '<div class="glyph glyph-tall">' +
+		    '<svg class="glyph-svg-original" width="60" height="120">' +
+			  '<polygon points="30,5 55,60 30,115 5,60" fill="none" stroke="#AA3090" stroke-width="1"/>' +
+			'</svg>' +
 			'<svg class="glyph-svg-small" width="50" height="100">' +
 		      '<polygon points="25,5 45,50 25,95 5,50" fill="none" stroke="#AA3090" stroke-width="1"/>' +
 		    '</svg>' +
@@ -57,18 +116,18 @@ var wide_glyph_1 = //SCISSOR WIDE
 		    '<div class="glyph glyph-wide">' +	  
 			  '<svg class="glyph-svg-original" width="100" height="50">' +
 			    '<path d="" fill="none" stroke="#AA3090" stroke-width="1">' +
-                '<animate attributeName="d" values="M75,20 L45,20 L40,25 L25,25 L25,35 L45,35 L50,25 L75,20; M73,12 L43,20 L40,26 L26,30 L30,40 L48,35 L50,22 L73,12; M75,20 L45,20 L40,25 L25,25 L25,35 L45,35 L50,25 L75,20;" dur="1s" repeatCount="indefinite">' +
+                '<animate attributeName="d" values="M75,20 L45,20 L40,25 L25,25 L25,35 L45,35 L50,25 L75,20; M73,12 L43,20 L40,26 L26,30 L30,40 L48,35 L50,22 L73,12; M75,20 L45,20 L40,25 L25,25 L25,35 L45,35 L50,25 L75,20;" dur="1s" repeatCount="indefinite"/>' +
                 '</path>' +
 				'<path d="" fill="none" stroke="#AA3090" stroke-width="1">' +
-                '<animate attributeName="d" values="M75,20 L45,20 L35,10 L25,20 L45,30 L75,20; M71,40 L49,21 L47,7 L33,9 L42,30 L71,40; M75,20 L45,20 L35,10 L25,20 L45,30 L75,20;" dur="1s" repeatCount="indefinite">' +
+                '<animate attributeName="d" values="M75,20 L45,20 L35,10 L25,20 L45,30 L75,20; M71,40 L49,21 L47,7 L33,9 L42,30 L71,40; M75,20 L45,20 L35,10 L25,20 L45,30 L75,20;" dur="1s" repeatCount="indefinite"/>' +
                 '</path>' +
 			  '</svg>' +
 			  '<svg class="glyph-svg-small" width="60" height="50">' +
 				'<path d="" fill="none" stroke="#AA3090" stroke-width="1">' +
-                '<animate attributeName="d" values="M55,20 L25,20 L20,25 L5,25 L5,35 L25,35 L30,25 L55,20; M53,12 L23,20 L20,26 L6,30 L10,40 L28,35 L30,22 L53,12; M55,20 L25,20 L20,25 L5,25 L5,35 L25,35 L30,25 L55,20;" dur="1s" repeatCount="indefinite">' +
+                '<animate attributeName="d" values="M55,20 L25,20 L20,25 L5,25 L5,35 L25,35 L30,25 L55,20; M53,12 L23,20 L20,26 L6,30 L10,40 L28,35 L30,22 L53,12; M55,20 L25,20 L20,25 L5,25 L5,35 L25,35 L30,25 L55,20;" dur="1s" repeatCount="indefinite"/>' +
                 '</path>' +
 				'<path d="" fill="none" stroke="#AA3090" stroke-width="1">' +
-                '<animate attributeName="d" values="M55,20 L25,20 L15,10 L5,20 L25,30 L55,20; M51,40 L29,21 L27,7 L13,9 L22,30 L51,40; M55,20 L25,20 L15,10 L5,20 L25,30 L55,20;" dur="1s" repeatCount="indefinite">' +
+                '<animate attributeName="d" values="M55,20 L25,20 L15,10 L5,20 L25,30 L55,20; M51,40 L29,21 L27,7 L13,9 L22,30 L51,40; M55,20 L25,20 L15,10 L5,20 L25,30 L55,20;" dur="1s" repeatCount="indefinite"/>' +
                 '</path>' +
 			  '</svg>' +
 			'</div>';
@@ -77,24 +136,24 @@ var wide_glyph_2 = //EMPTY
 		    '<div class="glyph glyph-wide">' +	  
 			  '<svg class="glyph-svg-original" width="100" height="50">' +
 			    '<path d="" fill="none" stroke="#AA3090" stroke-width="1">' +
-                '<animate attributeName="d" values="" dur="1s" repeatCount="indefinite">' +
+                '<animate attributeName="d" values="" dur="1s" repeatCount="indefinite"/>' +
                 '</path>' +
 				'<path d="" fill="none" stroke="#AA3090" stroke-width="1">' +
-                '<animate attributeName="d" values="" dur="1s" repeatCount="indefinite">' +
+                '<animate attributeName="d" values="" dur="1s" repeatCount="indefinite"/>' +
                 '</path>' +
 			  '</svg>' +
 			  '<svg class="glyph-svg-small" width="60" height="50">' +
 				'<path d="" fill="none" stroke="#AA3090" stroke-width="1">' +
-                '<animate attributeName="d" values="" dur="1s" repeatCount="indefinite">' +
+                '<animate attributeName="d" values="" dur="1s" repeatCount="indefinite"/>' +
                 '</path>' +
 				'<path d="" fill="none" stroke="#AA3090" stroke-width="1">' +
-                '<animate attributeName="d" values="" dur="1s" repeatCount="indefinite">' +
+                '<animate attributeName="d" values="" dur="1s" repeatCount="indefinite"/>' +
                 '</path>' +
 			  '</svg>' +
 			'</div>';
 
 var tablet_texts = [tablet_text_standalone_1, tablet_text_standalone_2, tablet_text_with_tallglyph_1, tablet_text_with_tallglyph_2, tablet_text_with_wideglyph_1, tablet_text_with_wideglyph_2];
-var tall_glyphs = [tall_glyph_1, tall_glyph_2];
+var tall_glyphs = [tall_glyph_1, tall_glyph_2, tall_glyph_3];
 var wide_glyphs = [wide_glyph_1, wide_glyph_2];
 
 function getRandomInt(max) {
@@ -104,16 +163,32 @@ function getRandomInt(max) {
 function populateTablets() {
 	console.log("THIS WORKS!!!!!!!!!!!!!");
 	for(i = 0; i < tablets.length; i++) {
-		let type = tablet_texts[getRandomInt(tablet_texts.length)];
-		let glyph = '';
-		
-		if (type.tag == 'tall') {
-			glyph = tall_glyphs[getRandomInt(tall_glyphs.length)];
+		setTablet(i);
+		console.log("EACH ONE");
+		for(j = 0; j < tablets.length; j++) {
+			//Pseudocode for checking if tablets[i] content is equal to any other tablet's content
+			//if(tablet stuff == tablets[j] stuff)
+			//{
+			//setTablet(i);				
+			//}
+			if (i != j && tablets[i].type == tablets[j].type) {
+				console.log("WAT?");
+				setTablet(i);
+			}
 		}
-		else if (type.tag == 'wide') {
-			glyph = wide_glyphs[getRandomInt(wide_glyphs.length)];
-		}
-		
-		tablets[i].innerHTML = type.text + glyph;
 	}
+}
+
+function setTablet(i) {
+	var type = tablet_texts[getRandomInt(tablet_texts.length)];
+	var glyph = '';
+	
+	if (type.tag == 'tall') {
+		glyph = tall_glyphs[getRandomInt(tall_glyphs.length)];
+	}
+	else if (type.tag == 'wide') {
+		glyph = wide_glyphs[getRandomInt(wide_glyphs.length)];
+	}
+	
+	tablets[i].innerHTML = type.text + glyph;	
 }
