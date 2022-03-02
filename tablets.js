@@ -14,17 +14,17 @@ class tablet_type {
 
 var tablets = document.getElementsByClassName('tablet-of-truth');
 
-//ADDING NEW TABLETS?
+/*ADDING NEW TABLETS?
 
-//FORMAT AS:
-//var naming_convention_x = new tablet_type('<p>text</p>','tag', null);
+FORMAT AS:
+var naming_convention_x = new tablet_type('<p>text</p>','tag', null);
 
-	//'tag' is either: 'none', 'tall', or 'wide'
-	//'none' = glyphless text, 'tall' pairs a tall glyph, 'wide' pairs a wide (shorter) glyph!
-	//null is thanks to javscript beint bad alangugaeg
+	'tag' is either: 'none', 'tall', or 'wide'
+	'none' = glyphless text, 'tall' pairs a tall glyph, 'wide' pairs a wide (shorter) glyph!
+	null is thanks to javascript not allowing two constuctors per class...
 
-//name the var according to your glyph choice and as the next appropriate number.
-//add the new var to the correlating array declared after these text and glyph declarations.
+name the var according to your glyph choice and as the next appropriate number.
+add the new var to the correlating array declared after these text and glyph declarations.*/
 
 var tablet_text_standalone_1 = new tablet_type('<p>Furthermore, the object, which individuality has as its essence, has no content. It is what is called necessity, since necessity, fate, and the like, each amount to saying that we do not know how to say what it is doing or what its determinate laws and its positive content are supposed to be because it is the absolute pure concept itself intuited as being, the simple and empty but nonetheless inexorable and impassive relation whose work is merely the nothingness of individuality.</p>', 'none', null);
 var tablet_text_standalone_2 = new tablet_type('<p>Furthermore, since the skull does not itself feel, it seems that perhaps a more determinate significance could be given to it. Through their proximity to the skull, certain determinate sensations would allow us to take cognizance of what the skull is supposed to mean, and if a conscious mode of spirit has its feeling in a determinate place on the skull, then perhaps this place on the skull will indicate by its shape that mode of spirit and its particularity.</p>', 'none', null);
@@ -231,32 +231,35 @@ var tablet_texts = [tablet_text_standalone_1, tablet_text_standalone_2, tablet_t
 var tall_glyphs = [tall_glyph_1, tall_glyph_2, tall_glyph_3, tall_glyph_4];
 var wide_glyphs = [wide_glyph_1, wide_glyph_2, wide_glyph_3, wide_glyph_4];
 
-function getRandomInt(max) {
-  return Math.floor(Math.random() * max); //.floor is good for arrays since they start at 0!
+
+//TABLET POPULATION SCRIPT
+
+function getRandomInt(max) {				//the script uses this random # gen to choose tablet texts, glyphs from their arrays.
+  return Math.floor(Math.random() * max);	//.floor is good for arrays since they start at 0!
 }
 
 function populateTablets() {
-	var typeArray = new Array();
-	for (i = 0; i < tablets.length; i++) {
-		var validation = false;
-		var type = null;
-		while (!validation) {
-			type = tablet_texts[getRandomInt(tablet_texts.length)]
-			validation = true;
-			for (j = 0; j < typeArray.length; j++) {
-				if (type.id == typeArray[j].id) {
-					validation = false;
-					break;
+	var typeArray = new Array();									//typeArray is to track and compare each created tablet.
+	for (i = 0; i < tablets.length; i++) {							//looking through each tablet...
+		var validation = false;										//validation becomes true when current tablet isn't a repeat.
+		var type = null;											//will be an instance of tablet_type to set current tablet.
+		while (!validation) {										//rolling types and checking for repeats for each tablet...
+			type = tablet_texts[getRandomInt(tablet_texts.length)]	//rolls a new tablet type.
+			validation = true;										//tentatively accepts the new tablet as valid.
+			for (j = 0; j < typeArray.length; j++) {				//comparing it to our previously populated tablets...
+				if (type.id == typeArray[j].id) {					//checks for repeats.
+					validation = false;								//if there's repeats, the while loop will start over.
+					break;											//doesn't have to check the rest if it's already invalid.
 				}
 			}
 		}
-		typeArray.push(new tablet_type(type.text, type.tag, type.id));	
-		tablets[i].innerHTML = type.text;
-		setGlyph(i, type);
+		typeArray.push(new tablet_type(type.text, type.tag, type.id));	//adds newly rolled tablet to typeArray.
+		tablets[i].innerHTML = type.text;								//sets the tablet text on the site!
+		setGlyph(i, type);												//finally, each tablet rolls a glyph.
 	}
 }
 
-function setGlyph(i, type) {
+function setGlyph(i, type) {	//check each tablet's tag for glyph type, roll for one from glyph array, append innerHTML.
 	var glyph = '';
 	if (type.tag == 'tall') {glyph = tall_glyphs[getRandomInt(tall_glyphs.length)];}
 	else if (type.tag == 'wide') {glyph = wide_glyphs[getRandomInt(wide_glyphs.length)];}
