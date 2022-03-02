@@ -48,11 +48,13 @@
   background-color: #100510;
 }
 
+/*STANDARDIZED: 60/120 - 50/100*/
 .glyph-tall {
   width: 60px;
   height: 120px;
 }
 
+/*STANDARDIZED: 100/50 - 60/50*/
 .glyph-wide {
   width: 100px;
   height: 50px;

@@ -1,27 +1,27 @@
-//MENU HTML & SVG STORAGE SCRIPT
+//HARMONIC OSCILLATOR MENU HTML & SVG STORAGE SCRIPT
 //MNO
 
 var left_nav_codeblock =
 			  '<svg class="nav-icon-standard" width="30" height="30">' +
                 '<polygon points="" fill="none" stroke="#AA3090" stroke-width="1">' +
-                '<animate attributeName="points" values="15,5 25,25 5,25; 5,25 15,5 25,25" dur="0.5s" repeatCount="indefinite">' +
+                '<animate attributeName="points" values="15,5 25,25 5,25; 5,25 15,5 25,25" dur="0.5s" repeatCount="indefinite"/>' +
                 '</polygon>' +
               '</svg>' +
 			  '<svg class="nav-icon-mobile" width="48" height="48">' +
                 '<polygon points="" fill="none" stroke="#AA3090" stroke-width="1">' +
-                '<animate attributeName="points" values="24,8 40,40 8,40; 8,40 24,8 40,40" dur="1s" repeatCount="indefinite">' +
+                '<animate attributeName="points" values="24,8 40,40 8,40; 8,40 24,8 40,40" dur="1s" repeatCount="indefinite"/>' +
                 '</polygon>' +
               '</svg>';
 
 var right_nav_codeblock =
 			  '<svg class="nav-icon-standard" width="30" height="30">' +
                 '<polygon points="" fill="none" stroke="#AA3090" stroke-width="1">' +
-                '<animate attributeName="points" values="15,5 25,25 5,25; 20,10 0,10 10,30; 15,5 25,25 5,25;" dur="1s" repeatCount="indefinite">' +
+                '<animate attributeName="points" values="15,5 25,25 5,25; 20,10 0,10 10,30; 15,5 25,25 5,25;" dur="1s" repeatCount="indefinite"/>' +
                 '</polygon>' +
               '</svg>' +
 			  '<svg class="nav-icon-mobile" width="48" height="48">' +
                 '<polygon points="" fill="none" stroke="#AA3090" stroke-width="1">' +
-                '<animate attributeName="points" values="24,8 40,40 8,40; 32,16 0,16 16,48; 24,8 40,40 8,40;" dur="2s" repeatCount="indefinite">' +
+                '<animate attributeName="points" values="24,8 40,40 8,40; 32,16 0,16 16,48; 24,8 40,40 8,40;" dur="2s" repeatCount="indefinite"/>' +
                 '</polygon>' +
               '</svg>';
 
@@ -30,10 +30,10 @@ var default_osc_codeblock =
 		        '<div>' +
 		          '<svg width="100" height="50">' +
 		            '<path d="" fill="none" stroke="#AA3090" stroke-width="1">' +
-		            '<animate attributeName="d" values="M0,0 L50,50; M0,0 L100,50; M0,0 L50,50;" dur="2s" repeatCount="indefinite">' +
+		            '<animate attributeName="d" values="M0,0 L50,50; M0,0 L100,50; M0,0 L50,50;" dur="2s" repeatCount="indefinite"/>' +
 		            '</path>' +
 		            '<path d="" fill="none" stroke="#AA3090" stroke-width="1">' +
-		            '<animate attributeName="d" values="M0,50 L100,0; M0,50 L50,0; M0,50 L100,0;" dur="2s" repeatCount="indefinite">' +
+		            '<animate attributeName="d" values="M0,50 L100,0; M0,50 L50,0; M0,50 L100,0;" dur="2s" repeatCount="indefinite"/>' +
 		            '</path>' +
 		          '</svg>' +
 		        '</div>' +
@@ -44,7 +44,7 @@ var default_osc_wide_codeblock =
 		        '<div>' +
 		          '<svg width="300" height="50">' +
 					'<path d="" fill="none" stroke="#AA3090" stroke-width="1">' +
-                    '<animate attributeName="d" values="M300,0 L300,0; M0,0 L300,50; M0,50 L0,50;" dur="2s" repeatCount="indefinite">' +
+                    '<animate attributeName="d" values="M300,0 L300,0; M0,0 L300,50; M0,50 L0,50;" dur="2s" repeatCount="indefinite"/>' +
                     '</polygon>' +
 		          '</svg>' +
 		        '</div>' +
@@ -107,10 +107,10 @@ var racer_osc_codeblock =
 		        '<div>' +
 		          '<svg width="100" height="50">' +
 		            '<path d="" fill="none" stroke="#AA3090" stroke-width="1">' +
-		            '<animate attributeName="d" values="M100,50 L100,0; M0,0 L0,50; M100,50 L100,0;" dur="1s" repeatCount="indefinite">' +
+		            '<animate attributeName="d" values="M100,50 L100,0; M0,0 L0,50; M100,50 L100,0;" dur="1s" repeatCount="indefinite"/>' +
 		            '</path>' +
 		            '<path d="" fill="none" stroke="#AA3090" stroke-width="1">' +
-		            '<animate attributeName="d" values="M0,50 L0,0; M100,0 L100,50; M0,50 L0,0;" dur="2s" repeatCount="indefinite">' +
+		            '<animate attributeName="d" values="M0,50 L0,0; M100,0 L100,50; M0,50 L0,0;" dur="2s" repeatCount="indefinite"/>' +
 		            '</path>' +
 		          '</svg>' +
 		        '</div>' +
@@ -121,7 +121,7 @@ var racer_osc_wide_codeblock =
 		        '<div>' +
 		          '<svg width="300" height="50">' +
 					'<path d="" fill="none" stroke="#AA3090" stroke-width="1">' +
-                    '<animate attributeName="d" values="M300,0 L300,0; M0,0 L300,50; M0,50 L0,50;" dur="2s" repeatCount="indefinite">' +
+                    '<animate attributeName="d" values="M300,0 L300,0; M0,0 L300,50; M0,50 L0,50;" dur="2s" repeatCount="indefinite"/>' +
                     '</polygon>' +
 		          '</svg>' +
 		        '</div>' +
@@ -155,10 +155,10 @@ var birds_osc_codeblock =
 					'</circle>' +
 					'<!--BIRDS-->' +
 					'<path d="" fill="none" stroke="#AA3090" stroke-width="1">' +
-		            '<animate attributeName="d" values="M50,25 L55,30 L60,25 L55,28 L50,25; M50,28 L55,33 L60,28 L55,31 L50,28; M50,30 L55,28 L60,30 L55,26 L50,30; M50,28 L55,27 L60,28 L55,24 L50,28; M50,25 L55,30 L60,25 L55,28 L50,25;" dur="1s" repeatCount="indefinite">' +
+		            '<animate attributeName="d" values="M50,25 L55,30 L60,25 L55,28 L50,25; M50,28 L55,33 L60,28 L55,31 L50,28; M50,30 L55,28 L60,30 L55,26 L50,30; M50,28 L55,27 L60,28 L55,24 L50,28; M50,25 L55,30 L60,25 L55,28 L50,25;" dur="1s" repeatCount="indefinite"/>' +
 		            '</path>' +
 		            '<path d="" fill="none" stroke="#AA3090" stroke-width="1">' +
-		            '<animate attributeName="d" values="M15,10 L30,20 L45,10 L30,15 L15,10; M15,15 L30,25 L45,15 L30,20 L15,15; M15,20 L30,20 L45,20 L30,15 L15,20; M15,15 L30,16 L45,15 L30,10 L15,15; M15,10 L30,20 L45,10 L30,15 L15,10;" dur="1.5s" repeatCount="indefinite">' +
+		            '<animate attributeName="d" values="M15,10 L30,20 L45,10 L30,15 L15,10; M15,15 L30,25 L45,15 L30,20 L15,15; M15,20 L30,20 L45,20 L30,15 L15,20; M15,15 L30,16 L45,15 L30,10 L15,15; M15,10 L30,20 L45,10 L30,15 L15,10;" dur="1.5s" repeatCount="indefinite"/>' +
 		            '</path>' +
 		          '</svg>' +
 		        '</div>' +
@@ -170,10 +170,10 @@ var birds_osc_wide_codeblock =
 		          '<svg width="300" height="50">' +
 				    '<!--BIRDS-->' +
 		            '<path d="" fill="none" stroke="#AA3090" stroke-width="1">' +
-		            '<animate attributeName="d" values="M140,10 L150,20 L160,10 L150,15 L140,10; M140,15 L150,25 L160,15 L150,20 L140,15; M140,25 L150,23 L160,25 L150,20 L140,25; M140,20 L150,18 L160,20 L150,15 L140,20; M140,10 L150,20 L160,10 L150,15 L140,10;" dur="1s" repeatCount="indefinite">' +
+		            '<animate attributeName="d" values="M140,10 L150,20 L160,10 L150,15 L140,10; M140,15 L150,25 L160,15 L150,20 L140,15; M140,25 L150,23 L160,25 L150,20 L140,25; M140,20 L150,18 L160,20 L150,15 L140,20; M140,10 L150,20 L160,10 L150,15 L140,10;" dur="1s" repeatCount="indefinite"/>' +
 		            '</path>' +
 		            '<path d="" fill="none" stroke="#AA3090" stroke-width="1">' +
-		            '<animate attributeName="d" values="M115,20 L125,30 L135,20 L125,25 L115,20; M115,25 L125,35 L135,25 L125,30 L115,25; M115,35 L125,33 L135,35 L125,30 L115,35; M115,30 L125,28 L135,30 L125,25 L115,30; M115,20 L125,30 L135,20 L125,25 L115,20;" dur="1.5s" repeatCount="indefinite">' +
+		            '<animate attributeName="d" values="M115,20 L125,30 L135,20 L125,25 L115,20; M115,25 L125,35 L135,25 L125,30 L115,25; M115,35 L125,33 L135,35 L125,30 L115,35; M115,30 L125,28 L135,30 L125,25 L115,30; M115,20 L125,30 L135,20 L125,25 L115,20;" dur="1.5s" repeatCount="indefinite"/>' +
 		            '</path>' +
 					'<!--CLOUDS ON LEFT-->' +
 					'<circle cx="100" cy="50" r="10" fill="#300020" stroke="" stroke-width="">' +
