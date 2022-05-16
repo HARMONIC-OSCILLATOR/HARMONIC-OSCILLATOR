@@ -114,18 +114,18 @@ var tall_glyph_2 = //SCREW TALL
 var tall_glyph_3 = //TEMP RIBBON TALL
 		  '<div class="glyph glyph-tall">' +
 		    '<svg class="glyph-svg-original" width="60" height="120">' +
-			  '<path d="M24,40 L14,90 L24,92 L30,40" fill="none" stroke="#AA3090" stroke-width="1"/>' +
-			  '<path d="M36,40 L46,90 L36,92 L30,40" fill="none" stroke="#AA3090" stroke-width="1"/>' +
-			  '<path d="M30,40 C0,0 0,80 30,40" fill="#100510" stroke="#AA3090" stroke-width="1"/>' +
-			  '<path d="M30,40 C60,0 60,80 30,40" fill="#100510" stroke="#AA3090" stroke-width="1"/>' +
-			  '<ellipse cx="30" cy="40" rx="5" ry="4" fill="#100510" stroke="#AA3090" stroke-width="1"/>' +
+			  '<path d="M24,45 L14,75 L24,77 L30,45" fill="none" stroke="#AA3090" stroke-width="1"/>' +
+			  '<path d="M36,45 L46,75 L36,77 L30,45" fill="none" stroke="#AA3090" stroke-width="1"/>' +
+			  '<path d="M30,45 C0,5 0,85 30,45" fill="#100510" stroke="#AA3090" stroke-width="1"/>' +
+			  '<path d="M30,45 C60,5 60,85 30,45" fill="#100510" stroke="#AA3090" stroke-width="1"/>' +
+			  '<ellipse cx="30" cy="45" rx="5" ry="4" fill="#100510" stroke="#AA3090" stroke-width="1"/>' +
 			'</svg>' +
 			'<svg class="glyph-svg-small" width="50" height="100">' +
-			  '<path d="M19,30 L9,80 L19,82 L25,30" fill="none" stroke="#AA3090" stroke-width="1"/>' +
-			  '<path d="M31,30 L41,80 L31,82 L25,30" fill="none" stroke="#AA3090" stroke-width="1"/>' +
-			  '<path d="M25,30 C-5,-10 -5,70 25,30" fill="#100510" stroke="#AA3090" stroke-width="1"/>' +
-			  '<path d="M25,30 C55,-10 55,70 25,30" fill="#100510" stroke="#AA3090" stroke-width="1"/>' +
-			  '<ellipse cx="25" cy="30" rx="5" ry="4" fill="#100510" stroke="#AA3090" stroke-width="1"/>' +
+			  '<path d="M19,35 L9,65 L19,67 L25,35" fill="none" stroke="#AA3090" stroke-width="1"/>' +
+			  '<path d="M31,35 L41,65 L31,67 L25,35" fill="none" stroke="#AA3090" stroke-width="1"/>' +
+			  '<path d="M25,35 C-5,-5 -5,75 25,35" fill="#100510" stroke="#AA3090" stroke-width="1"/>' +
+			  '<path d="M25,35 C55,-5 55,75 25,35" fill="#100510" stroke="#AA3090" stroke-width="1"/>' +
+			  '<ellipse cx="25" cy="35" rx="5" ry="4" fill="#100510" stroke="#AA3090" stroke-width="1"/>' +
 		    '</svg>' +
 		  '</div>';
 
