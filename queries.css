@@ -34,7 +34,7 @@
   
   .radial-container {width: 250px; height: 250px;}
   .radial {width: 250px; height: 250px;}
-  #S {width: 125px; height: 175px; top: 40%; left: 5%;}
+  #R {width: 125px; height: 175px; top: 40%; left: 5%;}
 }
 
 /*SMALL SCREENS BOX MODE*/
@@ -112,7 +112,7 @@
     margin: 1% auto 0;
   }
 
-  .splash-flex-standard {display: none;}
+  .splash-flex-standard {display: none;} /*ADD A BACKGROUND CLOUD!!!!!!!!!!!!!!!!!!*/
   #splash-flex-img-2-mobile {display: none;}
 }
 

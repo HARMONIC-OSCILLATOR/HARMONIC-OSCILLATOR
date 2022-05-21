@@ -111,23 +111,31 @@ var tall_glyph_2 = //SCREW TALL
 		    '</svg>' +
 		  '</div>';
 
-var tall_glyph_3 = //TEMP DIAMOND TALL
+var tall_glyph_3 = //TEMP RIBBON TALL
+		  '<div class="glyph glyph-tall">' +
+		    '<svg class="glyph-svg-original" width="60" height="120">' +
+			  '<path d="M24,45 L14,75 L24,77 L30,45" fill="none" stroke="#AA3090" stroke-width="1"/>' +
+			  '<path d="M36,45 L46,75 L36,77 L30,45" fill="none" stroke="#AA3090" stroke-width="1"/>' +
+			  '<path d="M30,45 C0,5 0,85 30,45" fill="#100510" stroke="#AA3090" stroke-width="1"/>' +
+			  '<path d="M30,45 C60,5 60,85 30,45" fill="#100510" stroke="#AA3090" stroke-width="1"/>' +
+			  '<ellipse cx="30" cy="45" rx="5" ry="4" fill="#100510" stroke="#AA3090" stroke-width="1"/>' +
+			'</svg>' +
+			'<svg class="glyph-svg-small" width="50" height="100">' +
+			  '<path d="M19,35 L9,65 L19,67 L25,35" fill="none" stroke="#AA3090" stroke-width="1"/>' +
+			  '<path d="M31,35 L41,65 L31,67 L25,35" fill="none" stroke="#AA3090" stroke-width="1"/>' +
+			  '<path d="M25,35 C-5,-5 -5,75 25,35" fill="#100510" stroke="#AA3090" stroke-width="1"/>' +
+			  '<path d="M25,35 C55,-5 55,75 25,35" fill="#100510" stroke="#AA3090" stroke-width="1"/>' +
+			  '<ellipse cx="25" cy="35" rx="5" ry="4" fill="#100510" stroke="#AA3090" stroke-width="1"/>' +
+		    '</svg>' +
+		  '</div>';
+
+var tall_glyph_4 = //TEMP DIAMOND TALL
 		  '<div class="glyph glyph-tall">' +
 		    '<svg class="glyph-svg-original" width="60" height="120">' +
 			  '<polygon points="30,5 55,60 30,115 5,60" fill="none" stroke="#AA3090" stroke-width="1"/>' +
 			'</svg>' +
 			'<svg class="glyph-svg-small" width="50" height="100">' +
 		      '<polygon points="25,5 45,50 25,95 5,50" fill="none" stroke="#AA3090" stroke-width="1"/>' +
-		    '</svg>' +
-		  '</div>';
-
-var tall_glyph_4 = //EMPTY
-		  '<div class="glyph glyph-tall">' +
-		    '<svg class="glyph-svg-original" width="60" height="120">' +
-			  '<polygon points="" fill="none" stroke="#AA3090" stroke-width="1"/>' +
-			'</svg>' +
-			'<svg class="glyph-svg-small" width="50" height="100">' +
-		      '<polygon points="" fill="none" stroke="#AA3090" stroke-width="1"/>' +
 		    '</svg>' +
 		  '</div>';
 
@@ -207,23 +215,31 @@ var wide_glyph_2 = //SCREW WIDE
 			  '</svg>' +
 			'</div>';
 
-var wide_glyph_3 = //TEMP DIAMOND WIDE
+var wide_glyph_3 = //TEMP RIBBON WIDE
+		  '<div class="glyph glyph-wide">' +
+		    '<svg class="glyph-svg-original" width="100" height="50">' +
+			  '<path d="M42,20 L34,40 L42,42 L50,20" fill="none" stroke="#AA3090" stroke-width="1"/>' +
+			  '<path d="M58,20 L66,40 L58,42 L50,20" fill="none" stroke="#AA3090" stroke-width="1"/>' +
+			  '<path d="M50,20 C20,-20 20,60 50,20" fill="#100510" stroke="#AA3090" stroke-width="1"/>' +
+			  '<path d="M50,20 C80,-20 80,60 50,20" fill="#100510" stroke="#AA3090" stroke-width="1"/>' +
+			  '<ellipse cx="50" cy="20" rx="5" ry="4" fill="#100510" stroke="#AA3090" stroke-width="1"/>' +
+			'</svg>' +
+			'<svg class="glyph-svg-small" width="60" height="50">' +
+			  '<path d="M22,20 L14,40 L22,42 L30,20" fill="none" stroke="#AA3090" stroke-width="1"/>' +
+			  '<path d="M38,20 L46,40 L38,42 L30,20" fill="none" stroke="#AA3090" stroke-width="1"/>' +
+			  '<path d="M30,20 C0,-20 0,60 30,20" fill="#100510" stroke="#AA3090" stroke-width="1"/>' +
+			  '<path d="M30,20 C60,-20 60,60 30,20" fill="#100510" stroke="#AA3090" stroke-width="1"/>' +
+			  '<ellipse cx="30" cy="20" rx="5" ry="4" fill="#100510" stroke="#AA3090" stroke-width="1"/>' +
+		    '</svg>' +
+		  '</div>';
+
+var wide_glyph_4 = //TEMP DIAMOND WIDE
 		    '<div class="glyph glyph-wide">' +	  
 			  '<svg class="glyph-svg-original" width="100" height="50">' +
 			    '<polygon points="15,25 50,5 85,25 50,45" fill="none" stroke="#AA3090" stroke-width="1"/>' +
 			  '</svg>' +
 			  '<svg class="glyph-svg-small" width="60" height="50">' +
 				'<polygon points="4,25 30,9 56,25 30,41" fill="none" stroke="#AA3090" stroke-width="1"/>' +
-			  '</svg>' +
-			'</div>';
-
-var wide_glyph_4 = //EMPTY
-		    '<div class="glyph glyph-wide">' +	  
-			  '<svg class="glyph-svg-original" width="100" height="50">' +
-			    '<polygon points="" fill="none" stroke="#AA3090" stroke-width="1"/>' +
-			  '</svg>' +
-			  '<svg class="glyph-svg-small" width="60" height="50">' +
-				'<polygon points="" fill="none" stroke="#AA3090" stroke-width="1"/>' +
 			  '</svg>' +
 			'</div>';
 

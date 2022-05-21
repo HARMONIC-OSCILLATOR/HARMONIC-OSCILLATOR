@@ -53,6 +53,7 @@ var blinker_frame_08 = 'assets/index/blinker_frame_08.png';
 var blinker_frame_09 = 'assets/index/blinker_frame_09.png';
 
 var frames_00 = [frame_00, frame_01, frame_02];
+//var frames_00 = [frame_00]; //freezeframe
 var frames_01 = [untitled_frame_00, untitled_frame_01, untitled_frame_02, untitled_frame_03, untitled_frame_04, untitled_frame_05, untitled_frame_06, untitled_frame_07, untitled_frame_08, untitled_frame_09, untitled_frame_10, untitled_frame_11, untitled_frame_10, untitled_frame_08, untitled_frame_07, untitled_frame_06, untitled_frame_05, untitled_frame_04, untitled_frame_03, untitled_frame_02, untitled_frame_01];
 var frames_02 = [frame_00_mobile];
 var frames_03 = [blinker_frame_05, blinker_frame_06, blinker_frame_07, blinker_frame_08, blinker_frame_09, blinker_frame_08, blinker_frame_07, blinker_frame_06];

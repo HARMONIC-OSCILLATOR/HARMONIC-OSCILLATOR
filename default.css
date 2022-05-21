@@ -260,24 +260,27 @@ p {
   width: 100%;
   min-height: 20em;
   margin: 0;
-  padding: 4em 0 3%;
+  padding: 4em 0 5%;
 }
 
 #splash-flex-img-1-standard {
   width: 50%;
   max-width: 540px;
   min-width: 405px;
+  /*-webkit-mask-image: radial-gradient(ellipse 95% 90% at 50% 50%, black 50%, transparent 51%);*/
+  /*mask-image: radial-gradient(ellipse 95% 90% at 50% 50%, black 50%, transparent 51%);*/
   z-index: 1;
 }
 
 #splash-flex-img-2-standard {
   position: absolute;
-  left: 40vw;
-  width: 50%;
-  min-width: 405px;
-  min-height: 405px;
-  max-width: 540px;
-  max-height: 540px;
+  /*left: 40vw;*/
+  /*width: 50%;*/
+  /*min-width: 405px;*/
+  /*min-height: 405px;*/
+  /*max-width: 540px;*/
+  /*max-height: 540px;*/
+  width: 540px;
   z-index: 2;
 }
 
@@ -317,29 +320,51 @@ p {
   width: 500px;
   height: 500px;
   padding: 2em 0;
-  overflow: hidden;
 }
 
 .radial {position: absolute;}
 
-#S6 {animation: rotator 5s linear 1s infinite reverse;}
-#S5 {animation: rotator 10s linear 0.8s infinite;}
-#S4 {animation: rotator 15s linear 0.6s infinite reverse;}
-#S3 {animation: rotator 20s linear 0.4s infinite;}
-#S2 {animation: rotator 25s linear 0.2s infinite reverse;}
-#S1 {animation: rotator 30s linear 0.1s infinite;}
-#S0 {animation: rotator 180s linear 0s infinite reverse;}
+#R0 {animation: rotator 180s linear 0s infinite reverse;}
+#R1 {animation: rotator 30s linear 0.1s infinite;}
+#R2 {animation: rotator 25s linear 0.2s infinite reverse;}
+#R3 {animation: rotator 20s linear 0.4s infinite;}
+#R4 {animation: rotator 15s linear 0.6s infinite reverse;}
+#R5 {animation: rotator 10s linear 0.8s infinite;}
+#R6 {animation: rotator 5s linear 1s infinite reverse;}
 
-#S {
+#R {
 position: absolute;
 top: 150px;
 left: 150px;
 }
 
-.radial-container:hover > img {mix-blend-mode: hard-light;}
-.radial-container:active > #S0 {filter: hue-rotate(150deg);}
+/*.radial-container:hover > img {mix-blend-mode: hard-light;}*/
+.radial-container:active > #R0 {filter: hue-rotate(150deg);}
 
 @keyframes rotator {
   from {transform: rotate(0deg);}
   to {transform: rotate(360deg);}
+}
+
+.cloud {
+  position: absolute;
+  max-height: 50%;
+
+}
+
+#C1 {bottom: 1%; transform: rotate(-1.5deg);}
+#C2 {bottom: -7%; transform: rotate(1.5deg); mix-blend-mode: color;}
+#C9 {bottom: 8%; animation: C9anim ease-in-out 20s infinite alternate;}
+#C10 {bottom: 2%; animation: C10anim ease-in-out 5s infinite alternate; mix-blend-mode: soft-light;}
+
+#SUN {animation: rotator 3s infinite;}
+
+@keyframes C9anim {
+  from {transform: rotate(-1deg) translate(5em,0);}
+  to {transform: rotate(-1deg) translate(-5em,0);}
+}
+
+@keyframes C10anim {
+  from {transform: rotate(181deg) translate(5%,0);}
+  to {transform: rotate(181deg) translate(-5%,0);}
 }
