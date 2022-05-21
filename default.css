@@ -320,7 +320,6 @@ p {
   width: 500px;
   height: 500px;
   padding: 2em 0;
-  overflow: hidden;
 }
 
 .radial {position: absolute;}
@@ -353,29 +352,19 @@ left: 150px;
 
 }
 
-#C0 {bottom: 0; animation: C0anim 60s infinite;}
-#C1 {bottom: 25px; animation: C1anim 5s infinite alternate;}
-#C2 {}
-#C3 {top: 0; left: 10vw;}
-#C4 {}
-#C5 {}
-#C6 {}
-#C7 {}
-#C8 {}
-#C9 {}
-#C10 {}
-#C11 {}
-#C12 {}
+#C1 {bottom: 1%; transform: rotate(-1.5deg);}
+#C2 {bottom: -7%; transform: rotate(1.5deg); mix-blend-mode: color;}
+#C9 {bottom: 8%; animation: C9anim ease-in-out 20s infinite alternate;}
+#C10 {bottom: 2%; animation: C10anim ease-in-out 5s infinite alternate; mix-blend-mode: soft-light;}
+
 #SUN {animation: rotator 3s infinite;}
 
-
-@keyframes C0anim {
-  0% {opacity: 50%; transform: translate(-120px,0);}
-  50% {opacity:45%; transform: translate(120px,0);}
-  100% {opacity: 50%; transform: translate(-120px,0);}
+@keyframes C9anim {
+  from {transform: rotate(-1deg) translate(5em,0);}
+  to {transform: rotate(-1deg) translate(-5em,0);}
 }
 
-@keyframes C1anim {
-  from {transform: rotate(-1deg) translate(0px,0px);}
-  to {transform: rotate(-1deg) translate(2px,12px);}
+@keyframes C10anim {
+  from {transform: rotate(181deg) translate(5%,0);}
+  to {transform: rotate(181deg) translate(-5%,0);}
 }
