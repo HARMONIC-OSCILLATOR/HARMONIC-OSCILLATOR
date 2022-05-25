@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <title>HARMONIC OSCILLATOR</title>
+  <meta charset='utf-8'>
+  <meta name='description' content='HARMONIC OSCILLATOR'>
+  <meta name='keywords' content='HARMONIC OSCILLATOR'>
+  <meta name='author' content='MNO'>
+  <meta name='viewport' content='width=device-width; initial-scale=1'>
+  <link rel='icon' href='assets/logo2.png' type='image/png'>
+  <link rel='stylesheet' href='default.css'>
+  <link rel='stylesheet' href='queries.css'>
+</head>
+<body>
+  <div class="site-container">
+    <header>
+      <nav class="main-nav noselect">
+        <ul>
+		  <li>
+		    <button id="left" class="nav-icon" onclick="sidePageTransition()"></button>
+		  </li>
+  	      <li><a class="nav-logo" href="index.html"><img id="logo" src="assets/logo1.png"></a></li>
+		  <li>
+		    <button id="right" class="nav-icon" onclick="sidePageTransition()"></button>
+		  </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+	  <section class="flex-container bird-container-1">
+		  <svg width="1117" height="745" style="background-color: #0e3368">
+		  <circle cx="200" cy="-150" r="600" fill="#194077" stroke="none" stroke-width="1">
+		    <animate attributeName="cx" values="400; 100; 400;" dur="50s" repeatCount="indefinite">
+		  </circle>
+		  <circle cx="0" cy="-250" r="745" fill="#25518f" stroke="none" stroke-width="1">
+		    <animate attributeName="cx" values="0; -220; 0;" dur="50s" repeatCount="indefinite">
+		  </circle>
+		  </svg>
+		<img id="BIRDTEST" src="assets/birdbook/temporary.gif">
+	  </section>
+	</main>
+	<nav>
+      <ul class="side-page-nav-flex">
+	    <li class="nav-flex-item">
+	      <a href="rings.html">
+            <div id="rings-osc" class="osc-sticker side-page-sticker noselect"></div>
+		    <div id="rings-osc-wide" class="osc-sticker-wide side-page-sticker-wide noselect"></div>
+		  </a>
+	    </li>
+	    <li class="nav-flex-item">
+	      <a href="tablets.html">
+            <div id="racer-osc" class="osc-sticker side-page-sticker noselect"></div>
+		    <div id="racer-osc-wide" class="osc-sticker-wide side-page-sticker-wide noselect"></div>
+		  </a>
+	    </li>
+	    <li class="nav-flex-item">
+	      <a href="tablets.html">
+            <div id="default-osc" class="osc-sticker side-page-sticker noselect"></div>
+		    <div id="default-osc-wide" class="osc-sticker-wide side-page-sticker-wide noselect"></div>
+		  </a>
+	    </li>
+	    <li class="nav-flex-item">
+	      <a href="birdbook.html">
+            <div id="birds-osc" class="osc-sticker side-page-sticker noselect"></div>
+		    <div id="birds-osc-wide" class="osc-sticker-wide side-page-sticker-wide noselect"></div>
+		  </a>
+	    </li>
+	  </ul>
+    </nav>
+  </div>
+</body>
+<script src='menus.js'></script>
+<script src='transistor.js'></script>
+</html>

@@ -366,3 +366,10 @@ p {
   from {transform: rotate(181deg) translate(5%,0);}
   to {transform: rotate(181deg) translate(-5%,0);}
 }
+
+#BIRDTEST {position: absolute;}
+
+.bird-container-1 {
+  min-width: 1117px;
+  min-height: 745px;
+}
