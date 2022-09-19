@@ -33,10 +33,11 @@
 .card {animation: appear 1s cubic-bezier(.81,.16,.47,.96) 0s 1 normal;}
 
 .card-title {
-  margin-bottom: 0.5rem;
-  font-size: 0.75em;
+  margin-bottom: 0.3rem;
+  font-size: 1em;
   text-align: center;
   font-variant: small-caps;
+  font-weight: 200;
 }
 
 .glyph {

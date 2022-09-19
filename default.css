@@ -61,7 +61,7 @@ p {
   gap: 2%;
 }
 
-#logo {width: 3.25rem; height: 3.25rem;}
+#logo {width: 4rem; height: 4rem;}
 
 .nav-logo {}
 .nav-logo:hover {animation: hue-rotation 1.5s ease-in infinite alternate;}
@@ -75,10 +75,9 @@ p {
 .nav-icon {
   background: none;
   border: none;
-  opacity: 50%;
 }
 
-.nav-icon:hover {opacity: 100%;}
+.nav-icon:hover polygon {stroke: #600040;}
 .nav-icon:active polygon {stroke: #FFF;}
 
 .nav-icon-standard {display: initial;}
@@ -94,7 +93,7 @@ p {
   min-width: 25em;
   max-width: 40em;
   margin: 0 auto;
-  padding: 0;
+  padding: 1% 0 0 0;
   transition: padding 0.5s linear;
   flex-flow: row nowrap;
   justify-content: center;
@@ -283,6 +282,7 @@ p {
   /*max-height: 540px;*/
   width: 540px;
   z-index: 2;
+  image-rendering: high-quality;
 }
 
 .splash-flex-mobile {
