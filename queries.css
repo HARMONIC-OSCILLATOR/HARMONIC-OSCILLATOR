@@ -4,7 +4,7 @@
 /*SMALL SCREENS*/
 @media all and (max-width: 635px) {
   .main-nav ul {padding: 1em 0 0; justify-content: space-around;}
-  #logo {width: 75px; height: 75px;}
+  #logo {width: 5rem; height: 5rem;}
   .nav-icon-standard {display: none;}
   .nav-icon-mobile {display: initial;}
   
@@ -105,3 +105,10 @@
 }
 
 /*consider giving a shit about prefers-reduced-motion*/
+
+/*FULLSCREEN MODE!*/
+/*
+@media all and (display-mode: fullscreen) {
+  #splash-flex-img-2-standard {width: initial;}
+}
+*/
