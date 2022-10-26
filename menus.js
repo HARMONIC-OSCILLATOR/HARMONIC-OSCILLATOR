@@ -25,6 +25,36 @@ var right_nav_codeblock =
                 '</polygon>' +
               '</svg>';
 
+var menu_nav_codeblock =
+			  '<svg class="nav-icon-standard" width="30" height="30">' +
+			    '<path d="M4,8 L25,8;" fill="none" stroke="#AA3090" stroke-width="1">' +
+				'<animate attributeName="d" values="M0,0 L0,0; M4,8 L25,8;" dur="1s" repeatCount="1"/>' +
+				'</path>' +
+				'<path d="M4,15 L25,15;" fill="none" stroke="#AA3090" stroke-width="1">' +
+				'<animate attributeName="d" values="M0,0 L0,0; M4,15 L25,15;" dur="0.75s" repeatCount="1"/>' +
+				'</path>' +
+				'<path d="M4,22 L25,22;" fill="none" stroke="#AA3090" stroke-width="1">' +
+				'<animate attributeName="d" values="M0,0 L0,0; M4,22 L25,22;" dur="0.5s" repeatCount="1"/>' +
+				'</path>' +
+			  '</svg>' +
+			  '<svg class="nav-icon-mobile" width="40" height="40">' +
+			    '<path d="M8,10 L32,10;" fill="none" stroke="#AA3090" stroke-width="1">' +
+				'<animate attributeName="d" values="M0,0 L0,0; M8,10 L32,10;"" dur="0.75s" repeatCount="1"/>' +
+				'</path>' +
+				'<path d="M8,20 L32,20;" fill="none" stroke="#AA3090" stroke-width="1">' +
+				'<animate attributeName="d" values="M0,0 L0,0; M8,20 L32,20;" dur="0.5s" repeatCount="1"/>' +
+				'</path>' +
+				'<path d="M8,30 L32,30;" fill="none" stroke="#AA3090" stroke-width="1">' +
+				'<animate attributeName="d" values="M0,0 L0,0; M8,30 L32,30;" dur="0.25s" repeatCount="1"/>' +
+				'</path>' +
+			  '</svg>';
+
+var lang_nav_codeblock =
+			  '<svg class="nav-icon-standard" width="30" height="30">' +
+			    '<polygon points="0,0 0,30 30,15 0,0;" fill="none" stroke="#AA3090" stroke-width="1"/>' +
+			  '</svg>';
+
+
 var default_osc_codeblock =
 	            '<h1>HARMONIC OSCILLATOR</h1>' +
 		        '<div>' +
@@ -106,12 +136,6 @@ var racer_osc_codeblock =
 	            '<h1>HARMONIC OSCILLATOR</h1>' +
 		        '<div>' +
 		          '<svg width="100" height="50">' +
-		            '<path d="" fill="none" stroke="#AA3090" stroke-width="1">' +
-		            '<animate attributeName="d" values="M100,50 L100,0; M0,0 L0,50; M100,50 L100,0;" dur="1s" repeatCount="indefinite"/>' +
-		            '</path>' +
-		            '<path d="" fill="none" stroke="#AA3090" stroke-width="1">' +
-		            '<animate attributeName="d" values="M0,50 L0,0; M100,0 L100,50; M0,50 L0,0;" dur="2s" repeatCount="indefinite"/>' +
-		            '</path>' +
 		          '</svg>' +
 		        '</div>' +
 	            '<h2>Underground Arts</h2>';
@@ -120,9 +144,6 @@ var racer_osc_wide_codeblock =
 	            '<h1>HARMONIC OSCILLATOR</h1>' +
 		        '<div>' +
 		          '<svg width="300" height="50">' +
-					'<path d="" fill="none" stroke="#AA3090" stroke-width="1">' +
-                    '<animate attributeName="d" values="M300,0 L300,0; M0,0 L300,50; M0,50 L0,50;" dur="2s" repeatCount="indefinite"/>' +
-                    '</polygon>' +
 		          '</svg>' +
 		        '</div>' +
 	            '<h2>Underground Arts</h2>';
@@ -233,3 +254,6 @@ document.getElementById('default-osc-wide').innerHTML = default_osc_wide_codeblo
 document.getElementById('rings-osc-wide').innerHTML = rings_osc_wide_codeblock;
 document.getElementById('racer-osc-wide').innerHTML = racer_osc_wide_codeblock;
 document.getElementById('birds-osc-wide').innerHTML = birds_osc_wide_codeblock;
+
+document.getElementById('menu').innerHTML = menu_nav_codeblock;
+document.getElementById('lang').innerHTML = lang_nav_codeblock;

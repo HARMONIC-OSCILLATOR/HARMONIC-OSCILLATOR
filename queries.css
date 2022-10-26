@@ -8,9 +8,17 @@
   .nav-icon-standard {display: none;}
   .nav-icon-mobile {display: initial;}
   
+  #left {padding-right: 20px;}
+  #right {padding-left: 20px;}
+  #menu {width: 40px; height: 40px;}
+  #lang {width: 40px; height: 40px;}
+  
   .nav-icon {opacity: 100%;}
   .nav-icon:hover polygon {stroke: #600040;}
   .nav-icon:active polygon {stroke: #FFF;}
+
+  .justify-start {padding-left: 8%;}
+  .justify-end {padding-right: 8%;}
 
   .splash-nav-flex .osc-sticker {display: none;}
   .splash-nav-flex .osc-sticker-wide {display: block;}
@@ -95,13 +103,15 @@
 }
 
 /*GIGATUBE STANDARD*/
-@media all and (min-width: 636px) and (max-height: 290px) {
+@media all and (min-width: 636px) and (max-height: 600px) {
   .splash-nav-flex {
 	margin: 2em auto 0;
     gap: 5vw;
   }
   
-  .nav-flex-item {flex: 0 1 auto;}  
+  .nav-flex-item {flex: 0 1 auto;}
+  
+  #splash-flex-img-2-standard {display: initial; bottom: 0;}
 }
 
 /*consider giving a shit about prefers-reduced-motion*/
