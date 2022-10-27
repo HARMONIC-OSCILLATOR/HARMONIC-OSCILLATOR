@@ -27,33 +27,56 @@ var right_nav_codeblock =
 
 var menu_nav_codeblock =
 			  '<svg class="nav-icon-standard" width="30" height="30">' +
-			    '<path d="M4,8 L25,8;" fill="none" stroke="#AA3090" stroke-width="1">' +
-				'<animate attributeName="d" values="M0,0 L0,0; M4,8 L25,8;" dur="1s" repeatCount="1"/>' +
+			    '<path d="M3,8 L25,8;" fill="none" stroke="#AA3090" stroke-width="1">' +
+				'<animate attributeName="d" values="M0,0 L0,0; M3,8 L25,8;" dur="1s" repeatCount="1"/>' +
 				'</path>' +
-				'<path d="M4,15 L25,15;" fill="none" stroke="#AA3090" stroke-width="1">' +
-				'<animate attributeName="d" values="M0,0 L0,0; M4,15 L25,15;" dur="0.75s" repeatCount="1"/>' +
+				'<path d="M3,15 L25,15;" fill="none" stroke="#AA3090" stroke-width="1">' +
+				'<animate attributeName="d" values="M0,0 L0,0; M3,15 L25,15;" dur="0.75s" repeatCount="1"/>' +
 				'</path>' +
-				'<path d="M4,22 L25,22;" fill="none" stroke="#AA3090" stroke-width="1">' +
-				'<animate attributeName="d" values="M0,0 L0,0; M4,22 L25,22;" dur="0.5s" repeatCount="1"/>' +
+				'<path d="M3,22 L25,22;" fill="none" stroke="#AA3090" stroke-width="1">' +
+				'<animate attributeName="d" values="M0,0 L0,0; M3,22 L25,22;" dur="0.5s" repeatCount="1"/>' +
 				'</path>' +
 			  '</svg>' +
 			  '<svg class="nav-icon-mobile" width="40" height="40">' +
-			    '<path d="M8,10 L32,10;" fill="none" stroke="#AA3090" stroke-width="1">' +
-				'<animate attributeName="d" values="M0,0 L0,0; M8,10 L32,10;"" dur="0.75s" repeatCount="1"/>' +
+			    '<path d="M6,10 L32,10;" fill="none" stroke="#AA3090" stroke-width="1">' +
+				'<animate attributeName="d" values="M0,0 L0,0; M6,10 L32,10;"" dur="0.75s" repeatCount="1"/>' +
 				'</path>' +
-				'<path d="M8,20 L32,20;" fill="none" stroke="#AA3090" stroke-width="1">' +
-				'<animate attributeName="d" values="M0,0 L0,0; M8,20 L32,20;" dur="0.5s" repeatCount="1"/>' +
+				'<path d="M6,20 L32,20;" fill="none" stroke="#AA3090" stroke-width="1">' +
+				'<animate attributeName="d" values="M0,0 L0,0; M6,20 L32,20;" dur="0.5s" repeatCount="1"/>' +
 				'</path>' +
-				'<path d="M8,30 L32,30;" fill="none" stroke="#AA3090" stroke-width="1">' +
-				'<animate attributeName="d" values="M0,0 L0,0; M8,30 L32,30;" dur="0.25s" repeatCount="1"/>' +
+				'<path d="M6,30 L32,30;" fill="none" stroke="#AA3090" stroke-width="1">' +
+				'<animate attributeName="d" values="M0,0 L0,0; M6,30 L32,30;" dur="0.25s" repeatCount="1"/>' +
 				'</path>' +
 			  '</svg>';
 
 var lang_nav_codeblock =
+			  /*US FLAG...*/
+			  /*
 			  '<svg class="nav-icon-standard" width="30" height="30">' +
-			    '<polygon points="0,0 0,30 30,15 0,0;" fill="none" stroke="#AA3090" stroke-width="1"/>' +
+				'<polygon points="0,0 0,14 14,14 14,0 0,0" fill="none" stroke="#AA3090" stroke-width="1"/>' +
+				'<path d="M14,2 29,2;" fill="none" stroke="#AA3090" stroke-width="1"/>' +
+				'<path d="M14,6 29,6;" fill="none" stroke="#AA3090" stroke-width="1"/>' +
+				'<path d="M14,10 29,10;" fill="none" stroke="#AA3090" stroke-width="1"/>' +
+				'<path d="M14,14 29,14;" fill="none" stroke="#AA3090" stroke-width="1"/>' +
+				'<path d="M0,18 29,18;" fill="none" stroke="#AA3090" stroke-width="1"/>' +
+				'<path d="M0,22 29,22;" fill="none" stroke="#AA3090" stroke-width="1"/>' +
+				'<path d="M0,26 29,26;" fill="none" stroke="#AA3090" stroke-width="1"/>' +
+				'<circle cx="7" cy="7" r="4" fill="none" stroke="#AA3090" stroke-width="1"/>' +
+			  '</svg>' +
+			  '<svg class="nav-icon-mobile" width="40" height="40">' +
+				'<polygon points="0,19 19,5 38,19 19,33 0,19" fill="none" stroke="#AA3090" stroke-width="1"/>' +
+				'<circle cx="19" cy="19" r="7" fill="none" stroke="#AA3090" stroke-width="1"/>' +
 			  '</svg>';
-
+			  */
+			  /*BRAZIL FLAG!*/
+			  '<svg class="nav-icon-standard" width="30" height="30">' +
+				'<polygon points="0,14 14,3 28,14 14,25 0,14;" fill="none" stroke="#AA3090" stroke-width="1"/>' +
+				'<circle cx="14" cy="14" r="6" fill="none" stroke="#AA3090" stroke-width="1"/>' +
+			  '</svg>' +
+			  '<svg class="nav-icon-mobile" width="40" height="40">' +
+				'<polygon points="0,19 19,5 38,19 19,33 0,19" fill="none" stroke="#AA3090" stroke-width="1"/>' +
+				'<circle cx="19" cy="19" r="7" fill="none" stroke="#AA3090" stroke-width="1"/>' +
+			  '</svg>';
 
 var default_osc_codeblock =
 	            '<h1>HARMONIC OSCILLATOR</h1>' +
@@ -245,6 +268,9 @@ var birds_osc_wide_codeblock =
 document.getElementById('left').innerHTML = left_nav_codeblock;
 document.getElementById('right').innerHTML = right_nav_codeblock;
 
+document.getElementById('menu').innerHTML = menu_nav_codeblock;
+document.getElementById('lang').innerHTML = lang_nav_codeblock;
+
 document.getElementById('default-osc').innerHTML = default_osc_codeblock;
 document.getElementById('rings-osc').innerHTML = rings_osc_codeblock;
 document.getElementById('racer-osc').innerHTML = racer_osc_codeblock;
@@ -254,6 +280,3 @@ document.getElementById('default-osc-wide').innerHTML = default_osc_wide_codeblo
 document.getElementById('rings-osc-wide').innerHTML = rings_osc_wide_codeblock;
 document.getElementById('racer-osc-wide').innerHTML = racer_osc_wide_codeblock;
 document.getElementById('birds-osc-wide').innerHTML = birds_osc_wide_codeblock;
-
-document.getElementById('menu').innerHTML = menu_nav_codeblock;
-document.getElementById('lang').innerHTML = lang_nav_codeblock;

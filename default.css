@@ -87,6 +87,8 @@ p {
 .nav-icon:active polygon {stroke: #FFF;}
 .nav-icon:hover path {stroke: #600040;}
 .nav-icon:active path {stroke: #FFF;}
+.nav-icon:hover circle {stroke: #600040;}
+.nav-icon:active circle {stroke: #FFF; fill: #FFF; animation: doom 0.25s ease-in 1.666s infinite alternate}
 
 .nav-icon-standard {display: initial;}
 .nav-icon-mobile {display: none;}
@@ -105,6 +107,12 @@ p {
 #lang {
   width: 30px;
   height: 30px;
+  border: none;
+}
+
+@keyframes doom {
+  from {stroke: #FFF; fill: #FF;}
+  to {stroke: #FF0000; fill: #FF0000;}
 }
 
 .splash-nav-flex {

@@ -5,6 +5,9 @@ var v = document.getElementsByTagName('main');
 var w = document.getElementsByClassName('side-page-nav-flex');
 var x = document.getElementsByClassName('splash-nav-flex');
 
+var sunmoon = document.getElementById('SUN');
+var isSun = true;
+
 function navDisplay() {  
 	for (var i = 0; i < x.length; i++) {
 		if (x[i].style.display == "flex") {x[i].style.display = "none";}
@@ -46,4 +49,9 @@ function splashTransition() {
 
 function sidePageTransition() {
 	totalNavDisplay();
+}
+
+function sunMoonTransition() {
+	if (isSun) {sunmoon.src = "assets/index/MOON.png"; isSun = false;}
+	else {sunmoon.src = "assets/index/SUN.png"; isSun = true;}
 }

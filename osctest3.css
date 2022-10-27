@@ -38,9 +38,9 @@ body {background-color: #000; overflow: hidden;}
 }
 
 #coloroptions h1 {
-  color: #0000A2;
-  font: normal small-caps normal 1em Arial;
+  color: #AA3090;
   text-align: center;
+  font-size: 1.5rem;
 }
 
 .options {margin: auto;}
