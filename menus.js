@@ -270,7 +270,7 @@ var birds_osc_wide_codeblock =
 	            '<h2>Underground Arts</h2>';
 
 document.getElementById('menu').innerHTML = menu_nav_codeblock;
-document.getElementById('lang').innerHTML = lang_nav_codeblock;
+document.getElementById('eye').innerHTML = lang_nav_codeblock;
 
 document.getElementById('default-osc').innerHTML = default_osc_codeblock;
 document.getElementById('rings-osc').innerHTML = rings_osc_codeblock;
@@ -288,5 +288,5 @@ document.getElementById('right').innerHTML = right_nav_codeblock;
 //window.addEventListener("load", navStartup);
 
 //function navStartup() {
-//	console.log(document.location);
+//console.log(document.location);
 //}

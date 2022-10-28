@@ -255,21 +255,21 @@ function getRandomInt(max) {				//the script uses this random # gen to choose ta
 }
 
 function populateTablets() {
-	var typeArray = new Array();									//typeArray is to track and compare each created tablet.
+	var type_array = new Array();									//type_array is to track and compare each created tablet.
 	for (i = 0; i < tablets.length; i++) {							//looking through each tablet...
 		var validation = false;										//validation becomes true when current tablet isn't a repeat.
 		var type = null;											//will be an instance of tablet_type to set current tablet.
 		while (!validation) {										//rolling types and checking for repeats for each tablet...
 			type = tablet_texts[getRandomInt(tablet_texts.length)]	//rolls a new tablet type.
 			validation = true;										//tentatively accepts the new tablet as valid.
-			for (j = 0; j < typeArray.length; j++) {				//comparing it to our previously populated tablets...
-				if (type.id == typeArray[j].id) {					//checks for repeats.
+			for (j = 0; j < type_array.length; j++) {				//comparing it to our previously populated tablets...
+				if (type.id == type_array[j].id) {					//checks for repeats.
 					validation = false;								//if there's repeats, the while loop will start over.
 					break;											//doesn't have to check the rest if it's already invalid.
 				}
 			}
 		}
-		typeArray.push(new tablet_type(type.text, type.tag, type.id));	//adds newly rolled tablet to typeArray.
+		type_array.push(new tablet_type(type.text, type.tag, type.id));	//adds newly rolled tablet to type_array.
 		tablets[i].innerHTML = type.text;								//sets the tablet text on the site!
 		setGlyph(i, type);												//finally, each tablet rolls a glyph.
 	}

@@ -49,7 +49,8 @@ var t_1 = setInterval(function(){updateAnim(anim_1)}, anim_1.update_freq);
 var t_2 = setInterval(function(){updateAnim(anim_2)}, anim_2.update_freq);
 
 function updateAnim(anim) {
-  anim.img_id.src = anim.frames[anim.current_frame];
-  anim.current_frame++;
-  if (anim.current_frame >= anim.frames.length) {anim.current_frame = 0;}
+	if (anim.img_id == null) return;
+	anim.img_id.src = anim.frames[anim.current_frame];
+	anim.current_frame++;
+	if (anim.current_frame >= anim.frames.length) {anim.current_frame = 0;}
 }

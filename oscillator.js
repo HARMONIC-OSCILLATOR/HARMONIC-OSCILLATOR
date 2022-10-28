@@ -2,29 +2,29 @@
 //MNO
 
 //COLOR CHOOSER FUNCTIONALITY
-var color1 = document.getElementById('color1');
-var color2 = document.getElementById('color2');
-var defaultColor = "#0000FF";
-var defaultColor2 = "#00FFFF";
+var color_1 = document.getElementById('color1');
+var color_2 = document.getElementById('color2');
+var default_color_1 = "#0000FF";
+var default_color_2 = "#00FFFF";
 window.addEventListener("load", colorStartup);
 
 function colorStartup() {
-	color1.value = defaultColor;
-	color2.value = defaultColor2;
-	color1.addEventListener("input", updateFirst);
-	color2.addEventListener("input", updateFirst2);
-	color1.addEventListener("change", updateAll);
-	color2.addEventListener("change", updateAll2);
+	color_1.value = default_color_1;
+	color_2.value = default_color_2;
+	color_1.addEventListener("input", updateFirst);
+	color_2.addEventListener("input", updateFirst2);
+	color_1.addEventListener("change", updateAll);
+	color_2.addEventListener("change", updateAll2);
 }
 
 function updateFirst(event) {
-	var path = document.querySelector('.illegal-rotation-1');
-	if (path) {path.style.stroke = event.target.value;}
+	var path_1 = document.querySelector('.illegal-rotation-1');
+	if (path_1) {path_1.style.stroke = event.target.value;}
 }
 
 function updateFirst2(event) {
-	var path2 = document.querySelector('.illegal-rotation-2');
-	if (path2) {path2.style.stroke = event.target.value;}	
+	var path_2 = document.querySelector('.illegal-rotation-2');
+	if (path_2) {path_2.style.stroke = event.target.value;}	
 }
 
 function updateAll(event) {
@@ -43,12 +43,12 @@ function updateAll2(event) {
 
 //UI HIDING FUNCTIONALITY (NEEDS REPLACING WITH THE EYE)
 document.addEventListener("keydown", function(){
-	var keyPressy = event.keyCode;
-	var colorPalettes = document.getElementsByClassName('color-options');
-	if(keyPressy == 72) {
-		for (i = 0; i < colorPalettes.length; i++) {
-			if (colorPalettes[i].style.display == "initial") {colorPalettes[i].style.display = "none";}
-			else {colorPalettes[i].style.display = "initial";}
+	var key_press = event.keyCode;
+	var color_palettes = document.getElementsByClassName('color-options');
+	if(key_press == 72) {
+		for (i = 0; i < color_palettes.length; i++) {
+			if (color_palettes[i].style.display == "initial") {color_palettes[i].style.display = "none";}
+			else {color_palettes[i].style.display = "initial";}
 		}
 	}
 })
