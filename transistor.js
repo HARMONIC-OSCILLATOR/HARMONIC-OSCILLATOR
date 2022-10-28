@@ -63,4 +63,3 @@ function sunMoonTransition() {
 }
 
 //EYE BUTTON SCRIPT
-function eyeDisplay() {}

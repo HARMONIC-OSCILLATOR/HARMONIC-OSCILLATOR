@@ -269,16 +269,8 @@ var birds_osc_wide_codeblock =
 		        '</div>' +
 	            '<h2>Underground Arts</h2>';
 
-
-function menuStartup() {
 	document.getElementById('menu').innerHTML = menu_nav_codeblock;
 	document.getElementById('eye').innerHTML = eye_nav_codeblock;
-	
-	var left = document.getElementById('left');
-	var right = document.getElementById('right');
-	
-	if (existingElement(left)) {left.innerHTML = left_nav_codeblock;}
-	if (existingElement(right)) {right.innerHTML = right_nav_codeblock;}
 	
 	document.getElementById('default-osc').innerHTML = default_osc_codeblock;
 	document.getElementById('rings-osc').innerHTML = rings_osc_codeblock;
@@ -289,7 +281,12 @@ function menuStartup() {
 	document.getElementById('rings-osc-wide').innerHTML = rings_osc_wide_codeblock;
 	document.getElementById('racer-osc-wide').innerHTML = racer_osc_wide_codeblock;
 	document.getElementById('birds-osc-wide').innerHTML = birds_osc_wide_codeblock;
-}
+	
+	var left = document.getElementById('left');
+	var right = document.getElementById('right');
+	
+	if (existingElement(left)) {left.innerHTML = left_nav_codeblock;}
+	if (existingElement(right)) {right.innerHTML = right_nav_codeblock;}
 
 function existingElement(id_element) {
 	if(id_element == null) return false;
