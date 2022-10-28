@@ -16,12 +16,18 @@
     <header>
       <nav class="main-nav noselect">
         <ul>
+		  <li class="justify-start">
+		    <button id="menu" class="nav-icon" onclick="splashTransition()"></button>
+		  </li>
 		  <li>
-		    <button id="left" class="nav-icon" onclick="splashTransition()"></button>
+		    <button id="left" class="nav-icon" onclick="sunMoonTransition()"></button>
 		  </li>
   	      <li><a class="nav-logo" href="index.html"><img id="logo" src="assets/logo1.png"></a></li>
 		  <li>
-		    <button id="right" class="nav-icon" onclick="splashTransition()"></button>
+		    <button id="right" class="nav-icon" onclick="sunMoonTransition()"></button>
+		  </li>
+		  <li class="justify-end">
+		    <button id="eye" class="nav-icon" onclick="eyeVision()"></button>
 		  </li>
         </ul>
       </nav>
@@ -55,7 +61,7 @@
 			</a>
 		  </li>
 		  <li class="nav-flex-item">
-		    <a href="tablets.html">
+		    <a href="oscillator.html">
 	          <div id="default-osc" class="osc-sticker noselect"></div>
 			  <div id="default-osc-wide" class="osc-sticker-wide noselect"></div>
 			</a>
@@ -70,8 +76,8 @@
 	  </nav>
 	</main>
   </div>
-</body>
 <script src='menus.js'></script>
 <script src='transistor.js'></script>
 <script src='animcontroller_index.js'></script>
+</body>
 </html>

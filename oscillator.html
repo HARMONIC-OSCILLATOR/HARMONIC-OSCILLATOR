@@ -10,9 +10,8 @@
   <link rel='icon' href='assets/logo2.png' type='image/png'>
   <link rel='stylesheet' href='default.css'>
   <link rel='stylesheet' href='queries.css'>
-  <link rel='stylesheet' href='tablets.css'>
 </head>
-<body onload="populateTablets()">
+<body>
   <div class="site-container">
     <header>
       <nav class="main-nav noselect">
@@ -21,11 +20,11 @@
 		    <button id="menu" class="nav-icon" onclick="sidePageTransition()"></button>
 		  </li>
 		  <li>
-		    <button id="left" class="nav-icon" onclick="populateTablets()"></button>
+		    <input style="padding: 0" class="color-options" id="color1" type="color" value="#FFF">
 		  </li>
   	      <li><a class="nav-logo" href="index.html"><img id="logo" src="assets/logo1.png"></a></li>
 		  <li>
-		    <button id="right" class="nav-icon" onclick="populateTablets()"></button>
+		    <input style="padding: 0" class="color-options" id="color2" type="color" value="#FFF">
 		  </li>
 		  <li class="justify-end">
 		    <button id="eye" class="nav-icon" onclick="eyeVision()"></button>
@@ -34,14 +33,31 @@
       </nav>
     </header>
     <main>
-	  <!--COUNTER-GLOW OF THE INDIVIDUAL-->			
-	  <section class="flex-container">
-		<article id="tablet-1" class="flex-item card tablet-of-truth"></article>
-		<div class="flex-item card">
-		  <h3 class="card-title">Daily<br>Counterglow</h3>
-		  <article id="tablet-2" class="tablet-of-truth"></article>
-		</div>
-		<article id="tablet-3" class="flex-item card tablet-of-truth"></article>
+	  <section class="flex-column noselect">
+	    <div class="graph-space-2">
+          <svg width="50" height="50">
+    	    <!--real part-->
+    	    <path d="M0,25 C12.5,25 12.5,0 25,25 S37.5,25 50,25" class="illegal-rotation-1-sm" fill="none" stroke="#0000FF" stroke-width="1"/>
+    	    <!--imaginary part-->
+    	    <path d="M0,25 C12.5,25 12.5,50 25,25 S37.5,25 50,25" class="illegal-rotation-2-sm" fill="none" stroke="#00FFFF" stroke-width="1"/>
+          </svg>
+        </div>
+        <div class="graph-space-1">
+          <svg width="500" height="500">
+    	    <!--real part-->
+    	    <path d="M0,250 C125,250 125,0 250,250 S375,250 500,250" class="illegal-rotation-1" fill="none" stroke="#0000FF" stroke-width="1"/>
+    	    <!--imaginary part-->
+    	    <path d="M0,250 C125,250 125,500 250,250 S375,250 500,250" class="illegal-rotation-2" fill="none" stroke="#00FFFF" stroke-width="1"/>
+          </svg>
+        </div>
+        <div class="graph-space-2">
+          <svg width="50" height="50">
+    	    <!--real part-->
+    	    <path d="M0,25 C12.5,25 12.5,0 25,25 S37.5,25 50,25" class="illegal-rotation-1-sm" fill="none" stroke="#0000FF" stroke-width="1"/>
+    	    <!--imaginary part-->
+    	    <path d="M0,25 C12.5,25 12.5,50 25,25 S37.5,25 50,25" class="illegal-rotation-2-sm" fill="none" stroke="#00FFFF" stroke-width="1"/>
+          </svg>
+        </div>
 	  </section>
 	</main>
 	<nav>
@@ -75,6 +91,6 @@
   </div>
 <script src='menus.js'></script>
 <script src='transistor.js'></script>
-<script src='tablets.js'></script>
+<script src='oscillator.js'></script>
 </body>
 </html>

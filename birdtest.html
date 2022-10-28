@@ -16,12 +16,18 @@
     <header>
       <nav class="main-nav noselect">
         <ul>
+		  <li class="justify-start">
+		    <button id="menu" class="nav-icon" onclick="sidePageTransition()"></button>
+		  </li>
 		  <li>
-		    <button id="left" class="nav-icon" onclick="sidePageTransition()"></button>
+		    <button id="left" class="nav-icon" onclick=""></button>
 		  </li>
   	      <li><a class="nav-logo" href="index.html"><img id="logo" src="assets/logo1.png"></a></li>
 		  <li>
-		    <button id="right" class="nav-icon" onclick="sidePageTransition()"></button>
+		    <button id="right" class="nav-icon" onclick=""></button>
+		  </li>
+		  <li class="justify-end">
+		    <button id="eye" class="nav-icon" onclick="eyeVision()"></button>
 		  </li>
         </ul>
       </nav>
@@ -55,7 +61,7 @@
 		  </a>
 	    </li>
 	    <li class="nav-flex-item">
-	      <a href="tablets.html">
+	      <a href="oscillator.html">
             <div id="default-osc" class="osc-sticker side-page-sticker noselect"></div>
 		    <div id="default-osc-wide" class="osc-sticker-wide side-page-sticker-wide noselect"></div>
 		  </a>
@@ -69,8 +75,8 @@
 	  </ul>
     </nav>
   </div>
-</body>
 <script src='menus.js'></script>
 <script src='transistor.js'></script>
 <script src='animcontroller_birdtest.js'></script>
+</body>
 </html>
