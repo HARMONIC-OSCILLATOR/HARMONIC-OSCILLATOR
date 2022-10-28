@@ -49,7 +49,7 @@ var menu_nav_codeblock =
 				'</path>' +
 			  '</svg>';
 
-var lang_nav_codeblock =
+var eye_nav_codeblock =
 			  /*US FLAG...*/
 			  /*
 			  '<svg class="nav-icon-standard" width="30" height="30">' +
@@ -269,24 +269,29 @@ var birds_osc_wide_codeblock =
 		        '</div>' +
 	            '<h2>Underground Arts</h2>';
 
-document.getElementById('menu').innerHTML = menu_nav_codeblock;
-document.getElementById('eye').innerHTML = lang_nav_codeblock;
 
-document.getElementById('default-osc').innerHTML = default_osc_codeblock;
-document.getElementById('rings-osc').innerHTML = rings_osc_codeblock;
-document.getElementById('racer-osc').innerHTML = racer_osc_codeblock;
-document.getElementById('birds-osc').innerHTML = birds_osc_codeblock;
+function menuStartup() {
+	document.getElementById('menu').innerHTML = menu_nav_codeblock;
+	document.getElementById('eye').innerHTML = eye_nav_codeblock;
+	
+	var left = document.getElementById('left');
+	var right = document.getElementById('right');
+	
+	if (existingElement(left)) {left.innerHTML = left_nav_codeblock;}
+	if (existingElement(right)) {right.innerHTML = right_nav_codeblock;}
+	
+	document.getElementById('default-osc').innerHTML = default_osc_codeblock;
+	document.getElementById('rings-osc').innerHTML = rings_osc_codeblock;
+	document.getElementById('racer-osc').innerHTML = racer_osc_codeblock;
+	document.getElementById('birds-osc').innerHTML = birds_osc_codeblock;
+	
+	document.getElementById('default-osc-wide').innerHTML = default_osc_wide_codeblock;
+	document.getElementById('rings-osc-wide').innerHTML = rings_osc_wide_codeblock;
+	document.getElementById('racer-osc-wide').innerHTML = racer_osc_wide_codeblock;
+	document.getElementById('birds-osc-wide').innerHTML = birds_osc_wide_codeblock;
+}
 
-document.getElementById('default-osc-wide').innerHTML = default_osc_wide_codeblock;
-document.getElementById('rings-osc-wide').innerHTML = rings_osc_wide_codeblock;
-document.getElementById('racer-osc-wide').innerHTML = racer_osc_wide_codeblock;
-document.getElementById('birds-osc-wide').innerHTML = birds_osc_wide_codeblock;
-
-document.getElementById('left').innerHTML = left_nav_codeblock;
-document.getElementById('right').innerHTML = right_nav_codeblock;
-
-//window.addEventListener("load", navStartup);
-
-//function navStartup() {
-//console.log(document.location);
-//}
+function existingElement(id_element) {
+	if(id_element == null) return false;
+	else return true;
+}
