@@ -78,6 +78,11 @@ var lang_nav_codeblock =
 				'<circle cx="19" cy="19" r="7" fill="none" stroke="#AA3090" stroke-width="1"/>' +
 			  '</svg>';
 
+var reroll_nav_codeblock =
+			  '<svg class="nav-icon-standard" width="30" height="30">' +
+			    '<path d="" fill="none" stroke="#AA3090" stroke-width="1"/>' +
+			  '</svg>';
+
 var default_osc_codeblock =
 	            '<h1>HARMONIC OSCILLATOR</h1>' +
 		        '<div>' +
@@ -264,10 +269,6 @@ var birds_osc_wide_codeblock =
 		        '</div>' +
 	            '<h2>Underground Arts</h2>';
 
-
-document.getElementById('left').innerHTML = left_nav_codeblock;
-document.getElementById('right').innerHTML = right_nav_codeblock;
-
 document.getElementById('menu').innerHTML = menu_nav_codeblock;
 document.getElementById('lang').innerHTML = lang_nav_codeblock;
 
@@ -280,3 +281,12 @@ document.getElementById('default-osc-wide').innerHTML = default_osc_wide_codeblo
 document.getElementById('rings-osc-wide').innerHTML = rings_osc_wide_codeblock;
 document.getElementById('racer-osc-wide').innerHTML = racer_osc_wide_codeblock;
 document.getElementById('birds-osc-wide').innerHTML = birds_osc_wide_codeblock;
+
+document.getElementById('left').innerHTML = left_nav_codeblock;
+document.getElementById('right').innerHTML = right_nav_codeblock;
+
+//window.addEventListener("load", navStartup);
+
+//function navStartup() {
+//	console.log(document.location);
+//}

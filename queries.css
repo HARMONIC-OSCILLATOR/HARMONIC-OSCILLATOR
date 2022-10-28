@@ -43,6 +43,8 @@
   .radial-container {width: 250px; height: 250px;}
   .radial {width: 250px; height: 250px;}
   #R {width: 175px; height: 175px;}
+  
+  .color-options {margin: 0 20px;}
 }
 
 /*SMALL SCREENS BOX MODE*/
@@ -103,15 +105,12 @@
 }
 
 /*GIGATUBE STANDARD*/
-@media all and (min-width: 636px) and (max-height: 600px) {
-  .splash-nav-flex {
-	margin: 2em auto 0;
-    gap: 5vw;
+@media all and (min-width: 636px) and (max-height: 700px) {
+  #splash-flex-img-2-standard {
+    width: 405px;
+	z-index: 0;
+	/*transition: width 0.1s linear;*/
   }
-  
-  .nav-flex-item {flex: 0 1 auto;}
-  
-  #splash-flex-img-2-standard {display: initial; bottom: 0;}
 }
 
 /*consider giving a shit about prefers-reduced-motion*/

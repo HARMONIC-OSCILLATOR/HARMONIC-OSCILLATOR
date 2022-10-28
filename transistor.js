@@ -1,6 +1,7 @@
 //HARMONIC OSCILLATOR BUTTON TRANSITIONIST SCRIPT
 //MNO
 
+var u = document.getElementsByTagName('nav');
 var v = document.getElementsByTagName('main');
 var w = document.getElementsByClassName('side-page-nav-flex');
 var x = document.getElementsByClassName('splash-nav-flex');
@@ -8,6 +9,7 @@ var x = document.getElementsByClassName('splash-nav-flex');
 var sunmoon = document.getElementById('SUN');
 var isSun = true;
 
+//INDEX MENU SUMMONS
 function navDisplay() {  
 	for (var i = 0; i < x.length; i++) {
 		if (x[i].style.display == "flex") {x[i].style.display = "none";}
@@ -20,6 +22,7 @@ function navDisplay() {
 	}
 }
 
+//SIDE PAGE MENU SUMMONS (OBSCURES ENTIRE PAGE)
 function totalNavDisplay() {  
 	for (var i = 0; i < v.length; i++) {
 		if (v[i].style.display == "none") {v[i].style.display = "initial";}
@@ -31,6 +34,7 @@ function totalNavDisplay() {
 	}
 }
 
+//INDEX MAIN SUBJECT ANIMATION SWAP SCRIPT
 function animSwap() {
 	if (anim_1.frames == frames_01) {anim_1 = new animStruct(anim_img_id_01, frames_01_alt, freq_01);}
 	else {anim_1 = new animStruct(anim_img_id_01, frames_01, freq_01);}
@@ -51,7 +55,34 @@ function sidePageTransition() {
 	totalNavDisplay();
 }
 
+//INDEX RIGHT NAV SUNMOONER
 function sunMoonTransition() {
 	if (isSun) {sunmoon.src = "assets/index/MOON.png"; isSun = false;}
 	else {sunmoon.src = "assets/index/SUN.png"; isSun = true;}
+}
+
+//EYE BUTTON SCRIPT
+function eyeDisplay() {
+	//THE EYE ABOVE ALL EYES
+	var eye = document.getElementById('lang');
+	var mainnav = document.querySelector('.main-nav');
+	console.log(mainnav.childElementCount);
+	console.log(mainnav.childNodes);
+	while(mainnav.length > 1) {
+		mainnav.removeChild(mainnav.firstChild);
+		console.log(mainnav.length);
+	}
+	console.log(eye);
+	
+	
+	
+	
+	//var eyeClone = eye.cloneNode(true);
+	//eyeClone.id = 'eye';ja ja ja voltooooooooooooooooooooooooooooooooo
+	//
+	//document.body.appendChild(eye);
+	//for (i = 0; i < u.length; i++) {
+	//	u[i].style.display = "none";
+	//	console.log(eye.id);
+	//}
 }
