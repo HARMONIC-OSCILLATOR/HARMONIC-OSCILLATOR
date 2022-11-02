@@ -12,14 +12,7 @@ body {
   image-rendering: -webkit-optimize-contrast; /*very cursed*/
 }
 
-p {
-  padding: 0 10%;
-  text-align: justify;
-  text-align-last: center;
-  line-height: 1.5em;
-}
-
-::selection {background-color: rgba(51, 0, 102, 0.5);}
+::selection {background-color: none; color: #FFAAEE;}
 
 .noselect {
   -webkit-touch-callout: none;
@@ -66,10 +59,10 @@ p {
 #logo {width: 4rem; height: 4rem;}
 
 .nav-logo {}
-.nav-logo:hover {animation: hue-rotation 1.5s ease-in infinite alternate;}
-.nav-logo:active {animation: hue-rotation 1s ease-in infinite alternate;}
+.nav-logo:hover {animation: logo-hue-rotator 1.5s ease-in infinite alternate;}
+.nav-logo:active {animation: logo-hue-rotator 1s ease-in infinite alternate;}
 
-@keyframes hue-rotation {
+@keyframes logo-hue-rotator {
   from {filter: hue-rotate(0deg);}
   to {filter: hue-rotate(320deg);}
 }
@@ -117,8 +110,8 @@ p {
 }
 
 .splash-nav-flex {
-  position: relative;
   display: none;
+  position: relative;
   width: 50%;
   min-width: 25em;
   max-width: 40em;
@@ -130,12 +123,12 @@ p {
   align-items: flex-start;
   list-style-type: none;
   gap: 2%;
-  animation: nav-appear 1s linear 0s 1;
+  animation: nav-appear 1s linear;
 }
 
 .side-page-nav-flex {
-  position: relative;
   display: none;
+  position: relative;
   width: 95%;
   min-width: 0;
   min-height: 24em;
@@ -146,7 +139,7 @@ p {
   align-items: stretch;
   list-style-type: none;
   gap: 2%;
-  animation: nav-appear 1s linear 0s 1;
+  animation: nav-appear 1s linear;
 }
 
 @keyframes nav-appear {
@@ -268,32 +261,46 @@ p {
 .nav-flex-item a:active path {stroke: #FFF;}
 .nav-flex-item a:active circle {fill: #222;}
 
-.flex-container {
-  position: relative;
+.flex-container-relative {
   display: flex;
+  position: relative;
   flex-flow: row nowrap;
   justify-content: center;
   align-items: center;
   gap: 2%;
 }
 
-.flex-item {flex: 0 0 auto;}
-
-.restricted {overflow: hidden;}
-
-.splash-flex-standard {
-  position: absolute;
+.flex-container-absolute {
   display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
   flex-flow: row nowrap;
   justify-content: center;
   align-items: center;
-  top: 0;
-  left: 0;
   width: 100%;
   height: 100%;
   margin: 0;
   padding: 0;
 }
+
+.splash-flex-standard {display: flex;}
+
+.splash-flex-mobile {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.flex-column {flex-flow: column nowrap;}
+
+.flex-item {flex: 0 0 auto;}
+
+.restricted {overflow: hidden;}
 
 #splash-flex-img-1-standard {
   width: 50%;
@@ -318,20 +325,11 @@ p {
   image-rendering: high-quality;
 }
 
-.splash-flex-mobile {
-  display: none;
-  position: fixed;
-  width: 100%;
-  bottom: 0;
-  flex-flow: row nowrap;
-  justify-content: center;
-  align-items: flex-end;
-}
-
 #splash-flex-img-1-mobile {
   width: 100%;
-  /*name | duration | timing function | delay | iteration count | direction*/
-  animation: appear 2s cubic-bezier(.81,.16,.47,.96) 0s 1 normal;
+  /*name | duration | timing-function | delay | iteration-count | direction | fill-mode | play-state*/
+  /*none | 0s | ease | 0s | 1 | normal | none | running*/
+  animation: appear 2s cubic-bezier(.81,.16,.47,.96);
 }
 
 #splash-flex-img-2-mobile {
@@ -340,13 +338,21 @@ p {
   left: -5%;
   width: 200px;
   height: 200px;
-  /*name | duration | timing function | delay | iteration count | direction*/
-  animation: appear 1s cubic-bezier(.81,.16,.47,.96) 0s 1 normal;
+  /*name | duration | timing-function | delay | iteration-count | direction | fill-mode | play-state*/
+  /*none | 0s | ease | 0s | 1 | normal | none | running*/
+  animation: appear 1s cubic-bezier(.81,.16,.47,.96);
 }
 
 @keyframes appear {
   from {opacity: 0%; margin: -5%;}
   to {opacity: 100%; margin: 0%;}
+}
+
+.text {
+  padding: 0 10%;
+  text-align: justify;
+  text-align-last: center;
+  line-height: 1.5em;
 }
 
 .wave {
@@ -356,8 +362,8 @@ p {
 
 #C1 {bottom: 20%; transform: rotate(-1.5deg);}
 #C2 {bottom: 17%; transform: rotate(1.5deg); mix-blend-mode: color;}
-#C9 {bottom: 24%; animation: C9anim ease-in-out 20s infinite alternate;}
-#C10 {bottom: 21%; animation: C10anim ease-in-out 5s infinite alternate; mix-blend-mode: soft-light;}
+#C9 {bottom: 24%; animation: C9anim 20s ease-in-out infinite alternate;}
+#C10 {bottom: 21%; animation: C10anim 5s ease-in-out infinite alternate; mix-blend-mode: soft-light;}
 
 #SUN {animation: rotator 3s infinite;}
 
@@ -378,48 +384,64 @@ p {
 
 .radial-container {
   flex: 0 1 auto;
-  width: 500px;
-  height: 500px;
+  width: 750px;
+  height: 750px;
   padding: 2em 0;
+  transition: width 0.1s linear, height 0.8s linear;
 }
 
-.radial {position: absolute;}
+.radial {position: absolute; transition: width 0.1s linear, height 0.8s linear;}
 
-#R0 {animation: rotator 180s linear 0s infinite reverse;}
-#R1 {animation: rotator 30s linear 0.1s infinite;}
-#R2 {animation: rotator 25s linear 0.2s infinite reverse;}
-#R3 {animation: rotator 20s linear 0.4s infinite;}
-#R4 {animation: rotator 15s linear 0.6s infinite reverse;}
-#R5 {animation: rotator 10s linear 0.8s infinite;}
-#R6 {animation: rotator 5s linear 1s infinite reverse;}
+#R0 {animation: rotator 180s linear 0s infinite reverse, radial-hue-rotator-1 4s ease-in-out 0s infinite alternate;}
+#R1 {animation: rotator 30s linear 0.1s infinite normal, radial-hue-rotator-1 4s ease-in-out 0.2s infinite alternate;}
+#R2 {animation: rotator 25s linear 0.2s infinite reverse, radial-hue-rotator-1 4s ease-in-out 0.4s infinite alternate;}
+#R3 {animation: rotator 20s linear 0.4s infinite normal, radial-hue-rotator-1 4s ease-in-out 0.6s infinite alternate;}
+#R4 {animation: rotator 15s linear 0.6s infinite reverse, radial-hue-rotator-1 4s ease-in-out 0.8s infinite alternate;}
+#R5 {animation: rotator 10s linear 0.8s infinite normal, radial-hue-rotator-1 4s ease-in-out 1s infinite alternate;}
+#R6 {animation: rotator 5s linear 1s infinite reverse, radial-hue-rotator-1 4s ease-in-out 1.2s infinite alternate;}
 
-#R {
-  position: absolute;
+/*#R {position: absolute; display: none; width: 250px; height: 350px;}*/
+
+.radial-container:hover > #R0 {animation: rotator 180s linear 0s infinite reverse; filter: invert(1);}
+
+.radial-container:active > img {mix-blend-mode: hard-light;}
+.radial-container:active > #R0 {animation: rotator 5s linear 0s infinite reverse; filter: invert(0);}
+.radial-container:active > #R1 {animation: rotator 15s linear 0.1s infinite normal, radial-hue-rotator-2 4s ease-in-out infinite alternate;}
+.radial-container:active > #R2 {animation: rotator 12.5s linear 0.2s infinite reverse, radial-hue-rotator-2 4.2s ease-in-out infinite alternate;}
+.radial-container:active > #R3 {animation: rotator 10s linear 0.4s infinite normal, radial-hue-rotator-2 4.4s ease-in-out infinite alternate;}
+.radial-container:active > #R4 {animation: rotator 7.5s linear 0.6s infinite reverse, radial-hue-rotator-2 4.6s ease-in-out infinite alternate;}
+.radial-container:active > #R5 {animation: rotator 5s linear 0.8s infinite normal, radial-hue-rotator-2 4.8s ease-in-out infinite alternate;}
+.radial-container:active > #R6 {animation: rotator 2.5s linear 1s infinite reverse, radial-hue-rotator-2 5s ease-in-out infinite alternate;}
+
+
+@keyframes radial-hue-rotator-1 {
+  from {filter: hue-rotate(-10deg);}
+  to {filter: hue-rotate(10deg);}
 }
 
-/*.radial-container:hover > img {mix-blend-mode: hard-light;}*/
-.radial-container:active > #R0 {filter: hue-rotate(150deg);}
+@keyframes radial-hue-rotator-2 {
+  from {filter: hue-rotate(100deg);}
+  to {filter: hue-rotate(-100deg);}
+}
+
+#bird-page-container {border: 1px solid #AA3090;}
 
 #BIRDTEST {position: absolute;}
-#page_02_panel_02_anim {position: absolute;}
 
-.bird-container-1 {
-  min-width: 1117px;
-  min-height: 745px;
+#page_02_panel_01_anim {
+  position: absolute;
+  top: 480px;
+  left: 465px;
+  width: 100px;
+  height: 100px;
 }
 
-.flex-column {
+#page_02_panel_02_anim {
   position: absolute;
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: center;
-  align-items: center;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  padding: 0;
+  top: 665px;
+  left: 800px;
+  width: 100px;
+  height: 100px;
 }
 
 .graph-space-1 {
@@ -438,9 +460,9 @@ p {
   margin: 1%;
 }
 
-.illegal-rotation-1 {animation: bad-graphing 5s linear infinite;}
+.illegal-rotation-1 {animation: bad-graphing 5s linear infinite normal;}
 .illegal-rotation-2 {animation: bad-graphing 5s linear 0.5s infinite reverse;}
-.illegal-rotation-1-sm {animation: bad-graphing-sm 2s linear infinite;}
+.illegal-rotation-1-sm {animation: bad-graphing-sm 2s linear infinite normal;}
 .illegal-rotation-2-sm {animation: bad-graphing-sm 2s linear 0.25s infinite reverse;}
 
 @keyframes bad-graphing {

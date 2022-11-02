@@ -67,7 +67,7 @@
 /*TABLETS QUERIES*/
 /*SMALL SCREENS*/
 @media all and (max-width: 635px) {
-  .flex-container {gap: 1%;}
+  .flex-container-relative {gap: 1%;}
   
   .tablet-of-truth {font-size: 0.75em;}
   

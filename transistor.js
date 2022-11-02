@@ -66,30 +66,31 @@ function sunMoonTransition() {
 function eyeVision () {
 	var a = document.getElementById('menu');
 	var b = document.getElementById('logo');
-	var d = document.getElementsByClassName('nav-flex-item');
-	var c = document.getElementsByClassName('main-nav');
-	var e = document.getElementById('left');
-	var f = document.getElementById('right');
-	var g = document.getElementById('color1');
-	var h = document.getElementById('color2');
+	var c = document.getElementById('left');
+	var d = document.getElementById('right');
+	var e = document.getElementById('color1');
+	var f = document.getElementById('color2');
+	var g = document.getElementsByClassName('main-nav');
+	var h = document.getElementsByClassName('nav-flex-item');
 	
 	eye.style.height = "4.25rem";
-	console.log(c);
-	console.log(c[0].style.height);
-	if (c[0].style.height == "") {c[0].style.height = "4.25rem";}
-	if (c[0].style.height >= "1") {c[0].style.height = "0"; console.log(c[0].style.height);}
-	else {c[0].style.height = "4.25rem"; console.log(c[0].style.height);}
 	
-	var toggles = new Array(a, b, e, f, g, h);
+	var toggles = new Array(a, b, c, d, e, f);
 	for (i = 0; i < toggles.length; i++) {
 		if(toggles[i] != null) {
 			if(toggles[i].style.display == "none") {toggles[i].style.display = "initial";}
 			else {toggles[i].style.display = "none";}
 		}
 	}
-	
-	for (i = 0; i < d.length; i++) {
-		if(d[i].style.display == "none") {d[i].style.display = "initial";}
-		else {d[i].style.display = "none";}
+
+	console.log(g);
+	console.log(g[0].style.height);
+	if (g[0].style.height == "") {g[0].style.height = "4.25rem";}
+	if (g[0].style.height >= "1") {g[0].style.height = "0"; console.log(g[0].style.height);}
+	else {g[0].style.height = "4.25rem"; console.log(g[0].style.height);}
+
+	for (i = 0; i < h.length; i++) {
+		if(h[i].style.display == "none") {h[i].style.display = "initial";}
+		else {h[i].style.display = "none";}
 	}
 }
