@@ -267,7 +267,7 @@ body {
   flex-flow: row nowrap;
   justify-content: center;
   align-items: center;
-  gap: 2%;
+  gap: 1vw;
 }
 
 .flex-container-absolute {
@@ -329,7 +329,7 @@ body {
   width: 100%;
   /*name | duration | timing-function | delay | iteration-count | direction | fill-mode | play-state*/
   /*none | 0s | ease | 0s | 1 | normal | none | running*/
-  animation: appear 2s cubic-bezier(.81,.16,.47,.96);
+  animation: appear 3s ease-out;
 }
 
 #splash-flex-img-2-mobile {
@@ -340,12 +340,12 @@ body {
   height: 200px;
   /*name | duration | timing-function | delay | iteration-count | direction | fill-mode | play-state*/
   /*none | 0s | ease | 0s | 1 | normal | none | running*/
-  animation: appear 1s cubic-bezier(.81,.16,.47,.96);
+  animation: appear 1s cubic-bezier(0.81, 0.16, 0.47, 0.96);
 }
 
 @keyframes appear {
-  from {opacity: 0%; margin: -5%;}
-  to {opacity: 100%; margin: 0%;}
+  from {opacity: 0%; margin: 0 0 -5%;}
+  to {opacity: 100%; margin: 0;}
 }
 
 .text {
@@ -426,7 +426,7 @@ body {
 
 #bird-page-container {border: 1px solid #AA3090;}
 
-#BIRDTEST {position: absolute;}
+#BIRDTEST {position: absolute; /*image-rendering: pixelated;*/}
 
 #page_02_panel_01_anim {
   position: absolute;
