@@ -4,8 +4,8 @@
 //COLOR CHOOSER FUNCTIONALITY
 var color_1 = document.getElementById('color1');
 var color_2 = document.getElementById('color2');
-var default_color_1 = "#0000FF";
-var default_color_2 = "#00FFFF";
+var default_color_1 = "#00FFFF";
+var default_color_2 = "#0000FF";
 window.addEventListener("load", colorStartup);
 
 function colorStartup() {
