@@ -426,7 +426,12 @@ body {
 
 #bird-page-container {border: 1px solid #AA3090;}
 
-#BIRDTEST {position: absolute; /*image-rendering: pixelated;*/}
+#BIRDTEST {
+  position: absolute;
+  image-rendering: pixelated;
+  width: 1117px;
+  height: 745px;
+}
 
 #page_02_panel_01_anim {
   position: absolute;
