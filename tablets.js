@@ -31,9 +31,13 @@ var tablet_text_standalone_2 = new tablet_type('<p>Furthermore, since the skull 
 
 var tablet_text_with_tallglyph_1 = new tablet_type('<p>Spirit is the self of the actual consciousness which spirit confronts, or rather which confronts itself as an objective actual world, a world which has likewise lost all its significance as something alien for the self, just as the self has lost any sense of being a dependent or independent being-for-itself separated from that world.</p>', 'tall', null);
 var tablet_text_with_tallglyph_2 = new tablet_type('<p>The being of what was meant, along with the individuality and the universality opposed to that individuality in perception, as well as the empty inner of the understanding, no longer exist as the essence. Rather, they exist merely as moments of self-consciousness.</p>', 'tall', null);
+var tablet_text_with_tallglyph_3 = new tablet_type('<p>However, the purpose of reason as the all-comprehensive universal purpose, is nothing less than the whole world itself, a final end which goes far beyond the content of this individual action and thus is to be placed altogether beyond all actual acting.</p>', 'tall', null);
+var tablet_text_with_tallglyph_4 = new tablet_type('<p>Because the common good ought to be put into practice, nothing good is done. However, in fact the nothingness of actual acting and the reality merely of the whole end, which are now put forward for examination, are when taken from all angles once again a matter of dissemblance.</p>', 'tall', null);
 
 var tablet_text_with_wideglyph_1 = new tablet_type('<p>This speech is the madness of the musician “who piled up and mixed together some thirty airs, Italian, French, tragic, comic, of all sorts of character; now, with a deep bass, he descended into the depths of hell, then, contracting his throat, with a falsetto he tore apart the vaults of the skies, alternately raging and then being placated, imperious and then derisive.”</p>', 'wide', null);
 var tablet_text_with_wideglyph_2 = new tablet_type('<p>The unity is estranged because it is absolutely negative unity, that is, infinite unity, and because the unity is durable existence, the distinction also has self-sufficiency only in the unity. This self-sufficiency of the shape appears as something determinate, as for an other, for it is something estranged. The sublation of the estrangement likewise happens by way of an other.</p>', 'wide', null);
+var tablet_text_with_wideglyph_3 = new tablet_type('<p>If we collect these moments together in which consciousness has advanced in its moral representational thought, it becomes clear that it once again sublates each of those representational thoughts in its opposite. It starts from the position that for it morality and actuality do not harmonize, but in its own eyes it is not serious about it since in the action this harmony exists for it in the present.</p>', 'wide', null);
+var tablet_text_with_wideglyph_4 = new tablet_type('<p>Since acting does take place, the lack of fit between purpose and actuality is therefore not taken seriously at all; in contrast, it does seem that acting itself is taken seriously. However, the actual action is in fact merely the action of an individual consciousness; therefore it is merely itself something individual, and the work merely something contingent.</p>', 'wide', null);
 
 var tall_glyph_1 = //SCISSOR TALL
 		  '<div class="glyph glyph-tall">' +
@@ -243,7 +247,11 @@ var wide_glyph_4 = //TEMP DIAMOND WIDE
 			  '</svg>' +
 			'</div>';
 
-var tablet_texts = [tablet_text_standalone_1, tablet_text_standalone_2, tablet_text_with_tallglyph_1, tablet_text_with_tallglyph_2, tablet_text_with_wideglyph_1, tablet_text_with_wideglyph_2];
+var tablet_texts = [
+tablet_text_standalone_1, tablet_text_standalone_2,
+tablet_text_with_tallglyph_1, tablet_text_with_tallglyph_2, tablet_text_with_tallglyph_3, tablet_text_with_tallglyph_4,
+tablet_text_with_wideglyph_1, tablet_text_with_wideglyph_2, tablet_text_with_wideglyph_3, tablet_text_with_wideglyph_4,
+];
 var tall_glyphs = [tall_glyph_1, tall_glyph_2, tall_glyph_3, tall_glyph_4];
 var wide_glyphs = [wide_glyph_1, wide_glyph_2, wide_glyph_3, wide_glyph_4];
 
