@@ -330,6 +330,7 @@ body {
 #dice-table rect {animation: none;}
 #dice-table circle {animation: none;}
 
+/*cursed js workaround*/
 @keyframes colorPulse3 {from {stroke: #000;} to {stroke: #AA3090;}}
 @keyframes diceFailureA {from {stroke: #FF0000; fill: #FF0000;} to {stroke: #AA3090; fill: #000;}}
 @keyframes diceFailureB {from {stroke: #000; fill: #000;} to {stroke: #AA3090; fill: #000;}}
