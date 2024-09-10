@@ -1,150 +1,178 @@
-/*HARMONIC OSCILLATOR DEFAULT MEDIA QUERIES*/
-/*MNO*/
+/*HARMONIC OSCILLATOR MEDIA QUERIES*/
+/*ANZOL*/
 
-/*SMALL SCREENS*/
-@media all and (max-width: 635px) {
-  .main-nav ul {padding: 1em 0 0; justify-content: space-around;}
-  #logo {width: 5rem; height: 5rem;}
-  .nav-icon-standard {display: none;}
-  .nav-icon-mobile {display: initial;}
-  
-  #left {padding-right: 20px;}
-  #right {padding-left: 20px;}
-  #menu {width: 40px; height: 40px;}
-  #eye {width: 40px; height: 40px;}
-  
-  .nav-icon {opacity: 100%;}
-  .nav-icon:hover polygon {stroke: #600040;}
-  .nav-icon:active polygon {stroke: #FFF;}
-
-  .justify-start {padding-left: 8%;}
-  .justify-end {padding-right: 8%;}
-
-  .splash-nav-flex .osc-sticker {display: none;}
-  .splash-nav-flex .osc-sticker-wide {display: block;}
-  
-  .splash-nav-flex {
-    width: 95%;
-    min-width: 0;
-	min-height: 20em;
-    margin: 5% auto 0;
-    flex-flow: column nowrap;
-    align-items: stretch;
-  }
-  
-  .side-page-nav-flex {min-height: 20em;}
-  
-  .nav-flex-item {}
-  .nav-flex-item a {padding: 2% 0;}
-  
-  .splash-flex-standard {display: none;}
-  .splash-flex-mobile {display: flex;}
-  
-  .radial-container {
-	width: 250px;
-	height: 250px;
-	transition: width 0.2s linear, height 0.5s linear;
-  }
-
-  .radial {
-	width: 250px;
-	height: 250px;
-	transition: width 0.2s linear, height 0.5s linear;
-  }
-
-  #R {width: 175px; height: 175px;}
-  
-  .color-options {margin: 0 20px;}
-}
-
-/*SMALL SCREENS BOX MODE*/
-@media all and (max-width: 635px) and (max-height: 460px) {
-  .splash-nav-flex {
-    flex-flow: column wrap;
-    justify-content: center;
-    align-items: center;
-	width: 220px;
-	min-height: 0;
-    height: 160px;    
-  }
-
-  .splash-nav-flex .osc-sticker {display: block;}
-  .splash-nav-flex .osc-sticker-wide {display: none;}
-
-  .side-page-nav-flex {
-    flex-flow: column wrap;
-    justify-content: center;
-    align-items: center;
-	width: 220px;
-	min-height: 0;
-    height: 160px;
-  }
-  
-  .side-page-sticker {display: block;}
-  .side-page-sticker-wide {display: none;}
-  
-  .nav-flex-item {flex: 0 1 auto;}  
-}
-/*STANDARD BOX MODE*/
-@media all and (min-width:635px) and (max-width: 1100px) {
-	.splash-nav-flex {padding: 2% 0 0 0; transition: padding 0.5s linear;}
-}
-
-/*BLINKER EXCEPTIONS*/
-@media all and (max-width: 450px) and (max-height: 600px) {
-  #splash-flex-img-2-mobile {display: none;}
-}
-
-/*GIGATUBE MOBILE*/
-@media all and (max-height: 290px) {
-  .splash-nav-flex {
-    width: 100%;
-    height: 90px;
-	flex-flow: row nowrap;
-  }
-  
-  .side-page-nav-flex {
-    width: 100%;
-	max-width: 60em;
-    height: 90px;
-    margin: 1% auto 0;
-  }
-
-  .splash-flex-standard {display: none;}
-  #splash-flex-img-2-mobile {display: none;}
-}
-
-/*GIGATUBE STANDARD*/
-@media all and (min-width: 636px) and (max-height: 700px) {
-  #splash-flex-img-2-standard {
-    width: 405px;
-	z-index: 0;
-	/*transition: width 0.1s linear;*/
-  }
-  
-  .radial-container {
-    width: 500px;
-	height: 500px;
-	transition: width 0.2s ease-out, height 0.5s ease-out;
-  }
-  
-  .radial {
-	width: 500px;
-	height: 500px;
-	transition: width 0.2s ease-out, height 0.5s ease-out;
-  }
-}
-
-/*GIGATUBE STANDARD EXCEPTIONS*/
-@media all and (min-width: 636px) and (max-height: 480px) {
-  #splash-flex-img-2-standard {display: none;}
-}
-
-/*consider giving a shit about prefers-reduced-motion*/
-
-/*FULLSCREEN MODE!*/
+/*LIGHT MODE QUERY*/
 /*
-@media all and (display-mode: fullscreen) {
-  #splash-flex-img-2-standard {width: initial;}
+@media (prefers-color-scheme: light) {
+  body {background-color: #EEE; color: #000;}
+  figcaption {color: #FFF;}
+  
+  
+  .page-footer {color: #000;}
+  .bordered {border: 1px solid #EEE;}
+  .nav-side a:link {color: #000;}
+  .nav-side a:visited {color: #000;}
+  .nav-side a:hover {color: #AA3090;}
+  .nav-side a:active {color: #3DCC66;}
+  .nav-side summary:hover {color: #AA3090;}
+  .nav-side summary:active {color: #3DCC66;}
+  
+  #logo svg > ellipse {stroke: #FFF;}
+  #logo svg > polygon {stroke: #FFF;}
+  #logo svg > path {stroke: #FFF;}
+  
+  #menu-nav svg > * {fill: #000; stroke: #FFF;}
+  #menu-nav:hover svg > * {fill: #AA3090; stroke: #FFF;}
+  #menu-nav:active svg > * {fill: #3DCC66; stroke: #FFF;}
+  .subnav-top button svg > * {fill: #000; stroke: #FFF;}
+  .subnav-top button:hover svg > * {fill: #AA3090; stroke: #FFF;}
+  .subnav-top button:active svg > * {fill: #3DCC66; stroke: #FFF;}
+  .subnav-top button:active .deactivated svg > * {fill: #CCC; stroke: #FFF;}
+  .dice svg > * {fill: #000; stroke: #FFF;}
+  .dice:hover svg > * {fill: #AA3090; stroke: #FFF;}
+  .dice:active svg > * {fill: #3DCC66; stroke: #FFF;}
+  
+  .splash-div {color: #EEE;}
+  
+  #secrets-window {background-color: #EEE;}
+  #secrets-window-x {background-color: #AA3090; color: #FFF;}
+  #secrets-window-x:hover {background-color: #800060; color: #FFF;}
+  #secrets-window-x:active {background-color: #EEE; border-color: #EEE; color: #000;}
+  
+  .osc-sticker {border: 1px solid #000; background-color: #000;}
+  .osc-sticker h1 {color: #FFF; border-bottom: 1px solid #FFF;}
+  .osc-sticker h2 {color: #FFF; border-top: 1px solid #FFF;}
+  .osc-sticker path {stroke: #FFF;}
+  .osc-sticker circle {fill: #333;}  
+  .rings circle {stroke: #FFF; stroke: none;}
+  .osc-sticker-wide {border: 1px solid #000; background-color: #000;}
+  .osc-sticker-wide h1 {color: #FFF; border-bottom: 1px solid #FFF;}
+  .osc-sticker-wide h2 {color: #FFF; border-top: 1px solid #FFF;}
+  .osc-sticker-wide path {stroke: #FFF;}
+  .osc-sticker-wide circle {fill: #333;}
+  .rings circle {fill:none; stroke: #FFF;}
+  
+  .talisman:hover {color: #CCC;}
+  .talisman:hover .osc-sticker {background-color: #DDD; color: #000; border: 1px solid #000;}
+  .talisman:hover .osc-sticker h1 {color: #000; border-bottom: 1px solid #000;}
+  .talisman:hover .osc-sticker h2 {color: #000; border-top: 1px solid #000;}
+  .talisman:hover .osc-sticker circle {fill: #FF0000; stroke: none;}
+  .talisman:hover .osc-sticker-wide {background-color: #DDD; color: #000; border: 1px solid #000;}
+  .talisman:hover .osc-sticker-wide h1 {color: #000; border-bottom: 1px solid #000;}
+  .talisman:hover .osc-sticker-wide h2 {color: #000; border-top: 1px solid #000;}
+  .talisman:hover #birds-osc circle {fill: #AAA;}
+  .talisman:hover #birds-osc-wide circle {fill: #AAA;}
+  .talisman:hover .rings circle {stroke: #000; fill: none;}
+  .talisman:hover path {stroke: #000;}
+  .talisman:active {color: #FFF;}
+  .talisman:active .osc-sticker {border: 1px solid #CCC;}
+  .talisman:active .osc-sticker h1 {color: #FFF; border-bottom: 1px solid #FFF;}
+  .talisman:active .osc-sticker h2 {color: #FFF; border-top: 1px solid #FFF;}
+  .talisman:active .osc-sticker circle {fill: #FF0000; stroke: none;}
+  .talisman:active .osc-sticker-wide {border: 1px solid #CCC;}
+  .talisman:active .osc-sticker-wide h1 {color: #FFF; border-bottom: 1px solid #FFF;}
+  .talisman:active .osc-sticker-wide h2 {color: #FFF; border-top: 1px solid #FFF;}
+  .talisman:active #birds-osc circle {fill: #FFF;}
+  .talisman:active #birds-osc-wide circle {fill: #FFF;}
+  .talisman:active .rings circle {stroke: #FFF; fill: none;}
+  .talisman:active path {stroke: #FFF;}
 }
 */
+
+/*SCREEN SIZE QUERIES*/
+
+@media all and (max-width: 1280px) {
+  .main-block-L {max-width: 1px;}
+  .main-block-R {max-width: 1px;}
+  .main-block-M > * {max-width: 70%;}
+  .nav-side {
+	display: block;
+	position: absolute;
+	background-color: #000;
+	border: none;
+	width: 100%;
+	overflow: hidden;
+	height: 100%;
+	top: 0;
+	left: 0;
+	animation: fade-in 0.1s linear;
+	z-index: 9;
+  }
+  .nav-side li > a {display: block; padding: 1em 0;}
+  .nav-side summary {padding: 1em 0;}
+}
+
+@media all and (max-width: 1080px) {
+  .splash-div h1 {font-size: 32px; height: 2.75rem;}	
+  .splash-div h2 {font-size: 32px; height: 2.75rem;}
+  .osc-crows {/*width: 225px; height: 225px;*/ bottom: 2.75rem;}
+  /*
+  #crow-1 {left: -2%;}
+  #crow-2 {right: 2%;}
+  #crow-3 {left: 22%;}*/
+  
+}
+
+@media all and (max-width: 800px) {
+  .splash-div h1 {font-size: 24px; height: 2rem;}	
+  .splash-div h2 {font-size: 24px; height: 2rem;}	
+  .osc-crows {/*width: 112px; height: 112px;*/ bottom: 2rem;}
+  /*
+  #crow-1 {left: 0;}
+  #crow-2 {right: 5%;}
+  #crow-3 {left: 25%;}*/
+  
+  .flex-justify-end {
+	height: 100%;
+	flex-flow: column nowrap;
+	margin: -2em 0;
+  }
+  .flex-justify-end button {margin: 0;}
+  .flex-justify-end button:last-of-type {margin-right: 0;}
+}
+
+/*NETSCAPE SIGMAS*/
+
+@media (scripting: none), (scripting: initial-only) {
+  body {background-color: #FFFF00; text-shadow: 0px 1px 4px #00AAAA;}
+  figcaption {color: #FFFF00; text-shadow: none;}
+  h1 {color: #FFFF00;}
+  h2 {color: #000;}
+  .main-block-L {display: none;}
+  .main-block-R {display: none;}
+  .main-block-M figure {width: 40%; min-width: 400px;}
+  .main-block-M p {width: 40%; min-width: 400px;}
+  .socials {
+    font-size: 40px;
+	text-decoration: wavy underline 1px;
+	text-transform: uppercase;
+  }
+  .socials:link {color: #AA00FF;}
+  .socials:visited {color: #AA00FF;}
+  .socials:hover {color: #00AAAA;}
+  .socials:active {color: #FFF;}
+  .osc-sticker-wide {display: none;}
+  .nav-top {flex-flow: column nowrap;}
+  .subnav-top {display: none;}
+  
+  .nav-noscript {
+	display: flex;
+	width: 100%; 
+	flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+	border-bottom: 1px solid #222;
+	padding-bottom: 1.5rem;
+  }
+  .nav-noscript ul {margin: 0; padding: 0;}
+  .nav-noscript li {list-style: none;}
+  .splash-div {max-width: 240px;}
+  .splash-div h1, .splash-div h2 {background-color: #FFFF00; font-size: 24px; height: 2rem;}
+  .osc-crows {bottom: 2rem; max-width: 50%;}
+}
+
+/*NO ANIMATIONS*/
+
+@media (prefers-reduced-motion: reduce) {
+	
+}

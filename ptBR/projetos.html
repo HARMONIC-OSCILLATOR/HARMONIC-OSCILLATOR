@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang='pt-BR'>
+<head>
+  <title>HARMONIC OSCILLATOR</title>
+  <meta charset='utf-8'>
+  <meta name='description' content='HARMONIC OSCILLATOR'>
+  <meta name='keywords' content='HARMONIC OSCILLATOR'>
+  <meta name='author' content='ANZOL'>
+  <meta name='viewport' content='width=device-width; initial-scale=1'>
+  <link rel='alternate' hreflang='en' href='../enUS/projects.html'/> <!--NOT GOOD ENOUGH-->
+  <link rel='alternate' hreflang='x-default' href='/enUS/projects.html'/>
+  <link rel='icon' href='' type='image/png'>
+  <link rel='stylesheet' href='../default.css'>
+  <link rel='stylesheet' href='../queries.css'>
+</head>
+<body>
+  <div id="site-container" class="flex-container-absolute">
+    <header class="page-header">
+	  <nav class="nav-top">
+	    <div class="subnav-top">
+		  <button onclick="navToggle()"><div id="menu-nav"></div></button>
+		</div>
+	    <a id="logo-link" href="index.html">
+		  <div class="logo-container">
+		    <div id="logo"></div>
+		    <noscript><h1>&#9858;</h1></noscript>
+	      </div>
+		</a>
+		<div class="subnav-top flex-justify-end">
+		  <button><div id="ptBR-nav" class="deactivated"></div></button>
+		  <button><a href="../enUS/projects.html"><div id="enUS-nav"></div></a></button>
+		</div>
+	  </nav>
+	  <noscript class="urgent"><h1>HARMONIC OSCILLATOR</h1><h2>&#9858; JAVASCRIPT DESABILITADO? EDIÇÃO SIGMA DE NETSCAPE &#9858;</h2></noscript>
+	</header>
+	<main class="page-main">
+	  <section id="block-L" class="main-block-L">
+	    <nav id="nav-side-id" class="nav-side noselect">
+		  <ul id="nav-side-ul">
+	        <li class="li-dashed"><a href="equipe.html">O EQUIPE OSC</a></li>
+	        <li class="li-dashed"><a href="contato.html">CONTATE-NOS</a></li>
+	        <li>
+			  <details open>
+	            <summary>Projetos</summary>
+	            <ul>
+	              <li class="li-dashed"><a href="projetos.html">PRÓXIMOS</a></li>
+	            </ul>
+	          </details>
+			</li>
+			<li id="secrets-button"><button class="dice" onclick="diceToggle()"><div class="side-3"></div></button></li>
+	      </ul>
+	    </nav>
+	  </section>
+	  <aside id="secrets-window">
+	    <button id="secrets-window-x" onclick="diceToggle()">X</button>
+	    <section id="dice-table">
+	      <button class="dice" onclick="loadedDice(1,1)"><div class="side-1"></div>
+	      <button class="dice" onclick="loadedDice(2,1)"><div class="side-2"></div>
+	      <button class="dice" onclick="loadedDice(3,1)"><div class="side-3"></div>
+	      <button class="dice" onclick="loadedDice(4,1)"><div class="side-4"></div>
+	      <button class="dice" onclick="loadedDice(5,1)"><div class="side-5"></div>
+	      <button class="dice" onclick="loadedDice(6,1)"><div class="side-6"></div>
+	    </section>
+	  </aside>
+	  <section class="main-block-M">
+        <h1>SUBCIRCUS</h1>
+		<figure class="talisman-container">
+		  <div id="talisman-locked">
+		    <button class="talisman" onclick="talismanToggle()">
+			  <div id="rings-osc-wide" class="osc-sticker-wide"></div>
+			</button>
+		  </div>
+		  <div id="talisman-unlocked">
+			<div class="dice dice-static side-2"></div>
+			<div class="dice dice-static side-2"></div>
+		    <button class="talisman" onclick="talismanToggle()">
+			  <div id="rings-osc" class="osc-sticker"></div>
+			</button>
+			<div class="dice dice-static side-2"></div>
+			<div class="dice dice-static side-2"></div>
+		  </div>
+		</figure>
+		<p>Pretendemos levantar o <strong class="strong">véu de segredo</strong> deste projeto em Q1 2025.</p>
+	  </section>
+	  <div id="block-R" class="main-block-R"></div>
+	</main>
+	<footer class="page-footer">
+	  <noscript>
+	    <img id="noscript-img-L" class="hard-noselect" src="https://cdn.pixabay.com/animation/2024/06/25/21/30/21-30-26-190_256.gif"/>
+		<img id="noscript-img-R" class="hard-noselect" src="https://cdn.pixabay.com/animation/2024/06/25/21/30/21-30-26-190_256.gif"/>
+   	    <nav class="nav-noscript">
+   	      <h1>WEBSITE LINKS (ENGLISH)</h2>
+   	  	  <ul>
+   	  	    <li><a href="../enUS/index.html">index</a></li>
+   	  	    <li><a href="../enUS/team.html">team</a></li>
+			<li><a href="../enUS/contact.html">contact</a></li>
+   	  	    <li><a href="../enUS/projects.html">projects</a></li>
+   	  	  </ul>
+   	  	  <h1>LINKS DO SITE (PORTUGUÊS)</h1>
+   	  	  <ul>
+   	  	    <li><a href="../ptBR/index.html">index</a></li>
+   	  	    <li><a href="../ptBR/equipe.html">time</a></li>
+			<li><a href="../ptBR/contato.html">contato</a></li>
+   	  	    <li><a href="../ptBR/projetos.html">projetos</a></li>
+   	  	  </ul>
+   	    </nav>
+		<h2><marquee>uau!!!</marquee></h2>
+	  </noscript>
+	  <p>HARMONICOSCILLATOR © 2024</p>
+	</footer>
+  </div>
+<script src='../toggles.js'></script>
+<script src='../svgz.js'></script>
+<script src='../dice.js'></script>
+</body>
+</html>
