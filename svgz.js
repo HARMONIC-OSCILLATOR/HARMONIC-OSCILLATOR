@@ -146,14 +146,14 @@ var enUS_nav_codeblock =
 
 var side_1_codeblock =
 			'<svg width="50" height="50">' +
-		    '<desc>A D6 Die rolled to #1 // Hand-coded by ANZOL</desc>' +
+		    '<desc>A D6 Die on #1 // Hand-coded by ANZOL</desc>' +
 		    '<rect width="50" height="50" fill="#000" stroke-width="1" stroke="#AA3090"/>' +
 		    '<circle cx="25" cy="25" r="5" fill="none" stroke-width="1" stroke="#AA3090"/>' +
 		    '</svg>';
 
 var side_2_codeblock =
 			'<svg width="50" height="50">' +
-		    '<desc>A D6 Die rolled to #2 // Hand-coded by ANZOL</desc>' +
+		    '<desc>A D6 Die on #2 // Hand-coded by ANZOL</desc>' +
 		    '<rect width="50" height="50" fill="#000" stroke-width="1" stroke="#AA3090"/>' +
 		    '<circle cx="12" cy="12" r="5" fill="none" stroke-width="1" stroke="#AA3090"/>' +
 		    '<circle cx="38" cy="38" r="5" fill="none" stroke-width="1" stroke="#AA3090"/>' +
@@ -161,7 +161,7 @@ var side_2_codeblock =
 
 var side_3_codeblock =
 			'<svg width="50" height="50">' +
-		    '<desc>A D6 Die rolled to #3 // Hand-coded by ANZOL</desc>' +
+		    '<desc>A D6 Die on #3 // Hand-coded by ANZOL</desc>' +
 		    '<rect width="50" height="50" fill="#000" stroke-width="1" stroke="#AA3090"/>' +
 		    '<circle cx="12" cy="12" r="5" fill="none" stroke-width="1" stroke="#AA3090"/>' +
 		    '<circle cx="25" cy="25" r="5" fill="none" stroke-width="1" stroke="#AA3090"/>' +
@@ -170,7 +170,7 @@ var side_3_codeblock =
 
 var side_4_codeblock =
 			'<svg width="50" height="50">' +
-		    '<desc>A D6 Die rolled to #4 // Hand-coded by ANZOL</desc>' +
+		    '<desc>A D6 Die on #4 // Hand-coded by ANZOL</desc>' +
 		    '<rect width="50" height="50" fill="#000" stroke-width="1" stroke="#AA3090"/>' +
 		    '<circle cx="12" cy="12" r="5" fill="none" stroke-width="1" stroke="#AA3090"/>' +
 			'<circle cx="38" cy="12" r="5" fill="none" stroke-width="1" stroke="#AA3090"/>' +
@@ -180,7 +180,7 @@ var side_4_codeblock =
 
 var side_5_codeblock =
 			'<svg width="50" height="50">' +
-		    '<desc>A D6 Die rolled to #5 // Hand-coded by ANZOL</desc>' +
+		    '<desc>A D6 Die on #5 // Hand-coded by ANZOL</desc>' +
 		    '<rect width="50" height="50" fill="#000" stroke-width="1" stroke="#AA3090"/>' +
 		    '<circle cx="12" cy="12" r="5" fill="none" stroke-width="1" stroke="#AA3090"/>' +
 			'<circle cx="38" cy="12" r="5" fill="none" stroke-width="1" stroke="#AA3090"/>' +
@@ -191,7 +191,7 @@ var side_5_codeblock =
 
 var side_6_codeblock =
 			'<svg width="50" height="50">' +
-		    '<desc>A D6 Die rolled to #6 // Hand-coded by ANZOL</desc>' +
+		    '<desc>A D6 Die on #6 // Hand-coded by ANZOL</desc>' +
 		    '<rect width="50" height="50" fill="#000" stroke-width="1" stroke="#AA3090"/>' +
 		    '<circle cx="12" cy="12" r="5" fill="none" stroke-width="1" stroke="#AA3090"/>' +
 			'<circle cx="12" cy="25" r="5" fill="none" stroke-width="1" stroke="#AA3090"/>' +

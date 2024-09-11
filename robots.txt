@@ -1,0 +1,8 @@
+#HELLO, ROBOTS! I COME IN PEACE!
+
+User-agent: *
+Disallow: /secrets/
+Disallow: /https://www.harmonicoscillator.com/team.html
+Disallow: /https://www.harmonicoscillator.com/ptBR/equipe.html
+Disallow: /https://www.harmonicoscillator.com/contact.html
+Disallow: /https://www.harmonicoscillator.com/ptBR/contato.html
