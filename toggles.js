@@ -67,7 +67,7 @@ function diceToggle() {
 
 // MAKING A STUPID SPAM IS NOT A TOGGLE!
 
-function spam1ptBR() {window.open("../ptBR/lixo.html", "", "width=220, height=600, menubar=0, status=0")}
-function spam2ptBR() {window.open("../ptBR/lixo.html", "", "width=220, height=600, menubar=0, status=0")}
-function spam1enUS() {window.open("../enUS/spam.html", "", "width=220, height=600, menubar=0, status=0")}
-function spam2enUS() {window.open("../enUS/spam.html", "", "width=220, height=600, menubar=0, status=0")}
+function spam1ptBR() {window.open("lixo.html", "", "width=220, height=600, menubar=0, status=0")}
+function spam2ptBR() {window.open("lixo.html", "", "width=220, height=600, menubar=0, status=0")}
+function spam1enUS() {window.open("spam.html", "", "width=220, height=600, menubar=0, status=0")}
+function spam2enUS() {window.open("spam.html", "", "width=220, height=600, menubar=0, status=0")}

@@ -11,7 +11,7 @@ var secret_link_2_ptBR_codeblock = '<li class="li-esoteric" onclick="spam2ptBR()
 var secret_link_2_enUS_codeblock = '<li class="li-esoteric" onclick="spam2enUS()"><a class="secret" href=#>SECRET?</a></li>';
 
 var dice_code_1 = [1,2,1,6];
-var dice_code_2 = [2,2,2,2];
+var dice_code_2 = [2,6,6,2];
 
 var dice_table = document.getElementById('dice-table');
 var passdice = dice_table.getElementsByClassName('dice');
