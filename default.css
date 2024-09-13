@@ -9,12 +9,13 @@ body {
   background-color: #000;
   color: #AA3090;
   font: 16px Garamond, 'EB Garamond', serif;
+  overscroll-behavior: contain; /*cursed*/
 }
 
 #site-container {}
 
 ::selection {background-color: none; color: #9999FF;}
-.hard-noselect {pointer-events: none;} /*cursed*/
+.hard-noselect {pointer-events: none;}
 .noselect {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -146,8 +147,8 @@ body {
 }
 
 @keyframes fade-in {0% {opacity: 0%;} 100% {opacity: 100%;}}
-@-webkit-keyframes fade-in {0% {opacity: 0%;} 100% {opacity: 100%;}}
 @keyframes logo-hue-rotator {from {filter: hue-rotate(0deg);} to {filter: hue-rotate(320deg);}}
+@-webkit-keyframes fade-in {0% {opacity: 0%;} 100% {opacity: 100%;}}
 @-webkit-keyframes logo-hue-rotator {from {filter: hue-rotate(0deg);} to {filter: hue-rotate(320deg);}}
 
 /*PAGE-MAIN CONTENT*/
@@ -173,7 +174,7 @@ body {
   align-items: center;
   padding: 0 0 3rem;
   max-height: 100%;
-  overflow-y: hidden;
+  overflow-y: hidden; /*cursed?*/
   text-align: justify; 
 }
 
@@ -191,13 +192,15 @@ body {
 
 .bordered {border: 1px solid #000;}
 
-.strong {animation: colorPulse 1s ease-in alternate infinite;}
-.secret {animation: colorPulse2 1s ease-in alternate infinite;}
-.secret:hover {animation: none;}
-.secret:active {animation: none;}
+.strong {animation: colorPulse 1s ease-in alternate infinite; -webkit-animation: colorPulse 1s ease-in alternate infinite;}
+.secret {animation: colorPulse2 1s ease-in alternate infinite; -webkit-animation: colorPulse2 1s ease-in alternate infinite;}
+.secret:hover {animation: none; -webkit-animation: none;}
+.secret:active {animation: none; -webkit-animation: none;}
 
 @keyframes colorPulse {from {color: #AA3090;} to {color: #FFF;}}
 @keyframes colorPulse2 {from {color: #AA3090;} to {color: #9999FF;}}
+@keyframes -webkit-colorPulse {from {color: #AA3090;} to {color: #FFF;}}
+@keyframes -webkit-colorPulse2 {from {color: #AA3090;} to {color: #9999FF;}}
 
 .socials:hover polygon {fill: #3DCC66;}
 .socials:active polygon {fill: #FFF;}
@@ -227,7 +230,7 @@ body {
 
 .nav-side summary {border-bottom: 1px solid #222; padding: 0.5rem 0;}
 .nav-side summary:hover {filter: hue-rotate(-90deg);}
-.nav-side summary:active {animation: logo-hue-rotator 0.75s ease-in infinite alternate;}
+.nav-side summary:active {animation: logo-hue-rotator 0.75s ease-in infinite alternate; -webkit-animation: logo-hue-rotator 0.75s ease-in infinite alternate;}
 
 .nav-side li > a {display: block; padding: 0.5rem 0;}
 
@@ -237,7 +240,7 @@ body {
 .nav-side a:hover {color: #3DCC66;}
 .nav-side a:active {color: #FFF;}
 
-#secrets-button {border: none; margin: 1em;}
+#secrets-button {border: none; margin: 1rem;}
 /*ABSOLUTE SELECTOR CHAOS*/
 .li-esoteric {border-top: 1px solid #222; border-bottom: 1px dashed #222;}
 .li-esoteric ~ .li-esoteric {border-top: none;}
@@ -309,8 +312,8 @@ body {
 .dice:active rect {stroke: #FFF;}
 .dice:active circle {stroke: #FFF;}
 
-.dice-static rect {animation: colorPulse3 1s ease-in 1;}
-.dice-static circle {animation: colorPulse3 4s ease-in 1;}
+.dice-static rect {animation: colorPulse3 1s ease-in 1; -webkit-animation: colorPulse3 1s ease-in 1;}
+.dice-static circle {animation: colorPulse3 4s ease-in 1; -webkit-animation: colorPulse3 4s ease-in 1;}
 .dice-static:hover circle {stroke: #AA3090;}
 .dice-static:hover rect {stroke: #AA3090;}
 .dice-static:active rect {stroke: #AA3090;}
@@ -327,11 +330,14 @@ body {
   width: 100%;
 }
 
-#dice-table rect {animation: none;}
-#dice-table circle {animation: none;}
+#dice-table rect {animation: none; -webkit-animation: none;}
+#dice-table circle {animation: none; -webkit-animation: none;}
+
+
+@keyframes colorPulse3 {from {stroke: #000;} to {stroke: #AA3090;}}
+@keyframes -webkit-colorPulse3 {from {stroke: #000;} to {stroke: #AA3090;}}
 
 /*cursed js workaround*/
-@keyframes colorPulse3 {from {stroke: #000;} to {stroke: #AA3090;}}
 @keyframes diceFailureA {from {stroke: #FF0000; fill: #FF0000;} to {stroke: #AA3090; fill: #000;}}
 @keyframes diceFailureB {from {stroke: #000; fill: #000;} to {stroke: #AA3090; fill: #000;}}
 @keyframes diceFailureC {from {stroke: #FF0000; fill: #FF0000;} to {stroke: #AA3090; fill: #000;}}
@@ -341,6 +347,16 @@ body {
 @keyframes diceSuccessB {from {stroke: #000; fill: #000;} to {stroke: #AA3090; fill: #000;}}
 @keyframes diceSuccessC {from {stroke: #9999FF; fill: #9999FF;} to {stroke: #AA3090; fill: #000;}}
 @keyframes diceSuccessD {from {stroke: #000; fill: #000;} to {stroke: #AA3090; fill: #000;}}
+
+@keyframes -webkit-diceFailureA {from {stroke: #FF0000; fill: #FF0000;} to {stroke: #AA3090; fill: #000;}}
+@keyframes -webkit-diceFailureB {from {stroke: #000; fill: #000;} to {stroke: #AA3090; fill: #000;}}
+@keyframes -webkit-diceFailureC {from {stroke: #FF0000; fill: #FF0000;} to {stroke: #AA3090; fill: #000;}}
+@keyframes -webkit-diceFailureD {from {stroke: #000; fill: #000;} to {stroke: #AA3090; fill: #000;}}
+
+@keyframes -webkit-diceSuccessA {from {stroke: #9999FF; fill: #9999FF;} to {stroke: #AA3090; fill: #000;}}
+@keyframes -webkit-diceSuccessB {from {stroke: #000; fill: #000;} to {stroke: #AA3090; fill: #000;}}
+@keyframes -webkit-diceSuccessC {from {stroke: #9999FF; fill: #9999FF;} to {stroke: #AA3090; fill: #000;}}
+@keyframes -webkit-diceSuccessD {from {stroke: #000; fill: #000;} to {stroke: #AA3090; fill: #000;}}
 
 /*SECRETS*/
 
@@ -357,6 +373,7 @@ body {
   color: #AA3090;
   box-shadow: 0px 20px 40px 10px #000;
   animation: popup 0.2s ease-in-out;
+  -webkit-animation: popup 0.2s ease-in-out;
   font-size: 1.5rem;
   font-variant: small-caps;
 }
@@ -379,6 +396,7 @@ body {
 #secrets-window-x:active {color: #FFF; border-color: #FFF;}
 
 @keyframes popup {from {margin-top: 0.625rem; opacity: 0%;} to {margin-top: 0; opacity: 100%;}}
+@-webkit-keyframes popup {from {margin-top: 0.625rem; opacity: 0%;} to {margin-top: 0; opacity: 100%;}}
 
 #spam-buza {
  position: fixed;

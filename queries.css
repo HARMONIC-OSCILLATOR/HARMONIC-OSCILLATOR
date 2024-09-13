@@ -96,10 +96,11 @@
 	top: 0;
 	left: 0;
 	animation: fade-in 0.1s linear;
+	-webkit-animation: fade-in 0.1s linear;
 	z-index: 9;
   }
-  .nav-side li > a {display: block; padding: 1em 0;}
-  .nav-side summary {padding: 1em 0;}
+  .nav-side li > a {display: block; padding: 1rem 0;}
+  .nav-side summary {padding: 1rem 0;}
 }
 
 @media all and (max-width: 1080px) {
@@ -114,6 +115,11 @@
 }
 
 @media all and (max-width: 800px) {
+  .nav-side {font-size: 20px;}
+  .nav-side li > a {padding: 0.5rem 0;}
+  .nav-side summary {padding: 0.5rem 0;}
+  #secrets-button {margin: 0;}
+  
   .splash-div h1 {font-size: 24px; height: 2rem;}	
   .splash-div h2 {font-size: 24px; height: 2rem;}	
   .osc-crows {/*width: 112px; height: 112px;*/ bottom: 2rem;}
