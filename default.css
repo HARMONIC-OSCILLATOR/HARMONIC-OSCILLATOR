@@ -9,7 +9,7 @@ body {
   background-color: #000;
   color: #AA3090;
   font: 16px Garamond, 'EB Garamond', serif;
-  overscroll-behavior: contain; /*cursed*/
+  overscroll-behavior: none; /*cursed*/
 }
 
 #site-container {}
