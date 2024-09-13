@@ -82,7 +82,7 @@
 /*SCREEN SIZE QUERIES*/
 
 @media all and (max-width: 1280px) {
-  .main-block-L {max-width: 1px;}
+  .main-block-L {max-width: 1px; border-right: 1px solid #000;}
   .main-block-R {max-width: 1px;}
   .main-block-M > * {max-width: 70%;}
   .nav-side {
@@ -96,31 +96,28 @@
 	top: 0;
 	left: 0;
 	animation: fade-in 0.1s linear;
+	-webkit-animation: fade-in 0.1s linear;
 	z-index: 9;
   }
-  .nav-side li > a {display: block; padding: 1em 0;}
-  .nav-side summary {padding: 1em 0;}
+  .nav-side li > a {display: block; padding: 1rem 0;}
+  .nav-side summary {padding: 1rem 0;}
 }
 
 @media all and (max-width: 1080px) {
   .splash-div h1 {font-size: 32px; height: 2.75rem;}	
   .splash-div h2 {font-size: 32px; height: 2.75rem;}
-  .osc-crows {/*width: 225px; height: 225px;*/ bottom: 2.75rem;}
-  /*
-  #crow-1 {left: -2%;}
-  #crow-2 {right: 2%;}
-  #crow-3 {left: 22%;}*/
-  
+  .osc-crows {bottom: 2.75rem;}
 }
 
 @media all and (max-width: 800px) {
+  .nav-side {font-size: 20px;}
+  .nav-side li > a {padding: 0.5rem 0;}
+  .nav-side summary {padding: 0.5rem 0;}
+  #secrets-button {margin: 0;}
+  
   .splash-div h1 {font-size: 24px; height: 2rem;}	
   .splash-div h2 {font-size: 24px; height: 2rem;}	
-  .osc-crows {/*width: 112px; height: 112px;*/ bottom: 2rem;}
-  /*
-  #crow-1 {left: 0;}
-  #crow-2 {right: 5%;}
-  #crow-3 {left: 25%;}*/
+  .osc-crows {bottom: 2rem;}
   
   .flex-justify-end {
 	height: 100%;
@@ -129,6 +126,22 @@
   }
   .flex-justify-end button {margin: 0;}
   .flex-justify-end button:last-of-type {margin-right: 0;}
+}
+
+@media all and (max-width: 500px) {
+  .splash-div h1 {font-size: 18px; height: 1.5rem;}	
+  .splash-div h2 {font-size: 18px; height: 1.5rem;}
+  .osc-crows {bottom: 1.5rem;}
+}
+
+@media all and (max-width: 400px) {
+  #talisman-unlocked {gap: 0.25rem;}
+  #secrets-window {
+    width: 320px;
+	height: 150px;
+	top: calc(50% - 75px);
+    left: calc(50% - 160px);
+  }
 }
 
 /*NETSCAPE SIGMAS*/
@@ -171,8 +184,12 @@
   .osc-crows {bottom: 2rem; max-width: 50%;}
 }
 
-/*NO ANIMATIONS*/
+@media (max-width: 500px) and (scripting: none), (max-width: 500px) and (scripting: initial-only) {
+  .urgent h1 {font-size: 48px; margin: 0;}
+  .main-block-M figure {width: 40%; min-width: 300px;}
+  .main-block-M p {width: 40%; min-width: 300px;}
+ }
 
-@media (prefers-reduced-motion: reduce) {
-	
-}
+/*NO ANIMATIONS???*/
+
+@media (prefers-reduced-motion: reduce) {}
