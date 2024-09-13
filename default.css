@@ -5,11 +5,12 @@
 
 /*BASICS*/
 
+html {overscroll-behavior: none;} /*exceptionally cursed*/
+
 body {
   background-color: #000;
   color: #AA3090;
   font: 16px Garamond, 'EB Garamond', serif;
-  overscroll-behavior: none; /*cursed*/
 }
 
 #site-container {}
