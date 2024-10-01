@@ -218,14 +218,16 @@ body {
   font-size: 1.5rem;
   font-variant: small-caps;
 }
-
-#nav-side-id {}
+#nav-side-L {}
+#nav-side-R {}
 #nav-side-ul {}
 
 .nav-side ul {margin: 0; padding: 0;}
 .nav-side li {list-style: none;}
 
 .li-dashed {border-bottom: 1px dashed #222;}
+.li-small {font-size: 1rem;}
+
 
 .nav-side details li:last-child {border-bottom: 1px solid #222;}
 

@@ -2,34 +2,14 @@
 <html lang='en'>
 <head>
   <title>HARMONIC OSCILLATOR</title>
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-	"name": "HARMONIC OSCILLATOR",
-    "url": "https://www.harmonicoscillator.com",
-	"logo": "https://www.harmonicoscillator.com/logostatic.svg",
-	"description": "HARMONIC OSCILLATOR: An American-Brazilian Underground Arts & Independent Game Studio",
-	"numberOfEmployees": "3",
-	"email": "inquiries@harmonicoscillator.com"
-  }
-  </script>
   <meta charset='utf-8'>
   <meta name='description' content='UNDERGROUND ARTS &amp; GAME COMPANY'>
   <meta name='keywords' content='HARMONIC OSCILLATOR UNDERGROUND ARTS &amp; GAME COMPANY'>
   <meta name='author' content='ANZOL'>
   <meta name='viewport' content='width=device-width; initial-scale=1'>
-  <meta name='twitter:card' content='summary_large_image'>
-  <meta property='og:url' content='https://www.harmonicoscillator.com/'>
-  <meta property='og:type' content='website'>
-  <meta property='og:title' content='HARMONIC OSCILLATOR'>
-  <meta property='og:description' content='UNDERGROUND ARTS &amp; GAME COMPANY'>
-  <meta property='og:image' content='https://www.harmonicoscillator.com/assets/HARMONIC-OSCILLATOR-0.png'>
-  <meta property='og:locale' content='en_US'>
-  <meta property='og:locale:alternate' content='pt_BR'>
-  <link rel='alternate' hreflang='en' href='https://www.harmonicoscillator.com/index.html'/>
-  <link rel='alternate' hreflang='pt-BR' href='https://www.harmonicoscillator.com/ptBR/index.html'/>
-  <link rel='alternate' hreflang='x-default' href='https://www.harmonicoscillator.com/index.html'/>
+  <link rel='alternate' hreflang='en' href='https://www.harmonicoscillator.com/devlog.html'/>
+  <link rel='alternate' hreflang='pt-BR' href='https://www.harmonicoscillator.com/ptBR/devlog.html'/>
+  <link rel='alternate' hreflang='x-default' href='https://www.harmonicoscillator.com/devlog.html'/>
   <link rel='icon' href='logo.svg' type='image/svg'>
   <link rel='icon' href='logostatic.svg' type='image/svg'>
   <link rel='icon' href='logo.svg' type='image/svg'>
@@ -38,7 +18,7 @@
 </head>
 <body>
   <div id="site-container" class="flex-container-absolute">
-    <header class="page-header fade-in">
+    <header class="page-header">
 	  <nav class="nav-top">
 	    <div class="subnav-top">
 		  <button onclick="navLToggle()"><div id="menu-nav"></div></button>
@@ -50,28 +30,29 @@
 	      </div>
 		</a>
 		<div class="subnav-top flex-justify-end">
-		  <button><a href="ptBR/index.html"><div id="ptBR-nav"></div></a></button>
+		  <button><a href="ptBR/devlog.html"><div id="ptBR-nav"></div></a></button>
 		  <button><div id="enUS-nav" class="deactivated"></div></button>
 		</div>
 	  </nav>
 	  <noscript class="urgent"><h1>HARMONIC OSCILLATOR</h1><h2>&#9858; JAVASCRIPT DISABLED? NETSCAPE SIGMA EDITION &#9858;</h2></noscript>
 	</header>
 	<main class="page-main">
-	  <section id="block-L" class="main-block-L bordered">
-	    <nav id="nav-side-L" class="nav-side noselect" style="display:none">
+	  <section id="block-L" class="main-block-L">
+	    <nav id="nav-side-L" class="nav-side noselect">
 		  <ul id="nav-side-ul">
 	        <li class="li-dashed"><a href="team.html">OSC TEAM</a></li>
 	        <li class="li-dashed"><a href="contact.html">CONTACT</a></li>
 	        <li>
-			  <details>
+			  <details open>
 	            <summary>Projects</summary>
 	            <ul>
 	              <li class="li-dashed"><a href="subcircus.html">SUBCIRCUS</a></li>
+				  <li class="li-dashed"><a href="devlog.html">DEV LOG</a></li>
 	            </ul>
 	          </details>
 			</li>
-	        <li id="secrets-button"><button class="dice" onclick="diceToggle()"><div class="side-3"></div></button></li>
-		  </ul>
+			<li id="secrets-button"><button class="dice" onclick="diceToggle()"><div class="side-3"></div></button></li>
+	      </ul>
 	    </nav>
 	  </section>
 	  <aside id="secrets-window">
@@ -85,19 +66,13 @@
 	      <button class="dice" onclick="loadedDice(6,0)"><div class="side-6"></div>
 	    </section>
 	  </aside>
-	  <section class="main-block-M" style="justify-content: center">
-	    <div class="splash-div">
-		  <h1>HARMONIC OSCILLATOR</h1>
-		  <video id="timelapse" autoplay loop muted><source src="assets/TIMELAPSE720.mp4" type="video/mp4"></video>
-		  <h2>Underground Arts</h2>
-		  <img id="crow-1" class="osc-crows noselect hard-noselect" alt="[ANZOL]" src="assets/crow1.png"/>
-		  <img id="crow-2" class="osc-crows noselect hard-noselect" alt="[ ]][[ ]" src="assets/crow2.png"/>
-		  <img id="crow-3" class="osc-crows noselect hard-noselect" alt="[DUBIOUS]" src="assets/crow3.png"/>
-		</div>
+	  <section class="main-block-M">
+        <h1>DEV LOG</h1>
+		<p>Here's a full list of all dev logs we've posted.</p>
 	  </section>
 	  <div id="block-R" class="main-block-R"></div>
 	</main>
-	<footer class="page-footer fade-in">
+	<footer class="page-footer">
 	  <noscript>
 	    <img id="noscript-img-L" class="hard-noselect" alt="[DIAL-UP ERA SPARKLES]" src="https://cdn.pixabay.com/animation/2024/06/25/21/30/21-30-26-190_256.gif"/>
 		<img id="noscript-img-R" class="hard-noselect" alt="[DIAL-UP ERA SPARKLES]" src="https://cdn.pixabay.com/animation/2024/06/25/21/30/21-30-26-190_256.gif"/>

@@ -29,7 +29,7 @@
     <header class="page-header">
 	  <nav class="nav-top">
 	    <div class="subnav-top">
-		  <button onclick="navToggle()"><div id="menu-nav"></div></button>
+		  <button onclick="navLToggle()"><div id="menu-nav"></div></button>
 		</div>
 	    <a id="logo-link" href="index.html">
 		  <div class="logo-container">
@@ -38,6 +38,7 @@
 	      </div>
 		</a>
 		<div class="subnav-top flex-justify-end">
+		  <button id="log-button" onclick="navRToggle()"><div id="dlog-nav"></div></button>
 		  <button><a href="ptBR/subcircus.html"><div id="ptBR-nav"></div></a></button>
 		  <button><div id="enUS-nav" class="deactivated"></div></button>
 		</div>
@@ -46,7 +47,7 @@
 	</header>
 	<main class="page-main">
 	  <section id="block-L" class="main-block-L">
-	    <nav id="nav-side-id" class="nav-side noselect">
+	    <nav id="nav-side-L" class="nav-side noselect">
 		  <ul id="nav-side-ul">
 	        <li class="li-dashed"><a href="team.html">OSC TEAM</a></li>
 	        <li class="li-dashed"><a href="contact.html">CONTACT</a></li>
@@ -55,6 +56,7 @@
 	            <summary>Projects</summary>
 	            <ul>
 	              <li class="li-dashed"><a href="subcircus.html">SUBCIRCUS</a></li>
+				  <li class="li-dashed"><a href="devlog.html">DEV LOG</a></li>
 	            </ul>
 	          </details>
 			</li>
@@ -93,7 +95,22 @@
 		</figure>
 		<p>We intend to lift the <strong class="strong">veil of secrecy</strong> on this project Q1 2025.</p>
 	  </section>
-	  <div id="block-R" class="main-block-R"></div>
+	  <div id="block-R" class="main-block-R" style="border-left: 1px solid #222">
+	    <nav id="nav-side-R" class="nav-side noselect">
+		  <ul class="nav-side-ul">
+		    <li>
+		      <details open>
+			  <summary>Subcircus Entries</summary>
+		      <ul>
+			    <li class="li-dashed li-small"><a href=#>DEV LOG #SC003</a></li>
+			    <li class="li-dashed li-small"><a href=#>DEV LOG #SC002</a></li>
+			    <li class="li-dashed li-small"><a href=#>DEV LOG #SC001</a></li>
+			  </ul>
+			  </details>
+			</li>
+		  </ul>
+		</nav>
+	  </div>
 	</main>
 	<footer class="page-footer">
 	  <noscript>

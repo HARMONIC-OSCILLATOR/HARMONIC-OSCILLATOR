@@ -1,15 +1,15 @@
 //HARMONIC OSCILLATOR'S PRECARIOUSLY CODED MENU TOGGLING SCRIPTS
 //ANZOL
 
-
-//NAV-SIDE TOGGLE
-
 var query_mobile = window.matchMedia('screen and (min-width: 1280px)');
 var mobile = false;
 
-var l = document.getElementById('block-L');
-var r = document.getElementById('block-R');
-var ul = document.getElementById('nav-side-id');
+var left_block = document.getElementById('block-L');
+var right_block = document.getElementById('block-R');
+var left_ul = document.getElementById('nav-side-L');
+var right_ul = document.getElementById('nav-side-R');
+
+//PASSIVE MENU VIZ QUERIES
 
 function checkQuery() {
   if(query_mobile.matches) {mobile = true;}
@@ -18,30 +18,48 @@ function checkQuery() {
 }
 
 function closeMenu() {
-  if (!checkQuery()) {ul.style.display = "none";} //WHY DOES THIS WORK?
+  if (!checkQuery()) { //WHY DOES THIS WORK?
+	left_ul.style.display = "none";
+	right_ul.style.display = "none";
+  }
 }
 
 window.onload = closeMenu();
 
 query_mobile.onchange = (e) => {
 	if(e.matches) {
-	  if(ul.style.display == "none") {l.style.borderRight = "1px solid #000";}
+	  if(left_ul.style.display == "none") {left_block.style.borderRight = "1px solid #000";}
+	  if(right_ul.style.display == "none") {right_block.style.borderLeft = "1px solid #000";}
 	  mobile = true;
 	}
 	else {
-	  ul.style.display = "none";
+	  left_ul.style.display = "none";
+	  right_ul.style.display = "none";
 	  mobile = false;
 	}
 }
 
-function navToggle() {
-  if(ul.style.display == "none") {
-	ul.style.display = "block";
-	l.style.borderRight = "1px solid #222";
+//BUTTON INDUCED MENU VIZ TOGGLES
+
+function navLToggle() {
+  if(left_ul.style.display == "none") {
+	left_ul.style.display = "block";
+	left_block.style.borderRight = "1px solid #222";
   }
   else{
-	ul.style.display = "none";
-	l.style.borderRight="1px solid #000";
+	left_ul.style.display = "none";
+	left_block.style.borderRight="1px solid #000";
+  }
+}
+
+function navRToggle() {
+  if(right_ul.style.display == "none") {
+	right_ul.style.display = "block";
+	right_block.style.borderLeft = "1px solid #222";
+  }
+  else{
+	right_ul.style.display = "none";
+	right_block.style.borderLeft="1px solid #000";
   }
 }
 
