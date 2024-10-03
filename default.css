@@ -190,6 +190,24 @@ body {
   width: 80%;
   text-align-last: center;
 }
+.log-list {
+  margin: 1rem;
+  padding: 1rem 1rem 0;
+  width: calc(80% - 2rem);
+  border: 1px solid #222;
+}
+.log-list li {list-style: none; margin: 0 0 1rem;}
+.log-list a {
+  display: inline;
+  padding: 0 0.25rem;
+  border: 1px solid #AA3090;
+  font-size: 1.25rem;
+  text-decoration: none;
+}
+.log-list a:link {color: #AA3090; border-color: #AA3090;}
+.log-list a:visited {color: #AA3090; border-color: #AA3090;}
+.log-list a:hover {color: #3DCC66; border-color: #3DCC66;}
+.log-list a:active {color: #FFF; border-color: #FFF;}
 
 .bordered {border: 1px solid #000;}
 
