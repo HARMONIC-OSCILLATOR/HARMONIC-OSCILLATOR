@@ -52,6 +52,8 @@
 }
 
 @media all and (max-width: 500px) {
+  .main-block-M p {min-width: 300px;}
+  .main-block-M figure {min-width: 300px;}
   .splash-div h1 {font-size: 18px; height: 1.5rem;}	
   .splash-div h2 {font-size: 18px; height: 1.5rem;}
   .osc-crows {bottom: 1.5rem;}
