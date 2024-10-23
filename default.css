@@ -194,6 +194,7 @@ body {
 .main-block-M .monospace {font: 14pt "Courier New", Courier, monospace;}
 
 .margin-fix {margin: 0;}
+.border-fix {/*border-left: 1px solid #222;*/}
 
 .log-list {
   margin: 1rem;
