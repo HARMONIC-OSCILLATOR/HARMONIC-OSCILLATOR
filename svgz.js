@@ -27,7 +27,7 @@ var logo_codeblock =
 
 var social_1_codeblock =
 		'<svg width="50px" height="50px">' +
-		  '<desc>Bluesky icon</desc>' +
+		  '<desc>Bluesky icon // Hand-coded by ANZOL</desc>' +
 		  '<polygon points="2,5 25,25 48,5 45,28 35,30 43,32 30,45 25,40 20,45 7,32 15,30 5,28" fill="#AA3090"/>' +
 		'</svg>';
 
@@ -55,6 +55,15 @@ var menu_nav_codeblock =
 				'</path>' +
 			  '</svg>';
 
+var dlog_nav_codeblock =
+	'<svg width="50" height="50">' +
+	  '<desc> Devlog Menu Button // Hand-coded by ANZOL</desc>' +
+      '<rect width="50" height="30" y="10" fill="none" stroke="#AA3090" stroke-width="1"/>' +
+      '<path d="M6,17 L6,32 17,32;" fill="none" stroke="#AA3090" stroke-width="1"/>' +
+	  '<path d="M20,18 L30,18 30,32 20,32 20,18;" fill="none" stroke="#AA3090" stroke-width="1"/>' +
+	  '<path d="M44,18 L34,18 34,32 44,32 44,25 38,25;" fill="none" stroke="#AA3090" stroke-width="1"/>' +
+    '</svg>';
+
 var spam_buza_codeblock =
 '<svg width="100" height="100">' +
   '<desc>Buza Drawing!!! // Hand-coded by ANZOL</desc>' +
@@ -76,55 +85,6 @@ var spam_buza_codeblock =
   '<path d="M22,38 L35,35;" fill="none" stroke="#AA3090" stroke-width="4"/>' +
   '<path d="M65,35 L78,38;" fill="none" stroke="#AA3090" stroke-width="4"/>' +
 '</svg>';
-
-/* 
-//ANIMATED BUZA?? SORTA CREEPY?
-
-var spam_buza_codeblock =
-'<svg width="100" height="100">' +
-  '<desc>Buza Drawing!!! // Hand-coded by ANZOL</desc>' +
-  //BALLOON STRING
-  '<path d="M50,70 L45,73 55,77 50,80 45,83 55,87 50,90 45,93 55,97 50,100;" fill="none" stroke="#AA3090" stroke-width="1">' +
-    '<animate attributeName="d" values="M50,70 L45,73 55,77 50,80 45,83 55,87 50,90 45,93 55,97 50,100; M50,68 L45,71 55,75 50,78 45,81 55,85 50,88 45,91 55,95 50,100; M50,70 L45,73 55,77 50,80 45,83 55,87 50,90 45,93 55,97 50,100;" dur="1s" repeatCount="indefinite"/>' +
-  '</path>' +
-  //EARS (LINES)
-  '<circle cx="22" cy="25" r="13" fill="#000" stroke="#AA3090" stroke-width="1">' +
-    '<animate attributeName="cy" values="25;35;20;25" keytimes="0;0.3;0.5;1" dur="2s" repeatCount="indefinite"/>' +
-  '</circle>' +
-  '<circle cx="78" cy="25" r="13" fill="#000" stroke="#AA3090" stroke-width="1">' +
-    '<animate attributeName="cy" values="25;35;20;25" keytimes="0;0.3;0.5;1" dur="2s" repeatCount="indefinite"/>' +
-  '</circle>' +
-  //HEAD
-  '<ellipse cx="50" cy="50" rx="40" ry="28" fill="#000" stroke="#AA3090" stroke-width="1">' +
-    '<animate attributeName="ry" values="28;25;30;28" keytimes="0;0.2;0.4;1" dur="2s" repeatCount="indefinite"/>' +
-    '<animate attributeName="cy" values="50;55;45;50" keytimes="0;0.2;0.4;1" dur="2s" repeatCount="indefinite"/>' +
-  '</ellipse>' +
-  //EARS (SUBTRACT)
-  '<circle cx="22" cy="25" r="12" fill="#000" stroke="#none" stroke-width="1">' +
-    '<animate attributeName="cy" values="25;35;20;25" keytimes="0;0.3;0.5;1" dur="2s" repeatCount="indefinite"/>' +
-  '</circle>' +
-  '<circle cx="78" cy="25" r="12" fill="#000" stroke="#none" stroke-width="1">' +
-    '<animate attributeName="cy" values="25;35;20;25" keytimes="0;0.3;0.5;1" dur="2s" repeatCount="indefinite"/>' +
-  '</circle>' +
-  //SMILE
-  '<path d="M15,50 C15,67 50,67 50,47 M50,47 C 50,67 85,67 85,50;" fill="none" stroke="#AA3090" stroke-width="1">' +
-    '<animate attributeName="d" values="M18,50 C18,67 50,67 50,47 M50,47 C 50,67 82,67 82,50; M20,60 C20,70 50,70 50,60 M50,60 C 50,70 80,70 80,60; M25,50 C25,57 50,57 50,45 M50,45 C 50,57 75,57 75,50; M18,50 C18,67 50,67 50,47 M50,47 C 50,67 82,67 82,50;" keytimes="0;0.2;0.4;1" dur="2s" repeatCount="indefinite"/> />' +
-  '</path>' +
-  //NOSEY
-  '<ellipse cx="50" cy="40" rx="12" ry="7" fill="#3D0066" stroke="#AA3090" stroke-width="1">' +
-    '<animate attributeName="cy" values="40;53;35;40;" keytimes="0;0.2;0.5;1" dur="2s" repeatCount="indefinite"/>' +
-	'<animate attributeName="ry" values="7;5;10;7;" keytimes="0;0.2;0.6;1" dur="2s" repeatCount="indefinite"/>' +
-  '</ellipse>' +
-  //EYES
-  '<path d="M22,38 L35,35;" fill="none" stroke="#AA3090" stroke-width="1">' +
-    '<animate attributeName="d" values="M22,38 L35,35; M22,46 L38,42; M22,35 L35,32; M22,38 L35,35;" keytimes="0;0.3;0.5;1" dur="2s" repeatCount="indefinite"/>' +
-  '</path>' +
-  '<path d="M65,35 L78,38;" fill="none" stroke="#AA3090" stroke-width="1">' +
-    '<animate attributeName="d" values="M65,35 L78,38; M63,42 L78,46; M65,32 L78,35; M65,35 L78,38;" keytimes="0;0.3;0.5;1" dur="2s" repeatCount="indefinite"/>' +
-  '</path>'
-'</svg>';
-
-*/
 
 var ptBR_nav_codeblock =
 	'<svg width="50" height="50">' +
@@ -381,6 +341,7 @@ var birds_osc_wide_codeblock =
 	
 	var logo = document.getElementById('logo');
 	var menu_nav = document.getElementById('menu-nav');
+	var dlog_nav = document.getElementById('dlog-nav');
 	var ptBR_nav = document.getElementById('ptBR-nav');
 	var enUS_nav = document.getElementById('enUS-nav');
 	var social_1 = document.getElementById('social-1');
@@ -396,14 +357,14 @@ var birds_osc_wide_codeblock =
 	var birds_osc_wide = document.getElementById('birds-osc-wide')
 	
 	var svgs = [
-	  logo, menu_nav, ptBR_nav, enUS_nav,
+	  logo, menu_nav, dlog_nav, ptBR_nav, enUS_nav,
 	  social_1, social_2, spam_buza,
 	  default_osc, rings_osc, birds_osc,
 	  default_osc_wide, rings_osc_wide, birds_osc_wide
 	  ];
 
 	var codeblocks = [
-	  logo_codeblock, menu_nav_codeblock, ptBR_nav_codeblock, enUS_nav_codeblock,
+	  logo_codeblock, menu_nav_codeblock, dlog_nav_codeblock, ptBR_nav_codeblock, enUS_nav_codeblock,
 	  social_1_codeblock, social_2_codeblock, spam_buza_codeblock,
 	  default_osc_codeblock, rings_osc_codeblock, birds_osc_codeblock,
 	  default_osc_wide_codeblock, rings_osc_wide_codeblock, birds_osc_wide_codeblock

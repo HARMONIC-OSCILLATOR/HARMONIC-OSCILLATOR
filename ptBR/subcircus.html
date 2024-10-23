@@ -18,9 +18,8 @@
   <link rel='alternate' hreflang='en' href='https://www.harmonicoscillator.com/subcircus.html'/>
   <link rel='alternate' hreflang='pt-BR' href='https://www.harmonicoscillator.com/ptBR/subcircus.html'/>
   <link rel='alternate' hreflang='x-default' href='https://www.harmonicoscillator.com/subcircus.html'/>
-  <link rel='icon' href='../logo.svg' type='image/svg'>
-  <link rel='icon' href='../logostatic.svg' type='image/svg'>
-  <link rel='icon' href='../logo.svg' type='image/svg'>
+  <link rel='icon' href='../logo128.ico' type='image/ico'>
+  <link rel='icon' href='../logo128.png' type='image/png'>
   <link rel='stylesheet' href='../default.css'>
   <link rel='stylesheet' href='../queries.css'>
 </head>
@@ -29,7 +28,7 @@
     <header class="page-header">
 	  <nav class="nav-top">
 	    <div class="subnav-top">
-		  <button onclick="navToggle()"><div id="menu-nav"></div></button>
+		  <button onclick="navLToggle()"><div id="menu-nav"></div></button>
 		</div>
 	    <a id="logo-link" href="index.html">
 		  <div class="logo-container">
@@ -38,6 +37,7 @@
 	      </div>
 		</a>
 		<div class="subnav-top flex-justify-end">
+		  <!--<button id="log-button" onclick="navRToggle()"><div id="dlog-nav"></div></button>-->
 		  <button><div id="ptBR-nav" class="deactivated"></div></button>
 		  <button><a href="../subcircus.html"><div id="enUS-nav"></div></a></button>
 		</div>
@@ -46,7 +46,7 @@
 	</header>
 	<main class="page-main">
 	  <section id="block-L" class="main-block-L">
-	    <nav id="nav-side-id" class="nav-side noselect">
+	    <nav id="nav-side-L" class="nav-side noselect">
 		  <ul id="nav-side-ul">
 	        <li class="li-dashed"><a href="equipe.html">O EQUIPE OSC</a></li>
 	        <li class="li-dashed"><a href="contato.html">CONTATE-NOS</a></li>
@@ -55,6 +55,7 @@
 	            <summary>Projetos</summary>
 	            <ul>
 	              <li class="li-dashed"><a href="subcircus.html">SUBCIRCUS</a></li>
+				  <!--<li class="li-dashed"><a href="devlog.html">DEV LOG</a></li>-->
 	            </ul>
 	          </details>
 			</li>
@@ -93,7 +94,7 @@
 		</figure>
 		<p>Pretendemos levantar o <strong class="strong">véu de segredo</strong> deste projeto em Q1 2025.</p>
 	  </section>
-	  <div id="block-R" class="main-block-R"></div>
+	  <div id="block-R" class="main-block-R border-fix"></div>
 	</main>
 	<footer class="page-footer">
 	  <noscript>
@@ -106,6 +107,7 @@
    	  	    <li><a href="../team.html">team</a></li>
 			<li><a href="../contact.html">contact</a></li>
    	  	    <li><a href="../subcircus.html">subcircus</a></li>
+			<!--<li><a href="../devlog.html">devlog</a></li>-->
    	  	  </ul>
    	  	  <h1>LINKS DO SITE (PORTUGUÊS)</h1>
    	  	  <ul>
@@ -113,6 +115,7 @@
    	  	    <li><a href="equipe.html">time</a></li>
 			<li><a href="contato.html">contato</a></li>
    	  	    <li><a href="subcircus.html">subcircus</a></li>
+			<!--<li><a href="devlog.html">devlog</a></li>-->
    	  	  </ul>
    	    </nav>
 		<h2><marquee>uau!!!</marquee></h2>
